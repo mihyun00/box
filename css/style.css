@@ -1,7 +1,139 @@
 @import "/reset.css";
 * {
   box-sizing: border-box;
+  font-family: "Noto Sans KR", sans-serif;
 }
+html,
+body {
+  position: relative;
+  height: 100%;
+}
+
+/*****************  header ***********************/
+
+header {
+  width: 100%;
+  height: 80px;
+  background-color: #06377b;
+  position: fixed;
+  z-index: 9999;
+}
+.h_ci {
+  width: 15%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  float: left;
+}
+.h_ci img {
+  width: 70px;
+  height: 70px;
+}
+.h_nav {
+  width: 70%;
+  height: 100%;
+  float: left;
+}
+.h_nav li a {
+  float: left;
+  color: #fff;
+  width: 16.66%;
+  font-size: 1vw;
+  font-weight: bold;
+  text-align: center;
+  line-height: 80px;
+}
+.h_nav li a:hover {
+  border-bottom: 3px solid gray;
+}
+.lang {
+  width: 15%;
+  height: 100%;
+  float: left;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.lang li {
+  float: left;
+  color: lightgray;
+  width: 30%;
+  font-size: 0.8vw;
+  text-align: center;
+  cursor: pointer;
+}
+.lang li:first-child {
+  border-right: 1px solid lightgray;
+}
+
+/***************** section1 ***********************/
+
+.sect1 {
+  width: 100%;
+  height: 80vh;
+  border: 1px solid red;
+  position: relative;
+}
+.bg_black {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 80vh;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+.sect1 .swiper-container {
+  width: 100%;
+  height: 80vh;
+}
+.sect1 .swiper-slide {
+  background-position: center;
+  background-size: cover;
+}
+
+/***************** section2 ***********************/
+
+.sect2 {
+  width: 100%;
+  height: 100vh;
+  border: 1px solid blue;
+  position: relative;
+}
+.sect2 h1 {
+  height: 30vh;
+  font-size: 2vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.sect2_logo {
+  height: 30vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.sect2_txt {
+  height: 17vh;
+  font-size: 1vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.sect2 button {
+  position: absolute;
+  left: 50%;
+  bottom: 13%;
+  transform: translate(-50%, -50%);
+  width: 15vh;
+  height: 5vh;
+  font-size: 0.9vw;
+  border: 1px solid lightgray;
+  margin: 0 auto;
+  color: #06377b;
+  font-family: "Noto Sans KR", sans-serif;
+}
+
 /*sect3*/
 .sect3 {
   width: 100%;
@@ -95,4 +227,50 @@
 .sect3-slide ul li h6.sect3-slide-year {
   margin-top: 20px;
   text-align: center;
+}
+
+/***************** footer ***********************/
+
+footer {
+  width: 100%;
+  height: 30vh;
+  background-color: #06377b;
+}
+.f_wrap {
+  margin: auto;
+  width: 1240px;
+  height: 30vh;
+  border: 1px solid #fff;
+}
+.f_logo {
+  width: 30%;
+  height: 30vh;
+  border: 1px solid red;
+  float: left;
+  position: relative;
+}
+.f_logo img {
+  width: 10vh;
+  height: 10vh;
+  position: absolute;
+  top: 30%;
+  right: 15%;
+}
+.f_nav1 {
+  float: left;
+  width: 50%;
+  height: 50%;
+  border: 1px solid #fff;
+}
+.f_nav1 li {
+  width: 25%;
+  height: 100%;
+  float: left;
+  color: #fff;
+  border: 1px solid red;
+}
+.f_nav1 li img {
+  width: 3vh;
+  height: 4vh;
+  border: 1px solid #fff;
 }
