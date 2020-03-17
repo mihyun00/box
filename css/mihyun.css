@@ -4,9 +4,6 @@
     height: 100vh;
     padding-top: 300px;
   }
-  .sect3 article {
-    float: left;
-  }
   /* sect3 왼쪽 텍스트 부분 */
   .sect3-txt {
     width: 30%;
@@ -31,30 +28,28 @@
     text-align: center;
     margin: 10px 0 40px;
   }
+  /*연도 버튼*/
   .sect3-txt .year-btn {
     display: flex;
     margin: auto;
     width: 80%;
   }
   .sect3-txt .year-btn button.on {
-    color: #06377b;
-    background-color: white;
-    border: 1px solid #06377b;
+    color: white;
+    background-color: #06377b;
   }
   .sect3-txt .year-btn button {
     width: 50%;
     height: 50px;
-    color: white;
-    background-color: #06377b;
+    color: #06377b;
+    background-color: white;
+    border: 1px solid #06377b;
   }
   /* sect3 오른쪽 슬라이드 부분 */
   .sect3-slide {
     width: 70%;
     height: 60%;
   }
-  /* .sect3-slide ul {
-    display: none;
-  } */
   .sect3-slide ul {
     width: 4000px;
     height: 400px;
@@ -90,4 +85,15 @@
   .sect3-slide ul li h6.sect3-slide-year {
     margin-top: 20px;
     text-align: center;
+  }
+  /*sect4*/
+  .sect4{
+    width: 100%;
+    height: 100vh;
+    background-color: beige;
+    padding-top: 100px;
+  }
+  .sect4 h2{
+    text-align: center;
+    font-size: 50px;
   }

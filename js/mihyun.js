@@ -1,15 +1,17 @@
-//sect3 slide 
+//sect3 커스텀 스크롤 
 $(".sect3-slide").mCustomScrollbar({
-    axis: "x", // vertical and horizontal scrollbar
-    theme: "dark-thin"
-  })
-  //sect3 buootn
-//   $(".year-button").click(function(){
-//       //button 부분 . 클릭하는 버튼만 배경, 글자색 변경
-//       $(".year-button").removeClass('on')
-//       $(this).addClass('on')
-//       //slide 부분 . 클릭하는 연도의 slide 표출
-  
-//   })
+  axis: "x", // vertical and horizontal scrollbar
+  theme: "dark-thin"
+})
 
-$()
+//sect3 buootn 클릭하면 연도별 슬라이드 표출되며 버튼 색 변경
+$('.year-btn button').click(function(){
+  $('.year-btn button').removeClass('on')
+  $(this).addClass('on')
+
+  var Ye = $(this).index()
+  $('.sect3-slide ul').hide()
+  $('.sect3-slide ul').eq(Ye).show()
+})
+
+
