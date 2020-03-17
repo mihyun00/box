@@ -1,6 +1,11 @@
-var swiper = new Swiper(".swiper-container", {
+var swiper = new Swiper(".sect5_swiper-container", {
     navigation: {
       nextEl: ".swiper-button-next",
       prevEl: ".swiper-button-prev"
-    }
+    },
+    effect:'fade',
+    fadeEffect: {
+      crossFade: true
+    },
   })
+  
