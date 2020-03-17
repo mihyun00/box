@@ -1,99 +1,157 @@
 /*sect3*/
 .sect3 {
-    width: 100%;
-    height: 100vh;
-    padding-top: 300px;
-  }
-  /* sect3 왼쪽 텍스트 부분 */
-  .sect3-txt {
-    width: 30%;
-  }
-  .sect3-txt .main-year {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 18px;
-    font-weight: bold;
-  }
-  .sect3-txt .main-year p {
-    margin: 0 10px;
-  }
-  .sect3-txt .main-year span {
-    width: 150px;
-    height: 1px;
-    background-color: lightgray;
-  }
-  .sect3-txt h3 {
-    font-size: 40px;
-    text-align: center;
-    margin: 10px 0 40px;
-  }
-  /*연도 버튼*/
-  .sect3-txt .year-btn {
-    display: flex;
-    margin: auto;
-    width: 80%;
-  }
-  .sect3-txt .year-btn button.on {
-    color: white;
-    background-color: #06377b;
-  }
-  .sect3-txt .year-btn button {
-    width: 50%;
-    height: 50px;
-    color: #06377b;
-    background-color: white;
-    border: 1px solid #06377b;
-  }
-  /* sect3 오른쪽 슬라이드 부분 */
-  .sect3-slide {
-    width: 70%;
-    height: 60%;
-  }
-  .sect3-slide ul {
-    width: 4000px;
-    height: 400px;
-    display: flex;
-    flex-wrap: nowrap;
-    align-items: center;
-    justify-content: space-evenly;
-  }
-  .sect3-slide ul .sect3-slide-head {
-    width: 50px;
-    height: 50px;
-    text-align: center;
-    line-height: 50px;
-    color: white;
-    background-color: #06377b;
-  }
-  .sect3-slide ul li {
-    width: 100px;
-    height: 100%;
-  }
-  .sect3-slide ul li p.sect3-slide-txtBox {
-    height: 50%;
-    background-color: lightgray;
-    margin-bottom: 10px;
-  }
-  .sect3-slide ul li .sect3-slide-icon {
-    width: 10px;
-    height: 10px;
-    border-radius: 50%;
-    background-color: #06377b;
-    margin: auto;
-  }
-  .sect3-slide ul li h6.sect3-slide-year {
-    margin-top: 20px;
-    text-align: center;
-  }
-  /*sect4*/
-  .sect4{
-    width: 100%;
-    height: 100vh;
-    background-color: beige;
-    padding-top: 100px;
-  }
-  .sect4 h2{
-    text-align: center;
-    font-size: 50px;
-  }
+  width: 100%;
+  height: 100vh;
+  padding-top: 300px;
+}
+/* sect3 왼쪽 텍스트 부분 */
+.sect3-txt {
+  width: 30%;
+}
+.sect3-txt .main-year {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 18px;
+  font-weight: bold;
+}
+.sect3-txt .main-year p {
+  margin: 0 10px;
+}
+.sect3-txt .main-year span {
+  width: 150px;
+  height: 1px;
+  background-color: lightgray;
+}
+.sect3-txt h3 {
+  font-size: 40px;
+  text-align: center;
+  margin: 10px 0 40px;
+}
+/*연도 버튼*/
+.sect3-txt .year-btn {
+  display: flex;
+  margin: auto;
+  width: 80%;
+}
+.sect3-txt .year-btn button.on {
+  color: white;
+  background-color: #06377b;
+}
+.sect3-txt .year-btn button {
+  width: 50%;
+  height: 50px;
+  color: #06377b;
+  background-color: white;
+  border: 1px solid #06377b;
+}
+/* sect3 오른쪽 슬라이드 부분 */
+.sect3-slide {
+  width: 70%;
+  height: 60%;
+}
+.sect3-slide ul {
+  width: 4000px;
+  height: 400px;
+  display: flex;
+  flex-wrap: nowrap;
+  align-items: center;
+  justify-content: space-evenly;
+}
+.sect3-slide ul .sect3-slide-head {
+  width: 50px;
+  height: 50px;
+  text-align: center;
+  line-height: 50px;
+  color: white;
+  background-color: #06377b;
+}
+.sect3-slide ul li {
+  width: 100px;
+  height: 100%;
+}
+.sect3-slide ul li p.sect3-slide-txtBox {
+  height: 50%;
+  background-color: lightgray;
+  margin-bottom: 10px;
+}
+.sect3-slide ul li .sect3-slide-icon {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: #06377b;
+  margin: auto;
+}
+.sect3-slide ul li h6.sect3-slide-year {
+  margin-top: 20px;
+  text-align: center;
+}
+/*sect4*/
+.sect4 {
+  width: 100%;
+  height: 100vh;
+  background-color: bisque;
+  padding-top: 60px;
+}
+/* sect4 상단 main txt */
+.sect4 h2 {
+  text-align: center;
+  font-size: 50px;
+  margin-bottom: 120px;
+}
+/* sect4 swiper */
+.sect4-swiper-container {
+  width: 100%;
+  margin-bottom: 80px;
+}
+.sect4-swiper-container .swiper-wrapper {
+  width: 100%;
+  height: 300px;
+}
+/* swiper book img */
+.bookIMG {
+  width: 170px;
+  height: 240px;
+  background-image: url(/img/new01.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin-bottom: 20px;
+}
+/* book txt */
+.bookTXT p {
+  text-align: center;
+}
+.bookTXT p:nth-child(1) {
+  font-size: 14px;
+}
+.bookTXT p:nth-child(2) {
+  font-size: 10px;
+}
+/* sect4 하단 nav */
+/*라인*/
+.sect4-slide-line{
+  width: 100%;
+  height: 20px;
+  position: relative;
+}
+.sect4-slide-line .line-line{
+  width: 100%;
+  height: 1px;
+  background-color: #06377b;
+}
+.sect4-slide-line .line-a{
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: #06377b;
+  position: absolute;
+  top: -5px;
+}
+/*txt*/
+.book-navtxt{
+  padding-top: 20px;
+  width: 50%;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+}
