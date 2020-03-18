@@ -1,4 +1,4 @@
-var swiper = new Swiper(".swiper-container", {
+var swiper = new Swiper(".sect1_swiper-container", {
   autoplay: {
     delay: 3000
   },
