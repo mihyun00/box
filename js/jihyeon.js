@@ -5,7 +5,7 @@ var swiper = new Swiper(".sect5_swiper-container", {
     },
     effect:'fade',
     fadeEffect: {
-      crossFade: true
+      crossFade: true,
     },
   })
-  
+
