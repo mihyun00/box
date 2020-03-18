@@ -2,16 +2,14 @@
 .sect3 {
   width: 100%;
   height: 100vh;
-  padding-top: 300px;
+  padding-top: 150px;
 }
-/* sect3 왼쪽 텍스트 부분 */
-.sect3-txt {
-  width: 30%;
-}
-.sect3-txt .main-year {
+.sect3-txt > div {
   display: flex;
   align-items: center;
   justify-content: center;
+}
+.sect3-txt .main-year {
   font-size: 18px;
   font-weight: bold;
 }
@@ -25,31 +23,23 @@
 }
 .sect3-txt h3 {
   font-size: 40px;
-  text-align: center;
-  margin: 10px 0 40px;
 }
 /*연도 버튼*/
 .sect3-txt .year-btn {
-  display: flex;
-  margin: auto;
   width: 80%;
 }
 .sect3-txt .year-btn button.on {
-  color: white;
-  background-color: #06377b;
+  color: #355444;
+  background-color: #B2D2C3;
 }
 .sect3-txt .year-btn button {
   width: 50%;
   height: 50px;
-  color: #06377b;
+  color: white;
   background-color: white;
-  border: 1px solid #06377b;
+  border: 1px solid #CCE4D7;
 }
 /* sect3 오른쪽 슬라이드 부분 */
-.sect3-slide {
-  width: 70%;
-  height: 60%;
-}
 .sect3-slide ul {
   width: 4000px;
   height: 400px;
@@ -86,11 +76,41 @@
   margin-top: 20px;
   text-align: center;
 }
+/*sect3 모바일 버전 swiper*/
+
+
+
+
+/* .sect3-mobaile-swiper{
+  display: none;
+  margin-top: 100px;
+}
+.sect3-swiper-container{
+  width: 250px;
+  height: 250px;
+  text-align: center;
+}
+.sect3-swiper-container p{
+  font-size: 20px;
+} 
+.sect3-swiper-container .M-line{
+  margin: auto;
+  width: 50px;
+  height: 1px;
+  background-color: black;
+}
+.sect3-swiper-container .swiper-wrapper{
+  width: 100%;
+  height: 100%;
+}
+.sect3-swiper-container .swiper-wrapper .swiper-slide{
+  width: 100%;
+  height: 100%;
+} */
 /*sect4*/
 .sect4 {
   width: 100%;
   height: 100vh;
-  background-color: bisque;
   padding-top: 60px;
 }
 /* sect4 상단 main txt */
@@ -129,17 +149,17 @@
 }
 /* sect4 하단 nav */
 /*라인*/
-.sect4-slide-line{
+.sect4-slide-line {
   width: 100%;
   height: 20px;
   position: relative;
 }
-.sect4-slide-line .line-line{
+.sect4-slide-line .line-line {
   width: 100%;
   height: 1px;
   background-color: #06377b;
 }
-.sect4-slide-line .line-a{
+.sect4-slide-line .line-a {
   width: 10px;
   height: 10px;
   border-radius: 50%;
@@ -148,10 +168,64 @@
   top: -5px;
 }
 /*txt*/
-.book-navtxt{
+.book-navtxt {
   padding-top: 20px;
   width: 50%;
   margin: auto;
   display: flex;
   justify-content: space-between;
+}
+
+/******************사이즈 조절 media******************/
+
+/*max*/
+@media screen and (max-width: 990px) {
+  .sect3 article {
+    width: 100%;
+  }
+  .sect3-txt .year-btn {
+    width: 50%;
+    margin-bottom: 100px;
+  }
+}
+@media screen and (max-width: 767px) {
+  /*sect3*/
+  .sect3-txt .main-year,
+  .sect3-txt .year-btn,
+  .sect3-slide {
+    display: none;
+  }
+  .sect3-mobaile-swiper{
+    display: block;
+  }
+}
+/*min*/
+@media screen and (min-width: 990px) {
+  /*sect3*/
+  .sect3 {
+    padding-top: 300px;
+  }
+  .sect3-txt > div {
+    margin: auto;
+  }
+  .sect3-txt .year-btn {
+    width: 80%;
+  }
+  .sect3-txt {
+    width: 30%;
+  }
+  .sect3-txt h3 {
+    margin: 10px 0 40px;
+  }
+  /*sect3 slide*/
+  .sect3-slide {
+    width: 70%;
+    height: 60%;
+  }
+}
+@media screen and (min-width: 767px) {
+  .sect3-txt > div {
+    width: 50%;
+    padding: 20px;
+  }
 }
