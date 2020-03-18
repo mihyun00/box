@@ -11,6 +11,7 @@
     />
     <!-- jq 연결 -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.js"></script>
     <!-- 커스텀 스크롤 연결 -->
     <link rel="stylesheet" href="css/jquery.mCustomScrollbar.css" />
     <script src="js/jquery.mCustomScrollbar.js"></script>
@@ -29,7 +30,7 @@
   <body>
     <header>
       <div class="h_ci">
-        <a href="#"><img src="img/logo.png" alt="창비로고"/></a>
+        <a href="#"><img src="img/logo2.png" alt="창비로고"/></a>
       </div>
       <nav class="h_nav">
         <ul>
@@ -49,27 +50,23 @@
     <!---------------- section1 ---------------->
 
     <section class="sect1" id="section1">
+      
       <div class="swiper-container sect1_swiper-container">
-        <div class="swiper-wrapper sect1_swiper-wrapper">
-          <div class="bg_black">
-            <div
-              class="swiper-slide sect1_bg_1"
-              style="background-image: url(img/sect1_bg_1.jpg);"
-            ></div>
-            <div
-              class="swiper-slide sect1_bg_2"
-              style="background-image: url(img/sect1_bg_2.jpg);"
-            ></div>
-            <div
-              class="swiper-slide sect1_bg_3"
-              style="background-image: url(img/sect1_bg_3.jpg);"
-            ></div>
-            <div
-              class="swiper-slide sect1_bg_4"
-              style="background-image: url(img/sect1_bg_4.jpg);"
-            ></div>
+        <div class="bg_black"></div><div class="swiper-wrapper sect1_swiper-wrapper">
+            <div class="swiper-slide sect1_bg_1">
+              <img src="img/sect1_bg_1.jpg" alt="">
+            </div>
+            <div class="swiper-slide sect1_bg_2">
+              <img src="img/sect1_bg_2.jpg" alt="">
+            </div>
+            <div class="swiper-slide sect1_bg_3">
+              <img src="img/sect1_bg_3.jpg" alt="">
+            </div>
+            <div class="swiper-slide sect1_bg_4">
+              <img src="img/sect1_bg_4.jpg" alt="">
+            </div>
           </div>
-        </div>
+        
         <!-- Add Pagination -->
         <div class="swiper-pagination swiper-pagination-white"></div>
       </div>
@@ -79,7 +76,7 @@
 
     <section class="sect2" id="section2">
       <h1>About CHANGBI</h1>
-      <div class="sect2_logo"><img src="img/big_logo.png" alt="" /></div>
+      <div class="sect2_logo"><img src="img/big_logo2.png" alt="" /></div>
       <div class="sect2_txt">
         <p>
           창비는 1974년 단행본 출판을 시작한 이래 문학, 인문, 사회, 교양, 어린이·청소년, 교과서 등
@@ -789,26 +786,44 @@
         </div>
         <ul class="f_nav1">
           <li>
-            <img src="img/icon01-w.png" alt="오시는길" />
-            <p>오시는길</p>
+            <div class="f_nav_wrap">
+              <a href="https://place.map.kakao.com/9338284">
+                <img src="img/icon01-w.png" alt="오시는길" />
+                <p>오시는길</p>
+              </a>
+            </div>
           </li>
           <li>
-            <img src="img/icon02-w.png" alt="제휴문의" />
-            <p>제휴문의</p>
+            <div class="f_nav_wrap">
+              <a href="http://www.changbi.com/customer-help/customer-email-contact?ps=1">
+                <img src="img/icon02-w.png" alt="제휴문의" />
+                <p>제휴문의</p>
+              </a>
+            </div>
           </li>
           <li>
-            <img src="img/icon03-w.png" alt="트위터" />
-            <p>트위터</p>
+            <div class="f_nav_wrap">
+              <a href="https://twitter.com/changbi_books">
+                <img src="img/icon03-w.png" alt="트위터" />
+                <p>트위터</p>
+              </a>
+            </div>
           </li>
           <li>
-            <img src="img/icon04-w.png" alt="페이스북" />
-            <p>페이스북</p>
-          </li>
+            <div class="f_nav_wrap">
+              <a href="https://www.facebook.com/changbi">
+                <img src="img/icon04-w.png" alt="페이스북" />
+                <p>페이스북</p>
+              </a>
+            </div>
+        </li>
         </ul>
         <ul class="f_nav2">
-          <li>이용약관</li>
-          <li>개인정보처리방침</li>
-          <li>사이트맵</li>
+          <li><a href="#">이용약관</a></li>
+          <li>|</li>
+          <li><a href="#">개인정보처리방침</a></li>
+          <li>|</li>
+          <li><a href="#">사이트맵</a></li>
         </ul>
         <div class="address">
           <div class="copy">
