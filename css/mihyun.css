@@ -29,15 +29,15 @@
   width: 80%;
 }
 .sect3-txt .year-btn button.on {
-  color: #355444;
-  background-color: #B2D2C3;
+  background-color: #b2d2c3;
 }
 .sect3-txt .year-btn button {
   width: 50%;
   height: 50px;
-  color: white;
+  color: #355444;
   background-color: white;
-  border: 1px solid #CCE4D7;
+  border: 1px solid #cce4d7;
+  margin: 0 2px;
 }
 /* sect3 오른쪽 슬라이드 부분 */
 .sect3-slide ul {
@@ -54,59 +54,37 @@
   text-align: center;
   line-height: 50px;
   color: white;
-  background-color: #06377b;
+  background-color: #cce4d7;
 }
 .sect3-slide ul li {
-  width: 100px;
-  height: 100%;
+  width: 250px;
+  height: 60%;
 }
 .sect3-slide ul li p.sect3-slide-txtBox {
+  width: 100%;
   height: 50%;
-  background-color: lightgray;
-  margin-bottom: 10px;
+  border: 1px solid #cce4d7;
+  margin-bottom: 90px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 .sect3-slide ul li .sect3-slide-icon {
   width: 10px;
   height: 10px;
   border-radius: 50%;
-  background-color: #06377b;
+  background-color: #cce4d7;
   margin: auto;
 }
 .sect3-slide ul li h6.sect3-slide-year {
   margin-top: 20px;
   text-align: center;
+  font-size: 12px;
 }
-/*sect3 모바일 버전 swiper*/
-
-
-
-
-/* .sect3-mobaile-swiper{
+/*sect3 모바일 버전*/
+.sect3-mobaile {
   display: none;
-  margin-top: 100px;
 }
-.sect3-swiper-container{
-  width: 250px;
-  height: 250px;
-  text-align: center;
-}
-.sect3-swiper-container p{
-  font-size: 20px;
-} 
-.sect3-swiper-container .M-line{
-  margin: auto;
-  width: 50px;
-  height: 1px;
-  background-color: black;
-}
-.sect3-swiper-container .swiper-wrapper{
-  width: 100%;
-  height: 100%;
-}
-.sect3-swiper-container .swiper-wrapper .swiper-slide{
-  width: 100%;
-  height: 100%;
-} */
 /*sect4*/
 .sect4 {
   width: 100%;
@@ -121,21 +99,28 @@
 }
 /* sect4 swiper */
 .sect4-swiper-container {
-  width: 100%;
+  margin: auto;
+  width: 90%;
   margin-bottom: 80px;
 }
 .sect4-swiper-container .swiper-wrapper {
   width: 100%;
-  height: 300px;
+  height: 360px;
+}
+.sect4-swiper-container .swiper-wrapper .swiper-slide {
+  padding: 10px;
+  border: 1px solid #cce4d7;
 }
 /* swiper book img */
 .bookIMG {
-  width: 170px;
-  height: 240px;
-  background-image: url(../img/new01.jpg);
-  background-size: cover;
-  background-repeat: no-repeat;
+  width: 100%;
+  height: 270px;
   margin-bottom: 20px;
+  text-align: center;
+}
+.bookIMG img {
+  width: 100%;
+  height: 100%;
 }
 /* book txt */
 .bookTXT p {
@@ -157,13 +142,13 @@
 .sect4-slide-line .line-line {
   width: 100%;
   height: 1px;
-  background-color: #06377b;
+  background-color: #cce4d7;
 }
 .sect4-slide-line .line-a {
   width: 10px;
   height: 10px;
   border-radius: 50%;
-  background-color: #06377b;
+  background-color: #355444;
   position: absolute;
   top: -5px;
 }
@@ -176,7 +161,7 @@
   justify-content: space-between;
 }
 
-/******************사이즈 조절 media******************/
+/**********************media************************/
 
 /*max*/
 @media screen and (max-width: 990px) {
@@ -191,11 +176,16 @@
 @media screen and (max-width: 767px) {
   /*sect3*/
   .sect3-txt .main-year,
-  .sect3-txt .year-btn,
   .sect3-slide {
     display: none;
   }
-  .sect3-mobaile-swiper{
+  .sect3-txt > div {
+    margin: auto;
+  }
+  .sect3-txt h3 {
+    margin: 10px 0 40px;
+  }
+  .sect3-mobaile {
     display: block;
   }
 }

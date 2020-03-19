@@ -19,15 +19,26 @@ $(".year-btn button").click(function() {
 
 //sect4 swiper
 var swiper_sect4 = new Swiper(".sect4-swiper-container", {
-  spaceBetween: 10,
-  slidesPerView: 8,
-  spaceBetween: 30,
   slidesPerGroup: 1,
   loop: true,
   loopFillGroupWithBlank: true,
   autoplay: {
     delay: 3500,
     disableOnInteraction: false
+  },
+  breakpoints: {
+    200: {
+      slidesPerView: 2,
+      spaceBetween: 20
+    },
+    768: {
+      slidesPerView: 4,
+      spaceBetween: 20
+    },
+    1024: {
+      slidesPerView: 7,
+      spaceBetween: 30
+    }
   }
 })
 
@@ -37,65 +48,66 @@ var b = $(".line-a").offset().left
 pointFuc(0)
 $(".book-navtxt li").click(function() {
   var idx = $(this).index()
+  console.log(idx)
   pointFuc(idx)
 })
 
 function pointFuc(i) {
   var p = $(".book-navtxt li")
     .eq(i)
-    .offset().left //각 li의 위치 값
+    .offset().left
   var h =
     $(".book-navtxt li")
       .eq(i)
-      .width() / 2 //li의 width/2
+      .width() / 2
   $(".line-a").animate({ left: p - b + h - 3 })
+  // $(window).resize(function() {
+  //   var p = $(".book-navtxt li")
+  //     .eq(i)
+  //     .offset().left
+  //   // console.log(p)
+  //   var h =
+  //     $(".book-navtxt li")
+  //       .eq(i)
+  //       .width() / 2
+  //   $(".line-a").animate({ left: p - b + h - 3 })
+  // })
 }
 $(".book-navtxt li").click(function(e) {
   e.preventDefault()
 })
 
-//book-navtxt 메뉴 선택시 해당 분야 도서가 첫번째로 이동
 
-//다른 분야로 swiper가 넘어갈 때 book-nevtxt, a 가 함께 이동 
+
+
+
+
+
+
 
 
 
 
 // swiper_sect4.on("slideChange", function() {
-//   var activeIdx = swiper.activeIndex
-//   console.log(activeIdx)
- 
+// var activeIdx = swiper_sect4.activeIndex
+// // console.log(activeIdx)
 // })
 
-//sect3 모바일 버전 swiper
-var swiper = new Swiper('.sect3-swiper-container', {
-  effect: 'cube',
-  grabCursor: true,
-  cubeEffect: {
-    shadow: true,
-    slideShadows: true,
-    shadowOffset: 40,
-    shadowScale: 1,
-  },
-  direction: 
-    'vertical',
-  // autoplay: {
-  //   delay: 3000,
-  //   disableOnInteraction: false
-  // }
-});
+// $(".book-navtxt li a").click(function() {
 
-//스와이퍼 반응형 소스코드
-// breakpoints: {
-//   640: {
-//     slidesPerView: 2,
-//     spaceBetween: 20,
-//   },
-//   768: {
-//     slidesPerView: 4,
-//     spaceBetween: 40,
-//   },
-//   1024: {
-//     slidesPerView: 5,
-//     spaceBetween: 50,
-//   },
+  
+
+
+// })
+
+
+
+//book-navtxt 메뉴 선택시 해당 분야 도서가 첫번째로 이동
+
+//다른 분야로 swiper가 넘어갈 때 book-nevtxt, a 가 함께 이동
+
+// 무엇의.on("slideChange", function() {
+//   var activeIdx = swiper.activeIndex
+//   console.log(activeIdx)
+
+// })
