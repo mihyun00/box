@@ -10,18 +10,22 @@ body {
   color: #333;
 }
 @font-face {
+  /*약간 굵음*/
   font-family: square;
   src: url(NanumSquare.ttf);
 }
 @font-face {
+  /*많이 굵음*/
   font-family: square_black;
   src: url(NanumSquare_0.ttf);
 }
 @font-face {
+  /*보통*/
   font-family: square_regular;
   src: url(NanumSquare_acR.ttf);
 }
 @font-face {
+  /*많이 얇음*/
   font-family: square_light;
   src: url(NanumSquare_acL.ttf);
 }
