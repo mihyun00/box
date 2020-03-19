@@ -11,19 +11,19 @@ body {
 }
 @font-face {
   font-family: square;
-  src: url(/css/NanumSquare.ttf);
+  src: url(NanumSquare.ttf);
 }
 @font-face {
   font-family: square_black;
-  src: url(/css/NanumSquare_0.ttf);
+  src: url(NanumSquare_0.ttf);
 }
 @font-face {
   font-family: square_regular;
-  src: url(/css/NanumSquare_acR.ttf);
+  src: url(NanumSquare_acR.ttf);
 }
 @font-face {
   font-family: square_light;
-  src: url(/css/NanumSquare_acL.ttf);
+  src: url(NanumSquare_acL.ttf);
 }
 h1,h2,h3,h4,h5,h6,b{
   font-family: square_black;
