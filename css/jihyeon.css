@@ -1,4 +1,42 @@
 /* section4 시작---------------------- */
+.sect4{
+  width: 100%; height: 200vh;
+}
+.sect4 h2{
+  padding: 70px 0;
+}
+.sect4_wrap{
+  max-width: 1240px;
+  margin: auto;
+}
+.sect4_box1{
+  width: 100%; height: 450px;
+  margin-bottom: 70px;
+  padding: 50px;
+}
+.sect4_box2{
+  width: 580px; height: 800px;
+  background-color: aliceblue;
+}
+.sect4_box3{
+  width: 580px; height: 800px;
+  background-color: aliceblue;
+  margin-top: 250px;
+}
+.sect4 h3{
+  font-size: 24px;
+}
+.sect4 h4{
+  font-size: 16px;
+  padding: 5px 0 25px;
+  font-family: square;
+}
+.sect4 li{
+  font-size: 14px;
+  padding: 5px 0;
+}
+
+
 
 /* section4 끝 */
 /* section5 시작-------------------------- */
@@ -6,26 +44,23 @@
   width: 100%;
   height: 100vh;
 }
+.sect5 h2 {
+  padding: 70px 0;
+  opacity: 0;
+}
 .sect5 .wrap {
   max-width: 1240px;
   margin: auto;
   display: flex;
   justify-content: space-between;
 }
-.sect5 h2 {
-  padding: 70px 0;
-  font-size: 40px;
-  font-weight: 900;
-  text-align: center;
-  letter-spacing: -1px;
-}
 .sect5 .comm_content {
   width: 300px;
   flex-wrap: wrap;
+  margin-top: 50px; opacity: 0;
 }
 .sect5 .comm_img {
-  width: 300px;
-  height: 300px;
+  max-width: 300px;
 }
 .sect5 .comm_img img {
   width: 100%;
@@ -49,30 +84,20 @@
 }
 .sect5 .more_btn {
   display: block;
-  width: 190px;
-  height: 69px;
+  width: 180px;
+  padding: 15px 0;
   border: 1px solid #d7d7d7;
   margin: auto;
   text-align: center;
   margin-top: 80px;
-  position: relative;
-}
-.sect5 .more_btn span {
-  display: block;
-  width: 0;
-  height: 69px;
-  background-color: #b2d2c3;
-  position: absolute;
-  top: 0;
-  left: 0;
-}
-.sect5 .more_btn b {
-  color: #365445;
-  position: absolute;
   font-size: 18px;
-  font-family: square;
-  left: 50%;
-  top: 50%;
-  transform: translate(-50%, -50%);
+  font-family: square_black;
+  color: #365445;
+  transition: .3s;
+  opacity: 0;
+}
+.sect5 .more_btn:hover{
+  background-color: #B2D2C3;
+  color: #fff;
 }
 /* section5 끝-------------------------- */
