@@ -96,54 +96,9 @@ header.on {
 .sect1 .swiper-pagination {
   z-index: 999;
 }
-/***************** section2 ***********************/
 
-.sect2 {
-  width: 100%;
-  height: 100vh;
-  border: 1px solid blue;
-}
-.sect2 h1 {
-  height: 30vh;
-  font-size: 2vw;
-}
-.sect2_wrap {
-  width: 100%;
-  height: 17vh;
-  font-size: 1vw;
-  position: relative;
-}
-.sect2_logo {
-  width: 100%;
-  height: 30vh;
-  position: relative;
-}
-.sect2_logo img {
-  height: 12vh;
-  position: absolute;
-  left: 50%;
-  transform: translate(-50%, -50%);
-}
-.sect2_txt {
-  width: 100%;
-  height: 70%;
-  position: absolute;
-  top: 200%;
-}
-.sect2_txt p {
-  text-align: center;
-}
-.sect2 button {
-  position: absolute;
-  left: 50%;
-  transform: translateX(-50%);
-  width: 15vh;
-  height: 5vh;
-  font-size: 0.9vw;
-  border: 1px solid lightgray;
-  color: #06377b;
-  font-family: "Noto Sans KR", sans-serif;
-}
+/*sect2 와 연혁 부분 합침으로 css 삭제했습니다!*/
+
 /***************** footer *********************/
 
 footer {

@@ -86,7 +86,7 @@
   display: none;
 }
 /*sect4*/
-.sect4 {
+.sect2 {
   width: 100%;
   height: 100vh;
   padding-top: 60px;
@@ -94,25 +94,24 @@
   background-size: cover; */
 }
 /* sect4 상단 main txt */
-.sect4 h2 {
+.sect2 h2 {
   text-align: center;
   font-size: 50px;
   margin-bottom: 120px;
 }
 /* sect4 swiper */
-.sect4-swiper-container {
+.sect2-swiper-container {
   margin: auto;
   width: 90%;
   margin-bottom: 80px;
 }
-.sect4-swiper-container .swiper-wrapper {
+.sect2-swiper-container .swiper-wrapper {
   width: 100%;
   height: 360px;
 }
-.sect4-swiper-container .swiper-wrapper .swiper-slide {
+.sect2-swiper-container .swiper-wrapper .swiper-slide {
   padding: 10px;
   background-color: white;
-
 }
 /* swiper book img */
 .bookIMG {
@@ -120,7 +119,8 @@
   height: 270px;
   margin-bottom: 20px;
   text-align: center;
-  box-shadow: 6px 6px 6px rgba(0, 0, 0, .2);}
+  box-shadow: 6px 6px 6px rgba(0, 0, 0, 0.2);
+}
 .bookIMG img {
   width: 100%;
   height: 100%;
@@ -137,17 +137,17 @@
 }
 /* sect4 하단 nav */
 /*라인*/
-.sect4-slide-line {
+.sect2-slide-line {
   width: 100%;
   height: 20px;
   position: relative;
 }
-.sect4-slide-line .line-line {
+.sect2-slide-line .line-line {
   width: 100%;
   height: 1px;
   background-color: #cce4d7;
 }
-.sect4-slide-line .line-a {
+.sect2-slide-line .line-a {
   width: 10px;
   height: 10px;
   border-radius: 50%;

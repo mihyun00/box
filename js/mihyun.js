@@ -17,8 +17,8 @@ $(".year-btn button").click(function() {
     .show()
 })
 
-//sect4 swiper
-var swiper_sect4 = new Swiper(".sect4-swiper-container", {
+//sect2 swiper
+var swiper_sect2 = new Swiper(".sect2-swiper-container", {
   slidesPerGroup: 1,
   loop: true,
   loopFillGroupWithBlank: true,
@@ -77,17 +77,6 @@ $(".book-navtxt li").click(function(e) {
   e.preventDefault()
 })
 
-
-
-
-
-
-
-
-
-
-
-
 // swiper_sect4.on("slideChange", function() {
 // var activeIdx = swiper_sect4.activeIndex
 // // console.log(activeIdx)
@@ -95,12 +84,7 @@ $(".book-navtxt li").click(function(e) {
 
 // $(".book-navtxt li a").click(function() {
 
-  
-
-
 // })
-
-
 
 //book-navtxt 메뉴 선택시 해당 분야 도서가 첫번째로 이동
 
@@ -110,4 +94,28 @@ $(".book-navtxt li").click(function(e) {
 //   var activeIdx = swiper.activeIndex
 //   console.log(activeIdx)
 
+// })
+
+//스크롤 이벤트
+
+// $(document).scroll(function() {
+
+//   var scrl = $(this).scrollTop()
+
+//   if (scrl > 0) {
+//     $("header").addClass("on")
+//   } else if (scrl == 0) {
+//     $("header").removeClass("on")
+//   }
+
+//   if(scrl < 350) {
+//     $('.sect4_logo img').animate({'opacity':'1','top':'40%'})
+//     $('.sect4_txt p').delay(200).animate({'opacity':'1','top':'40%'})
+//     $('.sect4 button').delay(400).animate({'opacity':'1','top':'40%'})
+//   }
+//   else if(scrl < 350){
+//     $('.sect4_logo img').animate({'opacity':'0','top':'70%'})
+//     $('.sect4_txt p').animate({'opacity':'0','top':'70%'})
+//     $('.sect4 button').delay(400).animate({'opacity':'0','top':'70%'})
+//   }
 // })
