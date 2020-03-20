@@ -20,12 +20,25 @@
 // })
 
 //위와 동일한 이유로 주석처리함
-
-$(".sect5 .more_btn").mouseenter(function() {
-  $(".sect5 .more_btn span").animate({ width: "190" }, 300)
-  $(".sect5 .more_btn b").animate({ color: "#fff" }, 200)
-})
-$(".sect5 .more_btn").mouseleave(function() {
-  $(".sect5 .more_btn span").animate({ width: "0" }, 300)
-  $(".sect5 .more_btn b").animate({ color: "#365445" }, 200)
+// --------------------------scroll
+// $(document).scroll(function(){
+//   var scrT = $(this).scrollTop()
+//   console.log(scrT)
+//   if(scrT>=300){
+//       $('.text_area').addClass('on')
+//   }else{
+//       $('.text_area').removeClass('on')
+//   }
+// })
+$(document).scroll(function(){
+  var scrT = $(this).scrollTop()
+  console.log(scrT)
+  if(scrT>=2390){
+    $('.sect5 h2').animate({'opacity':'1'},600)
+    $('.comm_content:nth-child(1)').delay(300).animate({'opacity':'1','margin-top':'0'},600)
+    $('.comm_content:nth-child(2)').delay(600).animate({'opacity':'1','margin-top':'0'},600)
+    $('.comm_content:nth-child(3)').delay(900).animate({'opacity':'1','margin-top':'0'},600)
+    $('.comm_content:nth-child(4)').delay(1200).animate({'opacity':'1','margin-top':'0'},600)
+    $('.sect5 .more_btn').delay(1700).animate({'opacity':'1'},200)
+  }
 })

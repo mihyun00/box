@@ -6,8 +6,11 @@ html,
 body {
   position: relative;
   height: 100%;
-  font-family: 'Noto Sans KR', sans-serif;
   color: #333;
+  background-image: url(../img/graphic2.png), url(../img/graphic1.png);
+  background-position: bottom left, top right;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
 }
 @font-face {
   /*약간 굵음*/
@@ -25,7 +28,7 @@ body {
   src: url(NanumSquare_acR.ttf);
 }
 @font-face {
-  /*많이 얇음*/
+  /*많이 가늚*/
   font-family: square_light;
   src: url(NanumSquare_acL.ttf);
 }
@@ -40,6 +43,10 @@ p,li,a,span{
 }
 .fl{ float: left;}
 .fr{ float: right;}
-/*각 css 파일 옮김 */
 
+h2.title{
+  font-size: 40px;
+  text-align: center;
+  letter-spacing: -1px;
+}
 
