@@ -5,32 +5,43 @@
 // })
 
 //sect3 buootn 클릭하면 연도별 슬라이드 표출되며 버튼 색 변경
-// $(".2000year").hide()
-// $(".year-btn button").click(function() {
-//   $(".year-btn button").removeClass("on")
-//   $(this).addClass("on")
 
-//   var Ye = $(this).index()
-//   $(".sect3-slide ul").hide()
-//   $(".sect3-slide ul")
-//     .eq(Ye)
-//     .show()
-// })
+$(".year-btn button").click(function() {
+  $(".year-btn button").removeClass("on")
+  $(this).addClass("on")
+
+  var Ye = $(this).index()
+  $('.sect3-swiper-container').hide()
+  $('.sect3-swiper-container').eq(Ye).show()
+})
 
 //sect3 swiper
 
-var swiper = new Swiper('.sect3-swiper-container', {
-  pagination: {
-    el: '.swiper-pagination',
-    type: 'progressbar',
-  },
-  navigation: {
-    nextEl: '.swiper-button-next',
-    prevEl: '.swiper-button-prev',
-  },
-});
+var swiper = new Swiper(".sect3-01", {
+  mousewheel: true,
+  breakpoints: {
+    200: {
+      slidesPerView: 2,
+      direction: 'vertical'
+    },
+    768: {
+      slidesPerView: 4,
+    },
+    1024: {
+      slidesPerView: 5,
+    }
+  }
+})
 
+var swiper = new Swiper(".sect3-02", {
+  slidesPerView: 5,
+  mousewheel: true
+})
 
+// var swiper = new Swiper(".sect3-swiper02", {
+//   slidesPerView: 5,
+//   mousewheel: true
+// })
 
 //a 태그 사용자 선택에 따라 위치 이동
 var b = $(".line-a").offset().left
@@ -71,10 +82,7 @@ var swiper_sect2 = new Swiper(".sect2-swiper-container", {
   slidesPerGroup: 1,
   loop: true,
   loopFillGroupWithBlank: true,
-  autoplay: {
-    delay: 3500,
-    disableOnInteraction: false
-  },
+ 
   breakpoints: {
     200: {
       slidesPerView: 2,
