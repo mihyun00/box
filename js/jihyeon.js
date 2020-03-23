@@ -33,7 +33,7 @@
 $(document).scroll(function(){
   var scrT = $(this).scrollTop()
   console.log(scrT)
-  if(scrT>=2390){
+  if(scrT>=4200){
     $('.sect5 h2').animate({'opacity':'1'},600)
     $('.comm_content:nth-child(1)').delay(300).animate({'opacity':'1','margin-top':'0'},600)
     $('.comm_content:nth-child(2)').delay(600).animate({'opacity':'1','margin-top':'0'},600)
