@@ -2,44 +2,59 @@
 .sect4{
   width: 100%; height: 200vh;
   position: relative;
-}
-.sect4 h2{
-  padding: 70px 0;
+  top: 20%;
+  background: url(../img/sect4_bg.png) no-repeat;
+  background-size: cover;
 }
 .sect4_wrap{
-  width: 100%; height: 50vh;
-  background: url(../img/DSC_0631.jpg);
-  background-attachment: fixed;
-  background-size: 
+  max-width: 1240px; height: 100vh;
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.sect4 .title{
+  position: absolute;
+  top: 10%; left: 5%;
+  font-family: square_light;
+  text-align: left;
+  z-index: 99;
+}
+.sect4 .title_bg{
+  position: absolute;
+  left: 0.7%; top: 6%;
+  width: 50px; height: 50px;
+  background: #B2D2C3;
 }
 .sect4 .photo_bg{
   position: absolute;
-  top: 13%; left: 10%;
+  top: 27%; left: 10%;
   width: 650px; height: 400px;
   background: url(../img/future.jpg) no-repeat;
   background-size: 650px;
-  z-index: 999;
+  z-index: 999; opacity: 0;
 }
 .sect4 .text_bg{
   position: absolute;
-  top: 16%; left: 30%;
-  width: 100%; height: 400px;
+  top: 18%; right: 0;
+  width: 57%; height: 400px;
   background: #fff;
   z-index: 99;
-  padding: 30px 0 0 300px;
+  padding: 40px 0 0 140px;
+  border: 5px solid #B2D2C3;
 }
 .sect4 .text_bg h3{
-  font-size: 24px;
+  font-size: 20px;
   color: #365445;
 }
 .sect4 .text_bg h4{
-  font-size: 18px;
+  font-size: 17px;
   color: #365445;
   padding: 5px 0 20px;
 }
 .sect4 .text_bg li{
-  font-size: 17px;
+  font-size: 16px;
   color: #365445;
+  padding: 5px 0;
 }
 /* section4 끝 */
 /* section5 시작-------------------------- */

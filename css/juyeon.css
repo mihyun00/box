@@ -183,7 +183,6 @@ footer{
 .low1{
   width: 100%;
   height: 30%;
-  border: 1px solid #000;
   background-color: #416051;
 }
 .lab1{
@@ -199,6 +198,7 @@ footer{
   margin-left: 15px;
   font-size: 14px;
   color: #fff;
+  padding: 3px 0;
 }
 .lab1 li a{
   color: #fff;
@@ -219,14 +219,14 @@ footer{
   cursor: pointer;
 }
 .sns li img{
-  width: 20%;
-  margin: auto;
+  width: 30%;
+  margin: 0 auto;
 
 }
 .sns li p{
   width: 53%;
   color: #fff;
-  margin: auto;
+  margin: 0 auto;
  text-align: center;
 }
 
