@@ -15,7 +15,6 @@ body {
   right: 1%;
   bottom: 15%;
   z-index: 9999;
-  border: 1px solid #000;
   background-image: url(../img/top_btn4.png);
   background-size: 100%;
 }
@@ -100,41 +99,68 @@ header {
 
   /***** sect1 background slide*****/
 
-  .sect1_bg {
-    width: 70%;
-    height: 80%;
-    border: 1px solid red;
-    position: absolute;
-    right: 0;
-    top: 0;
-    overflow: hidden;
-  }
-  .sect1_bg img {
-    position: absolute;
-    top: 0;
-    right: 0;
-    width: 100%;
-    height: 100%;
-  }
-
-  .sect1_swiper-container {
-    width: 100%;
-    height: 100%;
-  }
-
+.sect1_slidecontainer1 {
+  width: 1200px;
+  height: 900px;
+  position: absolute;
+  right: 0;
+  top: 0;
+  overflow: hidden;
+  
+}
+.sect1_slidewrap1{
+  width: 400%;
+  height: 100%;
+  margin-left: -100%;
+  display: flex;
+  justify-content: flex-start;
+}
+.slide1{
+  display: flex;
+  width: 25%;
+  height: 100%;
+}
+.slide1 img{
+  width: 100%;
+  height: 100%;
+}
 .sect1_button {
   width: 16%;
   height: 10%;
-  border: 1px solid blue;
   position: absolute;
   left: 24%;
-  bottom: 20%;
-  z-index: 999;
+  bottom: 7%;
+  z-index: 1;
+}
+
+/************* sect1 txt  ***********/
+
+.sect1_slidecontainer2{
+  width: 670px;
+  height: 335px;
+  position: absolute;
+  left: 15%;
+  top: 19%;
+  z-index: 1;
+  overflow: hidden;
+  
+}
+.sect1_slidewrap2{
+  width: 100%;
+  height: 400%;
+  margin-top: -50%;
+  display: flex;
+  flex-direction: column;
+}
+.slide2{
+  width: 100%; 
+  height: 100%;
+  font-size: 1.5vw;
 }
 .num {
   width: 40%;
   height: 100%;
-  background-color: #06377b;
+  background-color: #416051;
   float: left;
 }
 .roll {
@@ -149,7 +175,6 @@ header {
 .roll li {
   width: 20%;
   height: 60%;
-  border: 1px solid red;
   float: left;
 }
 
@@ -220,36 +245,8 @@ footer{
   height: 70%;
   background-color: #fff;}
 
-  .sect1_button {
-    width: 16%;
-    height: 10%;
-    border: 1px solid blue;
-    position: absolute;
-    left: 24%;
-    bottom: 20%;
-    z-index: 999;
-  }
-  .num {
-    width: 40%;
-    height: 100%;
-    background-color: #06377b;
-    float: left;
-  }
-  .roll {
-    width: 60%;
-    height: 100%;
-    float: left;
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-    background-color: #416051;
-  }
-  .roll li {
-    width: 20%;
-    height: 60%;
-    border: 1px solid red;
-    float: left;
-  }
+
+ 
 
   /*sect2 와 연혁 부분 합침으로 css 삭제했습니다!*/
 
@@ -263,6 +260,7 @@ footer{
     width: 1024px;
     height: 100%;
     margin: auto;
+
   }
   .low1 {
     width: 100%;
@@ -322,13 +320,15 @@ footer{
     height: 100%;
     float: left;
     display: flex;
-    justify-content: center;
+    
     align-items: center;
     padding-left: 30px;
+
   }
   .ci img {
     width: 40%;
-    height: 60%;
+    height: 65%;
+    
   }
   .copy {
     width: 70%;
@@ -337,9 +337,11 @@ footer{
     display: flex;
     padding: 3%;
     flex-direction: column;
+
   }
   .copy p {
     color: #416051;
     font-size: 0.7vw;
+    text-align: right;
   }
 }
