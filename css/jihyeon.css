@@ -1,70 +1,109 @@
 /* section4 시작---------------------- */
 .sect4{
-  width: 100%; height: 200vh;
+  width: 100%; height: 300vh;
   position: relative;
-  top: 20%;
-  background: url(../img/sect4_bg.png) no-repeat;
+  background: url(../img/sect4_bg.png) no-repeat 0 280px;
   background-size: cover;
 }
-.sect4_wrap{
+.sect4 .subsec{
   max-width: 1240px; height: 100vh;
   position: relative;
-  left: 50%;
+  left: 50%; top: 5%;
   transform: translateX(-50%);
 }
 .sect4 .title{
   position: absolute;
-  top: 10%; left: 5%;
+  top: 12%; left: 19.5%;
   font-family: square_light;
   text-align: left;
   z-index: 99;
 }
 .sect4 .title_bg{
   position: absolute;
-  left: 0.7%; top: 6%;
-  width: 50px; height: 50px;
+  top: 11.1%; left: 17.5%;
+  width: 33px; height: 33px;
   background: #B2D2C3;
 }
-.sect4 .photo_bg{
+.sect4 .writer_photo{
   position: absolute;
-  top: 27%; left: 10%;
+  top: 50%; left: 5%;
   width: 650px; height: 400px;
-  background: url(../img/future.jpg) no-repeat;
+  background: url(../img/sect5_slide2-1.jpg) no-repeat;
   background-size: 650px;
   z-index: 999; opacity: 0;
+  border: 5px solid #365445;
 }
-.sect4 .text_bg{
+.sect4 .writer_text{
   position: absolute;
-  top: 18%; right: 0;
+  top: 38%; right: 0;
   width: 57%; height: 400px;
   background: #fff;
   z-index: 99;
   padding: 40px 0 0 140px;
   border: 5px solid #B2D2C3;
 }
-.sect4 .text_bg h3{
-  font-size: 20px;
+.sect4 h3{
+  font-size: 27px;
   color: #365445;
 }
-.sect4 .text_bg h4{
+.sect4 h4{
   font-size: 17px;
   color: #365445;
   padding: 5px 0 20px;
+  font-family: square_light;
 }
-.sect4 .text_bg li{
+.sect4 .writer_text li{
   font-size: 16px;
   color: #365445;
   padding: 5px 0;
 }
+/* section4 col1 끝 */
+.sect4 .sect4_col2{
+  top: 10%;
+}
+.people,.award{
+  width: 47%; height: 100%;
+  background: #fff;
+  position: absolute;
+  top: 0;
+  padding: 30px;
+}
+.sect4 .award{
+  top: 30%; right: 0;
+}
+
+
+
+
+
+
+
+
+
+
+
+
 /* section4 끝 */
 /* section5 시작-------------------------- */
 .sect5 {
   width: 100%;
   height: 100vh;
+  background: url(../img/sect5_bg.png) no-repeat;
+  position: relative;
 }
-.sect5 h2 {
-  padding: 70px 0;
+.sect5 .title_bg{
+  position: absolute;
+  width: 33px; height: 33px;
+  top: 5%; left: 17.5%;
+  background: #B2D2C3;
   opacity: 0;
+}
+.sect5 .title {
+  width: 1240px;
+  padding: 70px 35px;
+  text-align: left;
+  opacity: 0;
+  margin: auto;
 }
 .sect5 .wrap {
   max-width: 1240px;
@@ -111,12 +150,11 @@
   margin-top: 80px;
   font-size: 18px;
   font-family: square_black;
-  color: #365445;
+  color: #ccc;
   transition: .3s;
   opacity: 0;
 }
 .sect5 .more_btn:hover{
-  background-color: #B2D2C3;
-  color: #fff;
+  color: #365445;
 }
 /* section5 끝-------------------------- */
