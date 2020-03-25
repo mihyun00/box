@@ -10,17 +10,23 @@
 .sect2 h2 {
   text-align: center;
   margin-top: 40px;
-  margin-bottom: 120px;
+  margin-bottom: 150px;
 }
 /* sect2 swiper */
+.sect2-slideWrap {
+  position: relative;
+  left: 50px;
+  width: 67.5%;
+  display: inline-block;
+}
 .sect2-swiper-container {
-  margin: auto;
+  position: static;
   width: 90%;
+  margin: auto;
   margin-bottom: 80px;
 }
 .sect2-swiper-container .swiper-wrapper {
-  width: 100%;
-  height: 360px;
+  height: 400px;
 }
 .sect2-swiper-container .swiper-wrapper .swiper-slide {
   padding: 10px;
@@ -38,6 +44,9 @@
   width: 100%;
   height: 100%;
 }
+.bookIMG img:hover{
+  border: 10px solid #b2d2c3;
+}
 /* book txt */
 .bookTXT p {
   text-align: center;
@@ -48,33 +57,32 @@
 .bookTXT p:nth-child(2) {
   font-size: 10px;
 }
-/* sect2 하단 nav */
-/*라인*/
-.sect2-slide-line {
+/*book slide txt box*/
+.sect2-slide-txtBOX {
+  width: 20%;
+  height: 50%;
+  display: inline-block;
+  position: absolute;
+  margin-top: -50px;
+  right: 120px;
+}
+.sect2-slide-txtBOX-inner{
+  width: 90%;
+  height: 80%;
+  margin: auto;
+  border: 2px solid #b2d2c3;
+  text-align: center;
+}
+.sect2-slide-txtBOX-inner ul{
   width: 100%;
-  height: 20px;
   position: relative;
 }
-.sect2-slide-line .line-line {
-  width: 100%;
-  height: 1px;
-  background-color: #cce4d7;
-}
-.sect2-slide-line .line-a {
-  width: 10px;
-  height: 10px;
-  border-radius: 50%;
-  background-color: #355444;
+.sect2-slide-txtBOX-inner ul li{
   position: absolute;
-  top: -5px;
+  opacity: 0;
 }
-/*txt*/
-.book-navtxt {
-  padding-top: 20px;
-  width: 50%;
-  margin: auto;
-  display: flex;
-  justify-content: space-between;
+.sect2-slide-txtBOX-inner ul li.on{
+  opacity: 1;
 }
 /*sect3*/
 .sect3 {
@@ -99,7 +107,7 @@
   justify-content: center;
   align-items: center;
 }
-.sect3-about .about-logo{
+.sect3-about .about-logo {
   justify-content: center;
   align-items: flex-end;
 }
@@ -112,7 +120,7 @@
 }
 /*about-txt*/
 .sect3 .about-txt {
-  margin-top: 150px;
+  margin-top: 200px;
   height: 60%;
   flex-direction: column;
   justify-content: space-evenly;
@@ -168,16 +176,14 @@
   margin: 0 2px;
 }
 /* sect3 슬라이드 부분 */
-article.sect3-swiperSlide{
-  width: 100%;
-}
-.sect3-swiper-container {
-  display: block;
+article.sect3-swiperSlide {
   width: 100%;
   height: 200px;
+  overflow: hidden;
 }
-.sect3-02{
-  display: none;
+.sect3-swiper-container {
+  width: 100%;
+  height: 200px;
 }
 .sect3-swiper-container .swiper-wrapper .swiper-slide {
   width: 20%;

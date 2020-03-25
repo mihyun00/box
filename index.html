@@ -4,11 +4,6 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <!-- 구글 폰트 연결 -->
-    <link
-      href="https://fonts.googleapis.comcss?family=Noto+Sans+KR:100,300,400,500,700,900&display=swap"
-      rel="stylesheet"
-    />
     <!-- jq 연결 -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.js"></script>
@@ -100,278 +95,422 @@
       <!-- sect2 제목  -->
       <h2 class="title">READ, NOW</h2>
       <!-- sect2 slide 부분 -->
-      <div class="sect2-slide">
-        <div class="slideWrap">
-          <!-- Swiper -->
-          <div class="swiper-container sect2-swiper-container">
-            <div class="swiper-wrapper">
-              <!-- 신간 -->
-              <div class="swiper-slide new-st" id="new-st">
-                <div class="bookIMG"><img src="img/new01.jpg" alt="" /></div>
-                <div class="bookTXT">
-                  <p>붉은빛이 여전합니까</p>
-                  <p>손택수</p>
-                </div>
+      <div class="sect2-slideWrap">
+        <!-- Swiper -->
+        <div class="swiper-container sect2-swiper-container">
+          <div class="swiper-wrapper">
+            <!-- 신간 -->
+            <div class="swiper-slide new-st" id="new-st">
+              <div class="bookIMG"><a href="#sect2-book-01"><img src="img/new01.jpg" alt="" /></a></div>
+              <div class="bookTXT">
+                <p>붉은빛이 여전합니까</p>
+                <p>손택수</p>
               </div>
-              <div class="swiper-slide">
-                <div class="bookIMG"><img src="img/new02.jpg" alt="" /></div>
-                <div class="bookTXT">
-                  <p>스피닝</p>
-                  <p>틸리 월든</p>
-                </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="bookIMG"><a href="#sect2-book-02"><img src="img/new02.jpg" alt="" /></a></div>
+              <div class="bookTXT">
+                <p>스피닝</p>
+                <p>틸리 월든</p>
               </div>
-              <div class="swiper-slide">
-                <div class="bookIMG"><img src="img/new03.jpg" alt="" /></div>
-                <div class="bookTXT">
-                  <p>너에게도 안녕이</p>
-                  <p>나태주</p>
-                </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="bookIMG"><a href="#sect2-book-03"><img src="img/new03.jpg" alt="" /></a></div>
+              <div class="bookTXT">
+                <p>너에게도 안녕이</p>
+                <p>나태주</p>
               </div>
-              <div class="swiper-slide">
-                <div class="bookIMG"><img src="img/new04.jpg" alt="" /></div>
-                <div class="bookTXT">
-                  <p>안녕을 묻는 방식</p>
-                  <p>양경언</p>
-                </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="bookIMG"><a href="#sect2-book-04"><img src="img/new04.jpg" alt="" /></a></div>
+              <div class="bookTXT">
+                <p>안녕을 묻는 방식</p>
+                <p>양경언</p>
               </div>
-              <div class="swiper-slide">
-                <div class="bookIMG"><img src="img/new05.jpg" alt="" /></div>
-                <div class="bookTXT">
-                  <p>게스트하우스Q</p>
-                  <p>박영란</p>
-                </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="bookIMG"><a href="#sect2-book-05"><img src="img/new05.jpg" alt="" /></a></div>
+              <div class="bookTXT">
+                <p>게스트하우스Q</p>
+                <p>박영란</p>
               </div>
-              <div class="swiper-slide">
-                <div class="bookIMG"><img src="img/new06.jpg" alt="" /></div>
-                <div class="bookTXT">
-                  <p>리코더를 불자</p>
-                  <p>권재원</p>
-                </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="bookIMG"><a href="#sect2-book-06"><img src="img/new06.jpg" alt="" /></a></div>
+              <div class="bookTXT">
+                <p>리코더를 불자</p>
+                <p>권재원</p>
               </div>
-              <div class="swiper-slide">
-                <div class="bookIMG"><img src="img/new07.jpg" alt="" /></div>
-                <div class="bookTXT">
-                  <p>고난과 웃음의 나라</p>
-                  <p>정병호</p>
-                </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="bookIMG"><a href="#sect2-book-07"><img src="img/new07.jpg" alt="" /></a></div>
+              <div class="bookTXT">
+                <p>고난과 웃음의 나라</p>
+                <p>정병호</p>
               </div>
-              <!-- 베스트 -->
-              <div class="swiper-slide best-st" id="best-st">
-                <div class="bookIMG"><img src="img/best01.jpg" alt="" /></div>
-                <div class="bookTXT">
-                  <p>일의 기쁨과 슬픔</p>
-                  <p>장류진</p>
-                </div>
+            </div>
+            <!-- 베스트 -->
+            <div class="swiper-slide best-st" id="best-st">
+              <div class="bookIMG"><a href="#sect2-book-08"><img src="img/best01.jpg" alt="" /></a></div>
+              <div class="bookTXT">
+                <p>일의 기쁨과 슬픔</p>
+                <p>장류진</p>
               </div>
-              <div class="swiper-slide">
-                <div class="bookIMG"><img src="img/best02.jpg" alt="" /></div>
-                <div class="bookTXT">
-                  <p>아몬드</p>
-                  <p>손원평</p>
-                </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="bookIMG"><a href="#sect2-book-09"><img src="img/best02.jpg" alt="" /></a></div>
+              <div class="bookTXT">
+                <p>아몬드</p>
+                <p>손원평</p>
               </div>
-              <div class="swiper-slide">
-                <div class="bookIMG"><img src="img/best03.jpg" alt="" /></div>
-                <div class="bookTXT">
-                  <p>선량한 차별주의자</p>
-                  <p>김지혜</p>
-                </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="bookIMG"><a href="#sect2-book-10"><img src="img/best03.jpg" alt="" /></a></div>
+              <div class="bookTXT">
+                <p>선량한 차별주의자</p>
+                <p>김지혜</p>
               </div>
-              <div class="swiper-slide">
-                <div class="bookIMG"><img src="img/best04.jpg" alt="" /></div>
-                <div class="bookTXT">
-                  <p>피프티 피플</p>
-                  <p>정세랑</p>
-                </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="bookIMG"><a href="#sect2-book-11"><img src="img/best04.jpg" alt="" /></a></div>
+              <div class="bookTXT">
+                <p>피프티 피플</p>
+                <p>정세랑</p>
               </div>
-              <div class="swiper-slide">
-                <div class="bookIMG"><img src="img/best05.jpg" alt="" /></div>
-                <div class="bookTXT">
-                  <p>수박 수영장</p>
-                  <p>안녕달 글그림</p>
-                </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="bookIMG"><a href="#sect2-book-12"><img src="img/best05.jpg" alt="" /></a></div>
+              <div class="bookTXT">
+                <p>수박 수영장</p>
+                <p>안녕달 글그림</p>
               </div>
-              <div class="swiper-slide">
-                <div class="bookIMG"><img src="img/best06.jpg" alt="" /></div>
-                <div class="bookTXT">
-                  <p>완득이</p>
-                  <p>김려령</p>
-                </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="bookIMG"><a href="#sect2-book-13"><img src="img/best06.jpg" alt="" /></a></div>
+              <div class="bookTXT">
+                <p>완득이</p>
+                <p>김려령</p>
               </div>
-              <div class="swiper-slide">
-                <div class="bookIMG"><img src="img/best07.jpg" alt="" /></div>
-                <div class="bookTXT">
-                  <p>대도시의 사랑법</p>
-                  <p>박상영</p>
-                </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="bookIMG"><a href="#sect2-book-14"><img src="img/best07.jpg" alt="" /></a></div>
+              <div class="bookTXT">
+                <p>대도시의 사랑법</p>
+                <p>박상영</p>
               </div>
-              <!-- 추천 -->
-              <div class="swiper-slide chu-st" id="chu-st">
-                <div class="bookIMG"><img src="img/chu01.jpg" alt="" /></div>
-                <div class="bookTXT">
-                  <p>봄비 내리는 날</p>
-                  <p>김한수</p>
-                </div>
+            </div>
+            <!-- 추천 -->
+            <div class="swiper-slide chu-st" id="chu-st">
+              <div class="bookIMG"><a href="#sect2-book-15"><img src="img/chu01.jpg" alt="" /></a></div>
+              <div class="bookTXT">
+                <p>봄비 내리는 날</p>
+                <p>김한수</p>
               </div>
-              <div class="swiper-slide">
-                <div class="bookIMG"><img src="img/chu02.jpg" alt="" /></div>
-                <div class="bookTXT">
-                  <p>메르시, 이대로 계속 머물러주세요</p>
-                  <p>리산</p>
-                </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="bookIMG"><a href="#sect2-book-16"><img src="img/chu04.jpg" alt="" /></a></div>
+              <div class="bookTXT">
+                <p>우리는 좀더 어두워지기로 했네</p>
+                <p>이설야</p>
               </div>
-              <div class="swiper-slide">
-                <div class="bookIMG"><img src="img/chu03.jpg" alt="" /></div>
-                <div class="bookTXT">
-                  <p>그늘진 말들에 꽃이 핀다</p>
-                  <p>박신규</p>
-                </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="bookIMG"><a href="#sect2-book-17"><img src="img/chu05.jpg" alt="" /></a></div>
+              <div class="bookTXT">
+                <p>도가니</p>
+                <p>공지영</p>
               </div>
-              <div class="swiper-slide">
-                <div class="bookIMG"><img src="img/chu04.jpg" alt="" /></div>
-                <div class="bookTXT">
-                  <p>우리는 좀더 어두워지기로 했네</p>
-                  <p>이설야</p>
-                </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="bookIMG"><a href="#sect2-book-18"><img src="img/chu06.jpg" alt="" /></a></div>
+              <div class="bookTXT">
+                <p>초혼</p>
+                <p>고은</p>
               </div>
-              <div class="swiper-slide">
-                <div class="bookIMG"><img src="img/chu05.jpg" alt="" /></div>
-                <div class="bookTXT">
-                  <p>도가니</p>
-                  <p>공지영</p>
-                </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="bookIMG"><a href="#sect2-book-19"><img src="img/chu07.jpg" alt="" /></a></div>
+              <div class="bookTXT">
+                <p>어린이, 세 번째 사람</p>
+                <p>김지은</p>
               </div>
-              <div class="swiper-slide">
-                <div class="bookIMG"><img src="img/chu06.jpg" alt="" /></div>
-                <div class="bookTXT">
-                  <p>초혼</p>
-                  <p>고은</p>
-                </div>
+            </div>
+            <!-- 수상 도서 -->
+            <div class="swiper-slide prime-st" id="prime-st">
+              <div class="bookIMG"><a href="#sect2-book-20"><img src="img/prime01.jpg" alt="" /></a></div>
+              <div class="bookTXT">
+                <p>해자네 점집</p>
+                <p>김해자</p>
               </div>
-              <div class="swiper-slide">
-                <div class="bookIMG"><img src="img/chu07.jpg" alt="" /></div>
-                <div class="bookTXT">
-                  <p>어린이, 세 번째 사람</p>
-                  <p>김지은</p>
-                </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="bookIMG"><a href="#sect2-book-21"><img src="img/prime02.jpg" alt="" /></a></div>
+              <div class="bookTXT">
+                <p>디디의 우산</p>
+                <p>김정환</p>
               </div>
-              <!-- 수상 도서 -->
-              <div class="swiper-slide prime-st" id="prime-st">
-                <div class="bookIMG"><img src="img/prime01.jpg" alt="" /></div>
-                <div class="bookTXT">
-                  <p>해자네 점집</p>
-                  <p>김해자</p>
-                </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="bookIMG"><a href="#sect2-book-22"><img src="img/prime03.jpg" alt="" /></a></div>
+              <div class="bookTXT">
+                <p>지구만큼 슬펐다고 한다</p>
+                <p>신철규</p>
               </div>
-              <div class="swiper-slide">
-                <div class="bookIMG"><img src="img/prime02.jpg" alt="" /></div>
-                <div class="bookTXT">
-                  <p>디디의 우산</p>
-                  <p>김정환</p>
-                </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="bookIMG"><a href="#sect2-book-23"><img src="img/prime04.jpg" alt="" /></a></div>
+              <div class="bookTXT">
+                <p>가만한 나날</p>
+                <p>김세희</p>
               </div>
-              <div class="swiper-slide">
-                <div class="bookIMG"><img src="img/prime03.jpg" alt="" /></div>
-                <div class="bookTXT">
-                  <p>지구만큼 슬펐다고 한다</p>
-                  <p>신철규</p>
-                </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="bookIMG"><a href="#sect2-book-24"><img src="img/prime06.jpg" alt="" /></a></div>
+              <div class="bookTXT">
+                <p>웃는 연습</p>
+                <p>박성우</p>
               </div>
-              <div class="swiper-slide">
-                <div class="bookIMG"><img src="img/prime04.jpg" alt="" /></div>
-                <div class="bookTXT">
-                  <p>가만한 나날</p>
-                  <p>김세희</p>
-                </div>
+            </div>
+            <!-- 전자책 -->
+            <div class="swiper-slide e-book-st" id="e-book-st">
+              <div class="bookIMG"><a href="#sect2-book-25"><img src="img/Ebook02.jpg" alt="" /></a></div>
+              <div class="bookTXT">
+                <p>버스킹</p>
+                <p>백민석</p>
               </div>
-              <div class="swiper-slide">
-                <div class="bookIMG"><img src="img/prime05.jpg" alt="" /></div>
-                <div class="bookTXT">
-                  <p>파일명 서정시</p>
-                  <p>나희적</p>
-                </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="bookIMG"><a href="#sect2-book-26"><img src="img/Ebook03.jpg" alt="" /></a></div>
+              <div class="bookTXT">
+                <p>수영장의 냄새</p>
+                <p>박윤선</p>
               </div>
-              <div class="swiper-slide">
-                <div class="bookIMG"><img src="img/prime06.jpg" alt="" /></div>
-                <div class="bookTXT">
-                  <p>웃는 연습</p>
-                  <p>박성우</p>
-                </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="bookIMG"><a href="#sect2-book-27"><img src="img/Ebook04.jpg" alt="" /></a></div>
+              <div class="bookTXT">
+                <p>베를린, 베를린</p>
+                <p>이은정</p>
               </div>
-              <!-- 전자책 -->
-              <div class="swiper-slide e-book-st" id="e-book-st">
-                <div class="bookIMG"><img src="img/Ebook01.jpg" alt="" /></div>
-                <div class="bookTXT">
-                  <p>금색 공책1</p>
-                  <p>도리스 레싱</p>
-                </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="bookIMG"><a href="#sect2-book-28"><img src="img/Ebook05.jpg" alt="" /></a></div>
+              <div class="bookTXT">
+                <p>그늘을 걷어내던 사람</p>
+                <p>박경희</p>
               </div>
-              <div class="swiper-slide">
-                <div class="bookIMG"><img src="img/Ebook02.jpg" alt="" /></div>
-                <div class="bookTXT">
-                  <p>버스킹</p>
-                  <p>백민석</p>
-                </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="bookIMG"><a href="#sect2-book-29"><img src="img/Ebook06.jpg" alt="" /></a></div>
+              <div class="bookTXT">
+                <p>달려라, 아비</p>
+                <p>김애란</p>
               </div>
-              <div class="swiper-slide">
-                <div class="bookIMG"><img src="img/Ebook03.jpg" alt="" /></div>
-                <div class="bookTXT">
-                  <p>수영장의 냄새</p>
-                  <p>박윤선</p>
-                </div>
-              </div>
-              <div class="swiper-slide">
-                <div class="bookIMG"><img src="img/Ebook04.jpg" alt="" /></div>
-                <div class="bookTXT">
-                  <p>베를린, 베를린</p>
-                  <p>이은정</p>
-                </div>
-              </div>
-              <div class="swiper-slide">
-                <div class="bookIMG"><img src="img/Ebook05.jpg" alt="" /></div>
-                <div class="bookTXT">
-                  <p>그늘을 걷어내던 사람</p>
-                  <p>박경희</p>
-                </div>
-              </div>
-              <div class="swiper-slide">
-                <div class="bookIMG"><img src="img/Ebook06.jpg" alt="" /></div>
-                <div class="bookTXT">
-                  <p>달려라, 아비</p>
-                  <p>김애란</p>
-                </div>
-              </div>
-              <div class="swiper-slide">
-                <div class="bookIMG"><img src="img/Ebook07.jpg" alt="" /></div>
-                <div class="bookTXT">
-                  <p>길 위의 동물을 만나러 갑니다</p>
-                  <p>최종욱</p>
-                </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="bookIMG"><a href="#sect2-book-30"><img src="img/Ebook07.jpg" alt="" /></a></div>
+              <div class="bookTXT">
+                <p>길 위의 동물을 만나러 갑니다</p>
+                <p>최종욱</p>
               </div>
             </div>
           </div>
+          <!-- Add Pagination -->
+          <div class="swiper-pagination"></div>
+          <!-- Add Arrows -->
+          <div class="swiper-button-next"></div>
+          <div class="swiper-button-prev"></div>
         </div>
       </div>
-      <!-- sect2 slide 하단 nav 부분 -->
-      <div class="sect2-slide-line">
-        <div class="line-line"></div>
-        <div class="line-a"></div>
-        <ul class="book-navtxt">
-          <li><a href="#">신간</a></li>
-          <li><a href="#">베스트셀러</a></li>
-          <li><a href="#">추천</a></li>
-          <li><a href="#">수상작</a></li>
-          <li><a href="#">e-book</a></li>
-        </ul>
+      <div class="sect2-slide-txtBOX">
+        <div class="sect2-slide-txtBOX-inner">
+          <ul>
+            <li id="sect2-book-01" class="on"> 
+              <h5>붉은빛이 여전합니까</h5>
+              <h6>손택수</h6>
+              <p>‘세상에서 제일 힘든 게 뭐냐면 있는 그대로더라… 나의 공부는 모두 외면을 위한 것이었는지 있는 그대로, 참으로 아득하기만 한 말’</p>
+            </li>
+            <li id="sect2-book-02">
+              <h5>스피닝</h5>
+              <h6>틸리 월든</h6>
+              <p>‘그럼에도 계속 스케이트를 타야 했다. 나는 원래 이렇게 약하지 않다고 생각하면서.’</p>
+            </li>
+            <li id="sect2-book-03">
+              <h5>너에게도 안녕이</h5>
+              <h6>나태주</h6>
+              <p>‘우리는 너무 오래 만나지 못했다. 너에게도 안녕이 있기를 바란다.’</p>
+            </li>
+            <li id="sect2-book-04">
+              <h5>안녕을 묻는 방식</h5>
+              <h6>양경언</h6>
+              <p>‘확신할 수는 없더라도 다른 이를 일컬어 “죽은 사람”이라고 하는 걸로 보아 ‘나’는 아직 삶과 죽음의 중간이라는 애매한 층위, 즉 가사 상태에 놓여 있는 것일지도 모른다.’</p>
+            </li>
+            <li id="sect2-book-05">
+              <h5>게스트하우스Q</h5>
+              <h6>박영란</h6>
+              <p>‘내가 다섯 살 때였다. 고모는 자살을 시도한 적이 있었다. 그것도 나와 둘이서만 잇는 집 안에서였다… 가족들이 깨웠을 때 나는 일어나고 고모는 일어나지 않았다.’</p>
+            </li>
+            <li id="sect2-book-06">
+              <h5>리코더를 불자</h5>
+              <h6>권재원</h6>
+              <p>‘부는 건 재미있어. 비눗방울을 후후 휘파람을 휙 풍선을 훅 불어봐.’</p>
+            </li>
+            <li id="sect2-book-07">
+              <h5>고난과 웃음의 나라</h5>
+              <h6>정병호</h6>
+              <p>‘유치원 아이들이 척척 행진해 들어오더니 미사일 발사를 축하하는 노래를 불렀다. “미국놈들 콧대를 꺾어놓았죠!” 펄쩍펄쩍 뛰면서 만세를 불렀다.’</p>
+            </li>
+            <li id="sect2-book-08">
+              <h5>일의 기쁨과 슬픔</h5>
+              <h6>장류진</h6>
+              <p>“사람들이 포인트를 그렇게 좋아하나?”
+                “다들 좋아하지 않나요?”
+                “그렇죠. 그래서 또 자신 있게 대답했지. 네, 좋아합니다! 그랬더니 뭐라는 줄 알아요?”
+                “글쎄요.”
+                “그렇게 좋은 거면 앞으로 일년 동안 이차장은 월급, 포인트로 받게.”</p>
+            </li>
+            <li id="sect2-book-09">
+              <h5>아몬드</h5>
+              <h6>손원평</h6>
+              <p>그날 한 명이 다치고 여섯 명이 죽었다. 먼저 엄마와 할멈. 다음으로는 남자를 말리러 온 대학생… 나는 그 모든 일이 눈앞에서 벌어지는 것을 바라보고만 있었다. 언제나처럼, 무표정하게.</p>
+            </li>
+            <li id="sect2-book-10">
+              <h5>선량한 차별주의자</h5>
+              <h6>김지혜</h6>
+              <p>“그런데 왜 결정장애하는 말을 쓰셨어요?” 
+                짧은 한마디였다. 그건 질문이 아니었다. 나의 잘못을, 더 정확하게는 혐오표현을 하지 말자던 사람이 결정장애라는 말을 사용하는 모순을 지적한 것이었다. </p>
+            </li>
+            <li id="sect2-book-11">
+              <h5>피프티 피플</h5>
+              <h6>정세랑</h6>
+              <p>하지만 나쁘지 않잖아, 수정은 생각했다. 엄마의 강인함도, 엄마가 맨날 부리던 억지도, 이상하게 저 사락사락함으로 기억 날 것만 같으니까.</p>
+            </li>
+            <li id="sect2-book-12">
+              <h5>수박 수영장</h5>
+              <h6>안녕달 글그림</h6>
+              <p>“그러게요. 올해 수박 수영장은 어떠려나? 작년에는 씨가 너무 많아서 수영하기 힘들었는데.”</p>
+            </li>
+            <li id="sect2-book-13">
+              <h5>완득이</h5>
+              <h6>김려령</h6>
+              <p>“너 나이 때는 그 뭐가 좆나게 쪽팔린데, 나중에 나이먹으면 쪽팔려 한 게 더 쪽팔려져.”</p>
+            </li>
+            <li id="sect2-book-14">
+              <h5>대도시의 사랑법</h5>
+              <h6>박상영</h6>
+              <p>언젠가 많은 시간이 지난 후에, 둘이 함께 누워 있던 밤에, 규호에게 물었던 적이 있다. 카일리가 있음에도 그때 왜 선뜻 나와 사귀기로 했냐고.
+                ‘그러거나 말거나, 너였으니까.’</p>
+            </li>
+            <li id="sect2-book-15">
+              <h5>봄비 내리는 날</h5>
+              <h6>김한수</h6>
+              <p>“필요없구먼, 우리의 고소를 받아줄 세상이라면 애시당초 잡아 갔겠는가. 이게 다 없어서 당하는 설움인 겨. 힘이 없응께 당하고 힘이 없응께 하소연할 곳도 없는 겨”</p>
+            </li>
+            <li id="sect2-book-16">
+              <h5>우리는 좀더 어두워지기로 했네</h5>
+              <h6>이설야</h6>
+              <p>무너져내리는 벽 속을 뛰쳐나와 누군가 마지막 성냥을 그었을 때
+                저기 멀리 불붙는 광장에 눈먼 소녀 머리카락이 보일락 말락</p>
+            </li>
+            <li id="sect2-book-17">
+              <h5>도가니</h5>
+              <h6>공지영</h6>
+              <p>‘신부님은 돈 많고 권력 있는 분들 많이 알고 계시잖아요. 저 밥도 잘하고요, 저 다 잘해요. 저 밤이면 춤도 춰드릴 수 있어요’…
+                엄마가 살아있었다면 내가 이런 처지가 되었을까?</p>
+            </li>
+            <li id="sect2-book-18">
+              <h5>초혼</h5>
+              <h6>고은</h6>
+              <p>내 슬픔은 얼마나 슬픔인가
+                내 마음은
+                얼마나 몹쓸 마음 아닌가
+                등불을 껐다</p>
+            </li>
+            <li id="sect2-book-19">
+              <h5>어린이, 세 번째 사람</h5>
+              <h6>김지은</h6>
+              <p>사내아이가 발레를 좋아해서 배운다는데 그걸 두고 뭐라고 말하는 사람은 없다. 하지만 아직도 발레 학원에 다니는 사내아이를 찾아보기는 쉽지 않다.</p>
+            </li>
+            <li id="sect2-book-20">
+              <h4>만해문학상 수상작</h4>
+              <h5>해자네 점집</h5>
+              <h6>김해자</h6>
+              <p>겉만 푸르죽죽하지 맘은 파릇파릇한 봄똥이쥬.
+                맞장구도 한 잎 싸주며
+                밥맛 읎을 때 숟가악 맞드는 사램만 있어도 넘어가유.</p>
+            </li>
+            <li id="sect2-book-21">
+              <h4>만해문학상 수상작</h4>
+              <h5>디디의 우산</h5>
+              <h6>김정환</h6>
+              <p>d는 그것을 반복해 생각했다. 많은 것을 생각했는데 마지막엔 늘 그것을 생각했다. 내동댕이쳐졌지. 그 많은 사람이 타고 있던 버스에서.</p>
+            </li>
+            <li id="sect2-book-22">
+              <h4>신동엽문학상 수상작</h4>
+              <h5>지구만큼 슬펐다고 한다</h5>
+              <h6>신철규</h6>
+              <p>우리가 사는 별은 너무 작아서 
+                내 꿈속의 유일한 등장인물은 나.
+                우리는 마주보며 서로의 지나간 되에 밑줄을 긋는다.</p>
+            </li>
+            <li id="sect2-book-23">
+              <h4>신동엽문학상 수상작</h4>
+              <h5>가만한 나날</h5>
+              <h6>김세희</h6>
+              <p>그리고 예린 씨는, 사무실에서 노골적으로 찬밥 취급을 받았다. 
+                나는 그녀를 보면서 일을 잘 못한다고 평가되는 것, 그것도 첫 직장에서 일을 잘 못한다고 낙인찍히는 것이 한 사람의 인생에 얼마나 큰 영향을 미치는지 알게 되었다.</p>
+            </li>
+            <li id="sect2-book-24">
+              <h4>백석문학상 수상작</h4>
+              <h5>웃는 연습</h5>
+              <h6>박성우</h6>
+              <p>속 비우고 살든
+                속 챙기며 살든
+                
+                언제 끈 떨어질지 모른다</p>
+            </li>
+            <li id="sect2-book-25">
+              <h5>버스킹</h5>
+              <h6>백민석</h6>
+              <p>다만 자본 전쟁이 재래식 전쟁만큼 끔찍해 보이지 않는 이유는, 텔레비전으로 중계할 만큼 쓸 만한 스펙터클이 펼쳐지지 않아서일 뿐이다. 숫자 더미와 그래프 몇줄로는 시청자를 유혹할 수 없다. </p>
+            </li>
+            <li id="sect2-book-26">
+              <h5>수영장의 냄새</h5>
+              <h6>박윤선</h6>
+              <p>나는 아이들이 왜 피구를 좋아하는지 이해할 수 없었다.
+                모두 다 죽거나
+                다 죽여야만 끝나는데..
+                이게, 재밌나?</p>
+            </li>
+            <li id="sect2-book-27">
+              <h5>베를린, 베를린</h5>
+              <h6>이은정</h6>
+              <p>한반도에서 남한 단독선거가 설정된 바로 그 무렵 독일의 분단도 기정사실이 되었다.</p>
+            </li>
+            <li id="sect2-book-28">
+              <h5>그늘을 걷어내던 사람</h5>
+              <h6>박경희</h6>
+              <p>'넌 전쟁이 얼마나 무서운 줄 모른다'
+
+                때리는 내내 중얼거렸고 아이는 전쟁의 공포보다 무서운 선생님의 폭력에 질려 울지도 못했다. ... 우리는 숨소리도 내지 못한 채 교과서에 머리만 처박고 있었다.</p>
+            </li>
+            <li id="sect2-book-29">
+              <h5>달려라, 아비(개정판)</h5>
+              <h6>김애란</h6>
+              <p>사실 우리는 그때까지 우리가 커서 훌륭한 인간이 될 거라는 상상을 한번도 해본 적이 없었다.</p>
+            </li>
+            <li id="sect2-book-30">
+              <h5>길 위의 동물을 만나러 갑니다</h5>
+              <h6>최종욱</h6>
+              <p>그래도 길 위에는 크든 작든 반드시 무수한 동물이 살고 있고 나를 지켜보고 있다는 것을 안다. 그래서 늘 인사하는 마음으로 길을 걷는다. '오늘은 또 누굴 만날까?'
+              </p>
+            </li>
+          </ul>
+        </div>
       </div>
     </section>
 
     <!---------------- section3 ---------------->
-
-    <!-- 
-        
-        
-      <button>MORE VIEW</button>---->
 
     <section class="sect3" id="section3">
       <h2 class="title">ABOUT CHANGBI</h2>
