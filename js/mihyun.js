@@ -8,6 +8,18 @@ var swiper = new Swiper('.sect2-swiper-container', {
   slidesPerGroup: 5,
   loop: true,
   loopFillGroupWithBlank: true,
+  breakpoints: {
+    200: {
+      slidesPerView: 2,
+      spaceBetween: 10
+    },
+    768: {
+      slidesPerView: 4
+    },
+    1024: {
+      slidesPerView: 5
+    }
+  },
   pagination: {
     el: '.swiper-pagination',
     clickable: true,
@@ -17,6 +29,7 @@ var swiper = new Swiper('.sect2-swiper-container', {
     prevEl: '.swiper-button-prev',
   },
 });
+
 //sect2 도서 클릭하면 해당되는 내용 표출
 $(".sect2-swiper-container .swiper-slide .bookIMG a").click(function() {
   var href = $(this).attr("href")
@@ -45,44 +58,45 @@ var swiper = new Swiper(".sect3-01", {
   mousewheel: true,
   breakpoints: {
     200: {
-      slidesPerView: 2,
-      direction: "vertical"
+      slidesPerView: 4,
+      direction: "vertical",
+      spaceBetween: 20
     },
-    768: {
-      slidesPerView: 4
+    760: {
+      slidesPerView: 4,
+      direction: "horizontal"
     },
     1024: {
-      slidesPerView: 5
+      slidesPerView: 5,
+      direction: "horizontal"
     }
   }
 })
 
 var swiper = new Swiper(".sect3-02", {
   slidesPerView: 5,
-  mousewheel: true
+  mousewheel: true,
+  breakpoints: {
+    200: {
+      slidesPerView: 4,
+      direction: "vertical",
+      spaceBetween: 20
+    },
+    760: {
+      slidesPerView: 4,
+      direction: "horizontal"
+    },
+    1024: {
+      slidesPerView: 5,
+      direction: "horizontal"
+    }
+  }
 })
 
 
 
 
-// swiper_sect4.on("slideChange", function() {
-// var activeIdx = swiper_sect4.activeIndex
-// // console.log(activeIdx)
-// })
 
-// $(".book-navtxt li a").click(function() {
-
-// })
-
-//book-navtxt 메뉴 선택시 해당 분야 도서가 첫번째로 이동
-
-//다른 분야로 swiper가 넘어갈 때 book-nevtxt, a 가 함께 이동
-
-// 무엇의.on("slideChange", function() {
-//   var activeIdx = swiper.activeIndex
-//   console.log(activeIdx)
-
-// })
 
 //스크롤 이벤트
 
@@ -107,3 +121,4 @@ var swiper = new Swiper(".sect3-02", {
 //     $('.sect4 button').delay(400).animate({'opacity':'0','top':'70%'})
 //   }
 // })
+
