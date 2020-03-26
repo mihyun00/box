@@ -58,23 +58,50 @@
   padding: 5px 0;
 }
 /* section4 col1 끝 */
-.sect4 .sect4_col2{
-  top: 10%;
+.sect4_col2{
+  width: 100%; height: 100vh;
+  margin-top: 150px;
 }
-.people,.award{
-  width: 47%; height: 100%;
+.sect4_col2 h3{
+  font-size: 35px;
+  text-align: center;
+  padding: 10px;
+  color: #000;
+}
+.sect4_col2 h4{
+  text-align: center;
+}
+.swiper-container {
+  width: 100%;
+  height: 100%;
+  margin-left: auto;
+  margin-right: auto;
+}
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
   background: #fff;
-  position: absolute;
-  top: 0;
-  padding: 30px;
+
+  /* Center slide text vertically */
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
-.sect4 .award{
-  top: 30%; right: 0;
+.peo1{
+  background: url(../img/people1.png) no-repeat center;
+  background-size: 450px;
 }
-
-
-
-
+.peo2{
+  background: url(../img/people2.png) no-repeat center;
+  background-size: 450px;
+}
+.peo3{
+  background: url(../img/people3.png) no-repeat center;
+  background-size: 450px;
+}
 
 
 
@@ -150,7 +177,7 @@
   margin-top: 80px;
   font-size: 18px;
   font-family: square_black;
-  color: #ccc;
+  color: #999;
   transition: .3s;
   opacity: 0;
 }
