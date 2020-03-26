@@ -236,7 +236,7 @@ article.sect3-swiperSlide {
 .sect3-slide-txtBox {
   width: 80%;
   height: 65%;
-  background-image: url(/img/history-box.png);
+  background-image: url(..img/history-box.png);
   background-repeat: no-repeat;
   background-size: contain;
   background-position: center;
