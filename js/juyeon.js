@@ -30,3 +30,20 @@ $('.sect1_button a.prev').click(function(){
 
 
 
+//var mleft=0
+//var timer=setInterval(move,10)
+//
+//$('.flow_container').on({
+//  mouseenter:function(){
+//    clearInterval(timer)
+//  },
+//  mouseleave:function(){
+//    timer=setInterval(move,10)
+//  }
+//})
+//
+//function move(){
+//  mleft-=2
+//  console.log(mleft)
+//    $('.flowwrap').css({'marginLeft':mleft},1000)
+//}
