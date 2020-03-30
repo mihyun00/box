@@ -102,7 +102,6 @@ header {
   .sect1 {
     width: 100%;
     height: 100vh;
-    border: 1px solid #000;
     position: relative;
   }
 
@@ -310,7 +309,7 @@ header {
   
   .h_wrap {
     width: 100%;
-    border: 1px solid #000;
+
   }
   .h_ci {
     display: none;
@@ -384,11 +383,15 @@ header {
     position: absolute;
     top: 10vh;
     width: 100%;
-    border: 1px solid #fff;
   }
   .h_menu li{
     height: 10vh;
-    border: 1px solid red;
+    border: 1px solid #fff;
+
+  }
+  .h_menu li a{
+    color: #fff;
+    font-size: 1vw;
   }
   .sect1_button{
     display: none;
@@ -402,17 +405,19 @@ display: none;
 .sect1_slidecontainer2{
 display: none;
 }
-.sect1_swiper-container{
+.sect1-swiper-container{
   width: 100%;
   height: 80%;
-  border: 1px solid red;
 }
-.sect1_swiper-slide {
+.sect1-swiper-container .swiper-slide {
   width: 100%;
-  height: 20vh;
-  border: 1px solid #000;
+  height: 100%;
   text-align: center;
   font-size: 18px;
   background: #fff;
+}
+.sect1-swiper-container img{
+  width: 100vh;
+  height: 80vh;
 }
 }
