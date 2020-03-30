@@ -1,6 +1,6 @@
-$('a').click(function(e) {
-  e.preventDefault()
-})
+// $('a').click(function(e) {
+//   e.preventDefault()
+// })
 
 //sect2
 var swiper = new Swiper('.sect2-swiper-container', {
