@@ -15,10 +15,12 @@
 /*sect2-pop*/
 .sect2-pop {
   position: absolute;
-  margin-top: -30px;
+  left: 50%;
+  transform: translate(-50%);
   font-size: 25px;
   color: #355444;
   display: none;
+  margin-top: -32px;
 }
 /* sect2 swiper */
 .sect2-slideWrap {
@@ -33,25 +35,27 @@
   margin: auto;
 }
 .sect2-swiper-container .swiper-wrapper {
-  height: 400px;
+  height: 382px;
 }
 .sect2-swiper-container .swiper-wrapper .swiper-slide {
   padding: 10px;
+  padding-top: 32px;
   z-index: 999;
 }
-.sect2-swiper-container .swiper-button-next, .sect2-swiper-container .swiper-button-prev{
-  top: 27% !important;
+.sect2-swiper-container .swiper-button-next,
+.sect2-swiper-container .swiper-button-prev {
+  top: 32% !important;
 }
-.sect2-swiper-container .swiper-button-next{
+.sect2-swiper-container .swiper-button-next {
   right: 0 !important;
 }
-.sect2-swiper-container .swiper-button-prev{
+.sect2-swiper-container .swiper-button-prev {
   left: 0 !important;
 }
-:root{
+:root {
   --swiper-theme-color: #355444;
 }
-.sect2-swiper-container .swiper-pagination{
+.sect2-swiper-container .swiper-pagination {
   top: 80% !important;
 }
 /* swiper book img */
@@ -67,6 +71,9 @@
 }
 .bookIMG img:hover {
   border: 10px solid #b2d2c3;
+}
+.sect2-swiper-container .swiper-wrapper .swiper-slide:hover .sect2-pop {
+  display: block;
 }
 /* book txt */
 .bookTXT p {
@@ -84,9 +91,7 @@
   height: 50%;
   display: inline-block;
   position: absolute;
-  margin-top: -50px;
   right: 5%;
-  z-index: -999;
 }
 .sect2-slide-txtBOX-inner {
   width: 90%;
@@ -100,11 +105,9 @@
   position: relative;
   border: 2px solid #b2d2c3;
   background-color: white;
-  display: flex;
-  align-items: center;
 }
 .sect2-slide-txtBOX-inner ul li {
-  height: 70%;
+  height: 100%;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
@@ -112,13 +115,13 @@
   position: absolute;
   opacity: 0;
 }
-.sect2-slide-txtBOX-inner ul li h5{
+.sect2-slide-txtBOX-inner ul li h5 {
   font-size: 1vw;
 }
-.sect2-slide-txtBOX-inner ul li h6{
+.sect2-slide-txtBOX-inner ul li h6 {
   font-size: 1vw;
 }
-.sect2-slide-txtBOX-inner ul li p{
+.sect2-slide-txtBOX-inner ul li p {
   font-size: 1vw;
 }
 .sect2-slide-txtBOX-inner ul li.on {
@@ -236,7 +239,7 @@ article.sect3-swiperSlide {
 .sect3-slide-txtBox {
   width: 80%;
   height: 65%;
-  background-image: url(..img/history-box.png);
+  background-image: url(/img/history-box.png);
   background-repeat: no-repeat;
   background-size: contain;
   background-position: center;
@@ -270,29 +273,37 @@ article.sect3-swiperSlide {
 /**********************media************************/
 
 /*max*/
-@media screen and (max-width: 1012px) {
+@media screen and (max-width: 500px){
+  .sect2-slide-txtBOX {
+  margin-top: -50px;
+  }
 }
-@media screen and (max-width: 760px) {
-  .sect2 h2{
+@media screen and (max-width: 768px) {
+  .sect2 h2 {
     margin-bottom: 50px;
   }
-  .sect2-slideWrap{
+  .sect2-slideWrap {
     width: 80%;
     display: block;
     margin: auto;
     left: 0;
   }
-  .sect2-swiper-container{
+  .sect2-swiper-container {
     width: 80%;
   }
   .sect2-slide-txtBOX {
     width: 60%;
-    height: 30%;
+    height: 35%;
     display: block;
     position: absolute;
-    margin-top: 30px;
     left: 50%;
     transform: translate(-50%);
+  }
+  .sect2-slide-txtBOX-inner ul li h5 {
+    font-size: 16px;
+  }
+  .sect2-slide-txtBOX-inner ul li p {
+    font-size: 12px;
   }
   /*sect3*/
   .sect3 {
@@ -301,7 +312,7 @@ article.sect3-swiperSlide {
   }
   .sect3-about {
     flex-direction: column;
-    width:100%;
+    width: 100%;
     height: 50%;
   }
   .sect3-about > div {
@@ -331,7 +342,6 @@ article.sect3-swiperSlide {
     height: 98%;
     flex-direction: unset;
     justify-content: space-between;
-   
   }
   .sect3-slide-txtBox {
     width: 100%;
@@ -340,24 +350,15 @@ article.sect3-swiperSlide {
     font-size: 14px;
     /* justify-content: flex-start; */
   }
-  .sect3-swiper-container .swiper-wrapper .sect3-name{
-   margin: auto;
+  .sect3-swiper-container .swiper-wrapper .sect3-name {
+    margin: auto;
   }
   .sect3-swiper-container .swiper-wrapper .sect3-name span {
     width: 50px;
     height: 50px;
     line-height: 50px;
   }
-  .sect3-slide-year{
+  .sect3-slide-year {
     margin-right: 10px;
   }
-}
-/*min*/
-@media screen and (min-width: 1012px) {
-  .sect2-swiper-container {
-    margin-bottom: 10%;
-  }
-}
-@media screen and (min-width: 760px) {
-
 }
