@@ -45,15 +45,19 @@ header {
     justify-content: flex-start;
   }
   .h_ci {
-    width: 15%;
+    width: 16%;
     height: 100%;
     display: flex;
     justify-content: center;
+    align-items: center;
     float: left;
   }
   .h_ci img {
-    width: 70px;
-    height: 70px;
+    width: 7vh;
+    height: 7vh;
+  }
+  .h_ci_m{
+    display: none;
   }
   .h_nav {
     width: 100%;
@@ -90,7 +94,9 @@ header {
   .lang li:first-child {
     border-right: 1px solid lightgray;
   }
-
+  .nav_m{
+    display: none;
+  }
   /***************** section1 ***********************/
 
   .sect1 {
@@ -124,8 +130,8 @@ header {
   height: 100%;
 }
 .slide1 img{
-  width: 100%;
-  height: 100%;
+  width: 150vh;
+  height: 90vh;
 }
 
 
@@ -154,10 +160,10 @@ header {
   font-size: 1.5vw;
 }
 .sect1_button {
-  width: 16%;
-  height: 10%;
+  width: 22vh;
+  height: 9vh;
   position: absolute;
-  left: 14%;
+  left: 17%;
   bottom: 10%;
   z-index: 1;
 }
@@ -217,8 +223,8 @@ header {
     flex-wrap: wrap;
   }
   .flowwrap img{
-    width: 10%;
-    height: 100%;
+    width: 11vh;
+    height: 7vh;
   }
 
   .low2 {
@@ -234,8 +240,8 @@ header {
     padding-left: 30px;
   }
   .ci img {
-    width: 6%;
-    height:80%;
+    width: 8vh;
+    height:8vh;
   }
   .copy {
     width: 100%;
@@ -276,19 +282,19 @@ header {
   }
   .low1 {
     width: 100%;
-    height: 30%;
+    height: 8vh;
   }
   .flow_container{
     width: 100%;
     height: 100%;
-    border: 1px solid #000;
   }
   .flowwrap{
     width: 1012px;
   }
   .flowwrap img{
-    width: 11%;
-    height: 100%;
+    width: 11vh;
+    height: 7vh;
+
   }
   .copy p {
     font-size: 1.2vw;
@@ -299,8 +305,114 @@ header {
 
 /*****************  MOBILE ***********************/
 
-@media screen and (min-width: 760px){
-
+@media screen and (max-width: 760px){
 
   
+  .h_wrap {
+    width: 100%;
+    border: 1px solid #000;
+  }
+  .h_ci {
+    display: none;
+  }
+  .h_ci_m{
+    display: block;
+    width: 43%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    padding-left: 10px;
+  }
+  .h_ci_m img{
+    width: 16vh;
+  }
+  .h_nav ul{
+    display: none;
+  }
+  .lang{
+    display: none;
+  }
+  #nav_m{
+  display: block;
+  width: 9vh;
+  height: 100%;
+  position: relative;
+  cursor: pointer;
+}
+  #nav_m p{
+    width: 60%;
+    border: 2px solid #416051;
+    margin-bottom: 5px;    
+    position: absolute;
+    transition: 0.5s;
+  }
+  #modal {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.6);
+    left: 0;
+    top: 0;
+    display: none;
+  }
+  #nav_m p:nth-child(1) {
+    left: 10px;
+    top: 25px;
+  }
+  #nav_m p:nth-child(1).on {
+    top: 25px;
+    transform: rotate(45deg);
+    border: 2px solid #fff;
+  }
+  #nav_m p:nth-child(2) {
+    left: 10px;
+    top: 34px;
+  }
+  #nav_m p:nth-child(2).on {
+    display: none;
+  }
+  #nav_m p:nth-child(3) {
+    left: 10px;
+    top: 42px;
+  }
+  #nav_m p:nth-child(3).on {
+    top: 25px;
+    transform: rotate(-45deg);
+    border: 2px solid #fff;
+  }
+  .h_menu{
+    position: absolute;
+    top: 10vh;
+    width: 100%;
+    border: 1px solid #fff;
+  }
+  .h_menu li{
+    height: 10vh;
+    border: 1px solid red;
+  }
+  .sect1_button{
+    display: none;
+  }
+  
+  /***** sect1 background slide*****/
+
+.sect1_slidecontainer1 {
+display: none;
+}
+.sect1_slidecontainer2{
+display: none;
+}
+.sect1_swiper-container{
+  width: 100%;
+  height: 80%;
+  border: 1px solid red;
+}
+.sect1_swiper-slide {
+  width: 100%;
+  height: 20vh;
+  border: 1px solid #000;
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+}
 }
