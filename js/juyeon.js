@@ -6,29 +6,42 @@
         $('html,body').animate({'scrollTop':scrl})
     })
 
-    var sw = 0 //sw=스위치(이름맘대로 정해도 됨)0=거짓 1=참 / =할당, ==조건연산자
+
+ //section1 header menu mobile ver
+
+   
+
     $("#nav_m").click(function() {
+       var sw = 0 
       if (sw == 0) {
         $("#modal").fadeIn(300) //1000=1s
         $("#nav_m p").addClass("on")
-
+   
         sw = 1 
       } else {
         $("#modal").fadeOut(300)
         $("#nav_m p").removeClass("on")
-        sw = 0
+       sw = 0
       }
-
-      //if(조건){참이면 실행}else{거짓이면 실행}
     })
-
-    //section1 swiper mobile ver
-    var swiper = new Swiper('.sect1_swiper-container', {
+    
+    $('.h_menu li a').click(function(){
+      $('#modal').fadeOut(300)
+      $("#nav_m p").removeClass("on")
+    }) 
+//section1 swiper mobile ver
+   
+    var swiper = new Swiper('.sect1-swiper-container', {
+      spaceBetween: 0,
+      loop: true,
+      slidesPerGroup: 1,
       autoplay: {
-        delay: 4000,
+        delay: 3000
       },
+
       pagination: {
-        el: '.swiper-pagination',
+        el: '.sect1-swiper-pagination',
+        clickable: true,
       },
     });
 
@@ -58,7 +71,6 @@ $('.sect1_slidewrap2').animate({'marginTop':'0px'},function(){
 })
 
 
-//footer banner slide 이거 해야함...ㅠ
 
 //var mleft=0
 //var timer=setInterval(move,10)
@@ -77,3 +89,4 @@ $('.sect1_slidewrap2').animate({'marginTop':'0px'},function(){
 //  console.log(mleft)
 //    $('.flowwrap').css({'marginLeft':mleft},1000)
 //}
+
