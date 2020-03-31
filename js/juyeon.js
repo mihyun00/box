@@ -23,7 +23,7 @@
     })
 
     //section1 swiper mobile ver
-    var swiper = new Swiper('.swiper-container', {
+    var swiper = new Swiper('.sect1_swiper-container', {
       autoplay: {
         delay: 4000,
       },
