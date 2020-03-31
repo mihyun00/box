@@ -44,7 +44,7 @@
 }
 .sect2-swiper-container .swiper-button-next,
 .sect2-swiper-container .swiper-button-prev {
-  top: 32% !important;
+  top: 38% !important;
 }
 .sect2-swiper-container .swiper-button-next {
   right: 0 !important;
@@ -60,7 +60,8 @@
 }
 /* swiper book img */
 .bookIMG {
-  width: 100%;
+  width: 90%;
+  margin: auto;
   margin-bottom: 20px;
   text-align: center;
 }
@@ -70,7 +71,9 @@
   box-shadow: 6px 6px 6px rgba(0, 0, 0, 0.2);
 }
 .bookIMG img:hover {
+  box-sizing: unset;
   border: 10px solid #b2d2c3;
+  box-shadow: unset;
 }
 .sect2-swiper-container .swiper-wrapper .swiper-slide:hover .sect2-pop {
   display: block;
@@ -80,10 +83,10 @@
   text-align: center;
 }
 .bookTXT p:nth-child(1) {
-  font-size: 14px;
+  font-size: 16px;
 }
 .bookTXT p:nth-child(2) {
-  font-size: 10px;
+  font-size: 13px;
 }
 /*book slide txt box*/
 .sect2-slide-txtBOX {
@@ -103,7 +106,7 @@
   width: 100%;
   height: 80%;
   position: relative;
-  border: 2px solid #b2d2c3;
+  border: 5px solid #355444;
   background-color: white;
 }
 .sect2-slide-txtBOX-inner ul li {
@@ -155,7 +158,7 @@
   align-items: flex-end;
 }
 .sect3-about .about-logo .logoWrap {
-  width: 30%;
+  width: 50%;
 }
 .sect3-about .about-logo img {
   width: 100%;
@@ -239,7 +242,7 @@ article.sect3-swiperSlide {
 .sect3-slide-txtBox {
   width: 80%;
   height: 65%;
-  background-image: url(/img/history-box.png);
+  background-image: url(../img/history-box.png);
   background-repeat: no-repeat;
   background-size: contain;
   background-position: center;

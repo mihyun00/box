@@ -7,7 +7,7 @@ body {
   position: relative;
   height: 100%;
   color: #333;
-  background-image: url(../img/graphic2.png), url(../img/graphic1.png);
+  background-image: url(../img/bg-icon01.png), url(../img/bg-icon02.png);
   background-position: bottom left, top right;
   background-repeat: no-repeat;
   background-attachment: fixed;

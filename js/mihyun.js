@@ -5,14 +5,16 @@ var swiper = new Swiper(".sect2-swiper-container", {
   breakpoints: {
     200: {
       slidesPerView: 2,
-      spaceBetween: 10
+      spaceBetween: 10,
+      slidesPerGroup: 2,
     },
     768: {
-      slidesPerView: 4
+      slidesPerView: 4,
+      slidesPerGroup: 4,
     },
     1024: {
-      slidesPerView: 5
-      // slidesPerGroup: 5
+      slidesPerView: 5,
+      slidesPerGroup: 5,
     }
   },
   navigation: {
