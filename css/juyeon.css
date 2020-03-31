@@ -117,7 +117,7 @@ header {
   
 }
 .sect1_slidewrap1{
-  width: 400%;
+  width: 600%;
   height: 100%;
   margin-left: -100%;
   display: flex;
@@ -125,7 +125,7 @@ header {
 }
 .slide1{
   display: flex;
-  width: 25%;
+  width: 16.66%;
   height: 100%;
 }
 .slide1 img{
@@ -148,7 +148,7 @@ header {
 }
 .sect1_slidewrap2{
   width: 100%;
-  height: 400%;
+  height: 600%;
   margin-top: -50%;
   display: flex;
   flex-direction: column;
@@ -156,7 +156,15 @@ header {
 .slide2{
   width: 100%; 
   height: 100%;
-  font-size: 1.5vw;
+  font-size: 1.3vw;
+  
+}
+.slide2 button{
+  width: 150px;
+  height: 50px;
+  border: 2px solid #ccc;
+  background-color: rgba(255, 255, 255, 0.5);
+  border-radius: 30px;
 }
 .sect1_button {
   width: 22vh;
@@ -189,6 +197,12 @@ header {
 .roll li img{
   width: 100%;
   height: 100%;
+}
+.h_menu{
+  display: none;
+}
+.sect1-swiper-container{
+  display: none;
 }
 
   /*sect2 와 연혁 부분 합침으로 css 삭제했습니다!*/
@@ -260,16 +274,35 @@ header {
 
 @media screen and (max-width: 1012px){
 
-  .sect1_slidecontainer2{
-    width: 470px;
-    height: 235px;
-  }
   .slide2{
     width: 100%; 
     height: 100%;
     font-size: 2vw;
   }
+  .sect1_slidecontainer2{
+    width: 420px;
+    height: 210px;
+    position: absolute;
+    left: 15%;
+    top: 19%;
+    z-index: 1;
+    overflow: hidden;
 
+    
+  }
+  .sect1_slidewrap2{
+    width: 100%;
+    height: 600%;
+    margin-top: -50%;
+    display: flex;
+    flex-direction: column;
+  }
+  .slide2{
+    width: 100%; 
+    height: 100%;
+    font-size: 1.4vw;
+
+  }
   /******* footer *******/
   footer {
     height: 35%;
@@ -306,10 +339,9 @@ header {
 
 @media screen and (max-width: 760px){
 
-  
+
   .h_wrap {
     width: 100%;
-
   }
   .h_ci {
     display: none;
@@ -333,10 +365,11 @@ header {
   }
   #nav_m{
   display: block;
-  width: 9vh;
+  width: 7vh;
   height: 100%;
   position: relative;
   cursor: pointer;
+
 }
   #nav_m p{
     width: 60%;
@@ -349,8 +382,8 @@ header {
     position: fixed;
     width: 100%;
     height: 100%;
-    background: rgba(0, 0, 0, 0.6);
-    left: 0;
+    background-color: rgba(0, 0, 0, 0.2);
+    right: 0;
     top: 0;
     display: none;
   }
@@ -361,37 +394,45 @@ header {
   #nav_m p:nth-child(1).on {
     top: 25px;
     transform: rotate(45deg);
-    border: 2px solid #fff;
+   
   }
   #nav_m p:nth-child(2) {
     left: 10px;
-    top: 34px;
+    top: 37px;
   }
   #nav_m p:nth-child(2).on {
     display: none;
   }
   #nav_m p:nth-child(3) {
     left: 10px;
-    top: 42px;
+    top: 49px;
   }
   #nav_m p:nth-child(3).on {
     top: 25px;
     transform: rotate(-45deg);
-    border: 2px solid #fff;
+
   }
   .h_menu{
     position: absolute;
-    top: 10vh;
-    width: 100%;
+    display: block;
+    right: 0;
+    top: 0;
+    width: 70%;
+    height: 100%;
+    padding: 5%;
+    background-color: #fff;
+  }
+  .h_menu img{
+    width: 15vh;
+    margin-bottom: 5%;
   }
   .h_menu li{
+    width: 100%;
     height: 10vh;
-    border: 1px solid #fff;
-
   }
   .h_menu li a{
-    color: #fff;
-    font-size: 1vw;
+    font-size: 8vw;
+    margin: auto;
   }
   .sect1_button{
     display: none;
@@ -406,18 +447,26 @@ display: none;
 display: none;
 }
 .sect1-swiper-container{
+  display: block;
   width: 100%;
-  height: 80%;
+  height: 100%;
 }
 .sect1-swiper-container .swiper-slide {
   width: 100%;
-  height: 100%;
+  height: 55%;
   text-align: center;
-  font-size: 18px;
+  font-size: 2.2vw;
   background: #fff;
 }
-.sect1-swiper-container img{
-  width: 100vh;
-  height: 80vh;
+.sect1-swiper-container .swiper-slide button{
+  border: 2px solid #ccc;
+  background-color: #fff;
+  width: 150px;
+  height: 30px;
 }
+.sect1-swiper-container img{
+  width: 90vh;
+  height: 70vh;
+}
+
 }
