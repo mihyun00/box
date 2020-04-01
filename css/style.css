@@ -41,11 +41,14 @@ h1,h2,h3,h4,h5,h6,b{
 p,li,a,span{
   font-family: square_regular;
 }
+button{
+  font-family: square;
+}
 .fl{ float: left;}
 .fr{ float: right;}
 
 h2.title{
-  font-size: 42px;
+  font-size: 33px;
   text-align: center;
   letter-spacing: -2px;
 }

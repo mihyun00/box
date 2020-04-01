@@ -23,6 +23,6 @@ $(document).scroll(function(){
     $('.comm_content:nth-child(4)').delay(1200).animate({'opacity':'1','margin-top':'0'},600)
     $('.sect5 .more_btn').delay(1700).animate({'opacity':'1'},200)
   }else if(scrT>=2947){
-    $('.sect4 .writer_photo').animate({'opacity':'1','left':'0'},800)
+    
   }
 })
