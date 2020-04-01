@@ -6,15 +6,15 @@ var swiper = new Swiper(".sect2-swiper-container", {
     200: {
       slidesPerView: 2,
       spaceBetween: 10,
-      slidesPerGroup: 2,
+      slidesPerGroup: 2
     },
     768: {
       slidesPerView: 4,
-      slidesPerGroup: 4,
+      slidesPerGroup: 4
     },
     1024: {
       slidesPerView: 5,
-      slidesPerGroup: 5,
+      slidesPerGroup: 5
     }
   },
   navigation: {
@@ -23,29 +23,39 @@ var swiper = new Swiper(".sect2-swiper-container", {
   }
 })
 
-var b = $(".sect2-pop").offset().left //포인터의 기본 위치 값
+// var b = $(".sect2-pop").offset().left //포인터의 기본 위치 값
 
-pointFuc(0)
-$(".sect2-swiper-container .swiper-wrapper .swiper-slide").mouseenter(function() {
-  var idx = $(this).index()
-  pointFuc(idx)
+// pointFuc(0)
+// $(".sect2-swiper-container .swiper-wrapper .swiper-slide").mouseenter(function() {
+//   var idx = $(this).index()
+//   pointFuc(idx)
+// })
+
+// function pointFuc(i) {
+//   var p = $(".sect2-swiper-container .swiper-wrapper .swiper-slide")
+//     .eq(i)
+//     .offset().left
+//   var h =
+//     $(".sect2-swiper-container .swiper-wrapper .swiper-slide")
+//       .eq(i)
+//       .width() / 2
+//   // $(".sect2-pop").animate({ left: p - b + h }, function() {
+//   //   $(".sect2-pop").fadeIn()
+//   //   $(".sect2-swiper-container .swiper-wrapper .swiper-slide").mouseleave(function() {
+//   //     $(".sect2-pop").fadeOut()
+//   //   })
+//   // })
+// }
+
+//book after
+$('.bookIMG a').mouseenter(function(){
+  $('.bookIMG a').removeClass('on')
+  $(this).addClass('on')
+})
+$('.bookIMG a').mouseleave(function(){
+  $('.bookIMG a').removeClass('on')
 })
 
-function pointFuc(i) {
-  var p = $(".sect2-swiper-container .swiper-wrapper .swiper-slide")
-    .eq(i)
-    .offset().left
-  var h =
-    $(".sect2-swiper-container .swiper-wrapper .swiper-slide")
-      .eq(i)
-      .width() / 2
-  // $(".sect2-pop").animate({ left: p - b + h }, function() {
-  //   $(".sect2-pop").fadeIn()
-  //   $(".sect2-swiper-container .swiper-wrapper .swiper-slide").mouseleave(function() {
-  //     $(".sect2-pop").fadeOut()
-  //   })
-  // })
-}
 
 //sect2 도서 클릭하면 해당되는 내용 표출
 $(".sect2-swiper-container .swiper-slide .bookIMG a").click(function(e) {
@@ -73,7 +83,10 @@ $(".year-btn button").click(function() {
 //sect3 swiper
 
 var swiper = new Swiper(".sect3-01", {
+  slidesPerView: 5,
   mousewheel: true,
+  slidesPerView: "auto",
+  freeMode: true,
   breakpoints: {
     200: {
       slidesPerView: 4,
@@ -94,6 +107,8 @@ var swiper = new Swiper(".sect3-01", {
 var swiper = new Swiper(".sect3-02", {
   slidesPerView: 5,
   mousewheel: true,
+  slidesPerView: "auto",
+  freeMode: true,
   breakpoints: {
     200: {
       slidesPerView: 4,
@@ -134,3 +149,4 @@ var swiper = new Swiper(".sect3-02", {
 //     $('.sect4 button').delay(400).animate({'opacity':'0','top':'70%'})
 //   }
 // })
+
