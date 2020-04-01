@@ -13,7 +13,7 @@ body {
   height: 70px;
   position: fixed;
   right: 1%;
-  bottom: 15%;
+  bottom: 5%;
   z-index: 9999;
   background-image: url(../img/top_btn4.png);
   background-size: 100%;
@@ -54,7 +54,7 @@ header {
   }
   .h_ci img {
     width: 7vh;
-    height: 7vh;
+    height: 5vh;
   }
   .h_ci_m{
     display: none;
@@ -108,8 +108,8 @@ header {
   /***** sect1 background slide*****/
 
 .sect1_slidecontainer1 {
-  width: 75%;
-  height: 90%;
+  width: 63%;
+  height: 85%;
   position: absolute;
   right: 0;
   top: 0;
@@ -137,10 +137,10 @@ header {
 /************* sect1 txt  ***********/
 
 .sect1_slidecontainer2{
-  width: 670px;
-  height: 335px;
+  width: 51vh;
+  height: 40vh;
   position: absolute;
-  left: 15%;
+  left: 5%;
   top: 19%;
   z-index: 1;
   overflow: hidden;
@@ -149,7 +149,7 @@ header {
 .sect1_slidewrap2{
   width: 100%;
   height: 600%;
-  margin-top: -50%;
+  margin-top: -79%;
   display: flex;
   flex-direction: column;
 }
@@ -157,6 +157,8 @@ header {
   width: 100%; 
   height: 100%;
   font-size: 1.3vw;
+  color: #000;
+  font-weight: bold;
   
 }
 .slide2 button{
@@ -170,8 +172,8 @@ header {
   width: 22vh;
   height: 9vh;
   position: absolute;
-  left: 17%;
-  bottom: 10%;
+  left: 33%;
+  bottom: 15%;
   z-index: 1;
 }
 .num {
@@ -230,14 +232,15 @@ header {
     overflow: hidden;
   }
   .flowwrap{
-    width: 1100px;
     height: 100%;
     display: flex;
     flex-wrap: wrap;
+    border: 1px solid red;
   }
   .flowwrap img{
-    width: 11vh;
+    width: 12vh;
     height: 7vh;
+    border: 1px solid #000;
   }
 
   .low2 {
@@ -254,7 +257,7 @@ header {
   }
   .ci img {
     width: 8vh;
-    height:8vh;
+    height:6vh;
   }
   .copy {
     width: 100%;
@@ -274,35 +277,23 @@ header {
 
 @media screen and (max-width: 1012px){
 
-  .slide2{
-    width: 100%; 
-    height: 100%;
-    font-size: 2vw;
+  .sect1_slidecontainer1 {
+    height: 85%;
+    border: 1px solid #000;
   }
-  .sect1_slidecontainer2{
-    width: 420px;
-    height: 210px;
-    position: absolute;
-    left: 15%;
-    top: 19%;
-    z-index: 1;
-    overflow: hidden;
 
-    
+  .slide1 img{
+    width: 100vh;
+    height: 85vh;
   }
-  .sect1_slidewrap2{
-    width: 100%;
-    height: 600%;
-    margin-top: -50%;
-    display: flex;
-    flex-direction: column;
-  }
-  .slide2{
-    width: 100%; 
-    height: 100%;
-    font-size: 1.4vw;
 
+  .sect1_button {
+    left: 26%;
+    bottom: 15%;
   }
+  .sect1_slidecontainer2 {
+    top: 25%;
+}
   /******* footer *******/
   footer {
     height: 35%;
