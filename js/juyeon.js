@@ -52,9 +52,9 @@ $('.sect1_slidewrap1').animate({'marginLeft':'-200%'},function(){
   $('.sect1_slidewrap1').css({'marginLeft':'-100%'})
 })
 
-$('.sect1_slidewrap2').animate({'marginTop':'-100%'},function(){
+$('.sect1_slidewrap2').animate({'marginTop':'-158%'},function(){
 $('.sect1_slidewrap2 div').first().appendTo('.sect1_slidewrap2')
-$('.sect1_slidewrap2').css({'marginTop':'-50%'})
+$('.sect1_slidewrap2').css({'marginTop':'-79%'})
 })
 })
 
@@ -66,27 +66,32 @@ $('.sect1_slidewrap1').animate({'marginLeft':'0px'},function(){
 
 $('.sect1_slidewrap2').animate({'marginTop':'0px'},function(){
   $('.slide2').last().prependTo('.sect1_slidewrap2')
-  $('.sect1_slidewrap2').css({'marginTop':'-50%'})
+  $('.sect1_slidewrap2').css({'marginTop':'-79%'})
 })
 })
 
+var mleft=0
+var timer=setInterval(move,10)
 
+$('.flow_container').on({
+  mouseenter:function(){
+    clearInterval(timer)
+  },
+  mouseleave:function(){
+    timer=setInterval(move,10)
+  }
+})
 
-//var mleft=0
-//var timer=setInterval(move,10)
-//
-//$('.flow_container').on({
-//  mouseenter:function(){
-//    clearInterval(timer)
-//  },
-//  mouseleave:function(){
-//    timer=setInterval(move,10)
-//  }
-//})
-//
-//function move(){
-//  mleft-=2
-//  console.log(mleft)
-//    $('.flowwrap').css({'marginLeft':mleft},1000)
-//}
+function move(){
+  mleft-=2
+  console.log(mleft)
+  
+    $('.flowwrap').css({'marginLeft':mleft},1000)
+      
+  $('.flowwrap').animate({'marginLeft':'-12vh'}),function(){
+    $('.flowwrap img').first().appendTo('.flowwrap')
+    $('.flowwrap').css({'marginLeft':'-6vh'})
+  }
+  
+}
 
