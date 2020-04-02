@@ -3,8 +3,6 @@
   width: 100%;
   height: 100vh;
   padding-top: 60px;
-  /* background-image: url(/img/bgbg.jpg);
-  background-size: cover; */
 }
 /* sect2 상단 main txt */
 .sect2 h2 {
@@ -68,7 +66,7 @@
   position: absolute;
   top: 0;
   left: 0;
-  width: 97%;
+  width: 96.5%;
   height: 95%;
   border: 5px solid #cce4d7;
   display: none;
@@ -150,27 +148,26 @@
 }
 .sect3 h2 {
   text-align: center;
+  margin-bottom: 50px;
 }
 /*about*/
 .sect3-about {
   display: flex;
-  width: 80%;
-  height: 60%;
+  width: 90%;
+  height: 50%;
   margin: auto;
 }
 .sect3-about > div {
   width: 50%;
   height: 80%;
   display: flex;
-  justify-content: center;
   align-items: center;
 }
 .sect3-about .about-logo {
   justify-content: center;
-  align-items: flex-end;
 }
 .sect3-about .about-logo .logoWrap {
-  width: 50%;
+  width: 70%;
 }
 .sect3-about .about-logo img {
   width: 100%;
@@ -178,6 +175,7 @@
 }
 /*about-txt*/
 .sect3 .about-txt {
+  justify-content: flex-start;
   margin-top: 200px;
   height: 60%;
   flex-direction: column;
@@ -296,7 +294,6 @@ article.sect3-swiperSlide {
   body {
     background-image: none;
   }
-
   /*sect3*/
   .sect3 {
     padding-top: 50px;
@@ -360,7 +357,7 @@ article.sect3-swiperSlide {
     margin-bottom: 50px;
   }
   .sect2-slideWrap {
-    width: 90%;
+    width: 92%;
     display: block;
     margin: auto;
     left: 0;
@@ -370,17 +367,17 @@ article.sect3-swiperSlide {
   }
   .sect2-slide-txtBOX {
     width: 60%;
-    height: 35%;
-    display: block;
-    position: absolute;
     left: 50%;
     transform: translate(-50%);
   }
   .sect2-slide-txtBOX-inner ul li h5 {
-    font-size: 16px;
+    font-size: 18px;
   }
   .sect2-slide-txtBOX-inner ul li p {
-    font-size: 12px;
+    font-size: 15px;
+  }
+  .sect2-slide-txtBOX-inner ul li h6 {
+    font-size: 16px;
   }
   .bookIMG a.on::after {
     display: none;

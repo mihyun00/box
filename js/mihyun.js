@@ -68,6 +68,8 @@ $(".sect2-swiper-container .swiper-slide .bookIMG a").click(function(e) {
 $(".bookIMG a").click(function(e) {
   e.preventDefault()
 })
+
+
 //sect3 buootn 클릭하면 연도별 슬라이드 표출되며 버튼 색 변경
 $(".year-btn button").click(function() {
   $(".year-btn button").removeClass("on")
