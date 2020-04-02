@@ -87,7 +87,6 @@ $(".flow_container").on({
 
 function move() {
   mleft -= 2
-  console.log(mleft)
 
   $(".flowwrap").css({ marginLeft: mleft }, 20)
 
