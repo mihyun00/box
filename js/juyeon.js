@@ -1,4 +1,22 @@
-//header animation
+//header scroll animation
+
+$('section').on('mousewheel',function(event,delta){
+  if(delta>0){
+      //alert('up')
+      var prev=$(this).prev().offset().top
+      $('header').slideUp(700,'easeOutExpo')
+      $('.top_button').fadeOut()
+  }
+  else if(delta<0){
+      //alert('down')
+      var next=$(this).next().offset().top
+      $('header').slideDown(700,'easeOutExpo')
+      $('.top_button').fadeIn()
+  }
+  
+})
+
+//header mobile ver animation
 $("header nav li a").click(function(e) {
   e.preventDefault()
   var href = $(this).attr("href")
@@ -74,14 +92,14 @@ $(".sect1_button a.prev").click(function() {
 })
 
 var mleft = 0
-var timer = setInterval(move, 10)
+var timer = setInterval(move, 1000)
 
 $(".flow_container").on({
   mouseenter: function() {
     clearInterval(timer)
   },
   mouseleave: function() {
-    timer = setInterval(move, 10)
+    timer = setInterval(move, 1000)
   }
 })
 
@@ -89,8 +107,8 @@ function move() {
   mleft -= 2
   console.log(mleft)
 
-  $(".flowwrap").css({ marginLeft: mleft }, 20)
-
-  $(".flowwrap").animate({ marginLeft: mleft })
+ 
+ $('.flowwrap img').first().appendTo('.flowwrap')
+ 
     
 }
