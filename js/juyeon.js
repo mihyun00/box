@@ -105,7 +105,6 @@ $(".flow_container").on({
 
 function move() {
   mleft -= 2
-  console.log(mleft)
 
  
  $('.flowwrap img').first().appendTo('.flowwrap')

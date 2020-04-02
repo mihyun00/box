@@ -11,6 +11,7 @@ body {
   background-position: bottom left, top right;
   background-repeat: no-repeat;
   background-attachment: fixed;
+  background-size: 500px;
 }
 @font-face {
   /*약간 굵음*/
@@ -48,7 +49,7 @@ button{
 .fr{ float: right;}
 
 h2.title{
-  font-size: 33px;
+  font-size: 42px;
   text-align: center;
   letter-spacing: -2px;
 }

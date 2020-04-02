@@ -3,130 +3,25 @@
   width: 100%; height: 300vh;
   position: relative;
   background-size: cover;
-}
-.sect4_col1{
-  width: 100%; height: 100vh;
-  position: relative;
-  left: 50%; top: 5%;
-  transform: translateX(-50%);
+  padding-top: 150px;
 }
 .sect4 .title{
-  position: absolute;
-  top: 12%; left: 19.5%;
+  height: 200px;
   font-family: square_light;
-  text-align: left;
-  z-index: 99;
 }
-.sect4 .title_bg{
+/* .sect4 .title_bg{
   position: absolute;
   top: 11.1%; left: 17.5%;
   width: 33px; height: 33px;
   background: #B2D2C3;
-}
-.sect4 .writer_photo{
-  position: absolute;
-  top: 40%; left: 17.5%;
-  width: 620px; height: 350px;
-  background: url(../img/sect4_info_img.jpg) no-repeat 0 -120px;
-  z-index: 999;
-}
-.sect4 .writer_text{
-  position: absolute;
-  bottom: 213px; right: 0;
-  width: 49.87%; height: 150px;
-  background: #365445;
-  z-index: 99;
-  padding: 40px;
-}
-.sect4 h3{
-  font-size: 27px;
-  color: #fff;
-}
-.sect4 h4{
-  font-size: 20px;
-  color: #fff;
-  font-family: square_light;
-}
-.sect4 .writer_info{
-  position: absolute;
-  bottom: 42%; right: 24%;
-}
-.sect4 .writer_info li{
-  font-size: 14px;
-  color: #365445;
-  padding: 5px 0;
-}
-.sect4 .writer_info li:first-child{
-  font-size: 19px;
-  font-weight: bold;
-}
-/* col1----------------------------- */
-.sect4_col2{
-  width: 70%; height: 70vh;
-  margin-top: 280px;
-  position: relative;
-}
-.sect4_col2 h3{
-  padding: 10px 0;
-}
-.sect4_swiper-container {
-  width: 100%; height: 50vh;
-  background: #fff;
-}
-.sect4-slide {
-  width: 80%;
-  padding: 80px 150px;
-}
-.sect4_col2 .swiper-button-prev{
-  width: 100px; height: 100px;
-  background: url(../img/arrow_prev.png) no-repeat center #365445;
-  background-size: 40px;
-  top: 540px; left: -100px;
-}
-.sect4_col2 .swiper-button-next{
-  width: 100px; height: 100px;
-  background: url(../img/arrow_next.png) no-repeat center #365445;
-  background-size: 40px;
-  top: 540px; right: 1232px;
-}
-.sect4_swiper-container h5{
-  font-size: 30px;
-  margin-bottom: 50px;
-}
-.sect4_swiper-container p{
-  font-size: 17px;
-  line-height: 35px;
-}
-.sect4_swiper-container h6{
-  font-size: 30px;
-}
-/* col2---------------------- */
-.sect4_col3{
-  width: 70%; height: 70vh;
-  margin-top: 280px;
-  position: relative;
-}
-.sect4_col3 .sect4_swiper-container {
-  width: 100%; height: 50vh;
-}
-.sect4_col3 .sect4-slide{
-  padding: 50px 150px;
-}
-.sect4_col3 .swiper-button-prev{
-  width: 100px; height: 100px;
-  background: url(../img/arrow_prev.png) no-repeat center #365445;
-  background-size: 40px;
-  top: 540px; left: -100px;
-}
-.sect4_col3 .swiper-button-next{
-  width: 100px; height: 100px;
-  background: url(../img/arrow_next.png) no-repeat center #365445;
-  background-size: 40px;
-  top: 540px; right: 1232px;
-}
-.sect4 .swiper-button-prev:after{ content: '';}
-.sect4 .swiper-button-next:after{ content: '';}
-/* section4 끝 */
+} */
+
+
+
+
+
+
+
 /* section5 시작-------------------------- */
 .sect5 {
   width: 100%;
@@ -158,7 +53,7 @@
 }
 .sect5 .comm_content {
   max-width: 300px;
-  margin-top: 80px; opacity: 0;
+  margin-top: 100px; opacity: 0;
   cursor: pointer;
 }
 .sect5 .comm_img {
@@ -204,110 +99,7 @@
 /* section5 끝-------------------------- */
 /* 모바일 */
 @media screen and (max-width: 768px) {
-  .sect4{
-    padding: 0 15px;
-    height: 270vh;
-  }
-  .sect4_col1{
-    max-width: 1240px; height: 120vh;
-    position: relative;
-    top: 0; left: 50%; 
-    transform: translateX(-50%);
-  }
-  .sect4 .title{
-    font-size: 30px;
-    top: 5%; left: 50%;
-    transform: translateX(-50%);
-  }
-  .sect4 .title_bg{
-    display: none;
-  }
-  .sect4 .writer_photo{
-    width: 100%; height: 300px;
-    top: 20%; left: 0%;
-    background-size: 500px;
-  }
-  .sect4 .writer_text{
-    height: 100px;
-    top: 47%;
-    width: 100%; 
-    padding: 20px;
-  }
-  .sect4 h3{
-    font-size: 20px;
-  }
-  .sect4 h4{
-    font-size: 16px;
-    padding-bottom: 18px;
-  }
-  .sect4 .writer_info{
-    width: 100%;
-    top: 58%; left: 0;
-    padding: 10px 30px;
-  }
-  .sect4 .writer_info li{
-    font-size: 15px;
-    padding: 3px 0;
-  }
-
-  /* col2 시작---------------------- */
-
-  .sect4_col2{
-    width: 93%; height: 70vh;
-    margin-top: 80px;
-  }
-  .sect4_col2 h3{
-    padding: 10px 0;
-    text-align: center;
-  }
-  .sect4-slide {
-    width: 80%;
-    padding: 50px 20px;
-  }
-  .sect4_col2 .swiper-button-prev{
-    width: 50px; height: 50px;
-    background: url(../img/arrow_prev.png) no-repeat 16px 15px #365445;
-    background-size: 15px;
-    top: 522px; left: 0;
-  }
-  .sect4_col2 .swiper-button-next{
-    display: none;
-  }
-  .sect4_swiper-container h5{
-    font-size: 20px;
-    margin-bottom: 15px;
-  }
-  .sect4_swiper-container p{
-    font-size: 15px;
-    line-height: 28px;
-  }
-  .sect4_swiper-container h6{
-    font-size: 20px;
-    margin-bottom: 15px;
-  }
-
-  /* col3 시작-------------------- */
-
-  .sect4_col3{
-    width: 93%; height: 80vh;
-    margin-top: 150px;
-  }
-  .sect4_col3 .sect4_swiper-container {
-    height: 63vh;
-  }
-  .sect4_col3 .sect4-slide{
-    padding: 40px 20px;
-  }
-  .sect4_col3 .swiper-button-prev{
-    display: none;
-  }
-  .sect4_col3 .swiper-button-next{
-    width: 50px; height: 50px;
-    background-size: 15px;
-    top: 518px; right: 0;
-  }
-
-  /* sect4 end------------------ */
+  
   .sect5{
     padding: 0 15px;
     min-height: 110vh;
@@ -344,116 +136,11 @@
     margin-bottom: 120px;
   }
 }
+footer{
+  position: relative;
+}
 /* 태블릿 */
 @media screen and (min-width: 768px) and (max-width: 1024px) {
-  .sect4{
-    padding: 0 15px;
-    height: 270vh;
-  }
-  .sect4_col1{
-    max-width: 1240px; height: 100vh;
-    position: relative;
-    top: 0; left: 50%; 
-    transform: translateX(-50%);
-  }
-  .sect4 .title{
-    font-size: 30px;
-    top: 5%; left: 5%;
-  }
-  .sect4 .title_bg{
-    width: 25px; height: 25px;
-    top: 105px; left: 15px;
-  }
-  .sect4 .writer_photo{
-    min-width: 475px;
-    width: 50%;
-    top: 23%; left: 0;
-    background-size: 100%;
-  }
-  .sect4 .writer_photo img{
-    width: 100%;
-  }
-  .sect4 .writer_text{
-    width: 50%; height: 120px;
-    top: 47.8%; 
-    padding: 32px;
-  }
-  .sect4 h3{
-    font-size: 20px;
-  }
-  .sect4 h4{
-    font-size: 16px;
-    padding-bottom: 18px;
-  }
-  .sect4 .writer_info{
-    width: 475px;
-    top: 18%; right: 0;
-    padding: 20px;
-  }
-  .sect4 .writer_info li{
-    padding: 3px 0;
-  }
-
-  /* col2 시작---------------------- */
-
-  .sect4_col2{
-    width: 93%; height: 70vh;
-    margin-top: 20px;
-  }
-  .sect4_col2 h3{
-    padding: 10px 0;
-    text-align: center;
-  }
-  .sect4-slide {
-    width: 80%;
-    padding: 50px 20px;
-  }
-  .sect4_col2 .swiper-button-prev{
-    width: 50px; height: 50px;
-    background: url(../img/arrow_prev.png) no-repeat 16px 15px #365445;
-    background-size: 15px;
-    top: 528px; left: -50px;
-  }
-  .sect4_col2 .swiper-button-next{
-    width: 50px; height: 50px;
-    background: url(../img/arrow_next.png) no-repeat 16px 15px #365445;
-    background-size: 15px;
-    top: 528px; left: 0;
-  }
-  .sect4_swiper-container h5{
-    font-size: 20px;
-    margin-bottom: 15px;
-  }
-  .sect4_swiper-container p{
-    font-size: 15px;
-    line-height: 28px;
-  }
-  .sect4_swiper-container h6{
-    font-size: 20px;
-    margin-bottom: 15px;
-  }
-
-  /* col3 시작-------------------- */
-
-  .sect4_col3{
-    width: 93%; height: 80vh;
-    margin-top: 150px;
-  }
-  .sect4_col3 .sect4_swiper-container {
-    height: 63vh;
-  }
-  .sect4_col3 .sect4-slide{
-    padding: 40px 20px;
-  }
-  .sect4_col3 .swiper-button-prev{
-    display: none;
-  }
-  .sect4_col3 .swiper-button-next{
-    width: 50px; height: 50px;
-    background-size: 15px;
-    top: 518px; right: 0;
-  }
-  /* sect4 끝-------------------------- */
   .sect5{
     padding: 0 15px;
     min-height: 80vh;

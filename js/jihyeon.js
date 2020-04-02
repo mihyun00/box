@@ -21,8 +21,6 @@ $(document).scroll(function(){
     $('.comm_content:nth-child(2)').delay(600).animate({'opacity':'1','margin-top':'0'},600)
     $('.comm_content:nth-child(3)').delay(900).animate({'opacity':'1','margin-top':'0'},600)
     $('.comm_content:nth-child(4)').delay(1200).animate({'opacity':'1','margin-top':'0'},600)
-    $('.sect5 .more_btn').delay(1700).animate({'opacity':'1'},200)
-  }else if(scrT>=2947){
-    
+    // $('.sect5 .more_btn').delay(1700).animate({'opacity':'1'},200)
   }
 })
