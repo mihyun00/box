@@ -13,7 +13,7 @@ var swiper = new Swiper('.sect4_swiper-container', {
 });
 $(document).scroll(function(){
   var scrT = $(this).scrollTop()
-  console.log(scrT)
+  // console.log(scrT)
   if(scrT>=5200){
     $('.sect5 h2').animate({'opacity':'1'},600)
     $('.sect5 .title_bg').animate({'opacity':'1'},600)
