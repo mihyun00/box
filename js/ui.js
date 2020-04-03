@@ -18704,6 +18704,3 @@ var widgetsTooltip = $.ui.tooltip;
 
 
 }));
-×
-Drag and Drop
-The image will be downloaded
