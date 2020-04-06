@@ -9,19 +9,113 @@
   height: 200px;
   font-family: square_light;
 }
-/* .sect4 .title_bg{
+.sect4 .wave_text_wrap{
   position: absolute;
-  top: 11.1%; left: 17.5%;
-  width: 33px; height: 33px;
-  background: #B2D2C3;
-} */
-
-
-
-
-
-
-
+  top: 245px;
+  width: 100%; overflow-x: hidden;
+}
+.sect4 .wave_text{
+  width: 7394px;
+}
+.sect4 .wave_text span{
+  display: inline-block;
+  font-size: 125px;
+  color: rgba(178, 210, 195, .5);
+  margin-right: 30px;
+}
+.sect4 .contents{
+  width: 85%;
+  overflow: hidden;
+  margin: 0 auto;
+}
+.sect4 .main.fl{
+  width: calc(50% - 20px); height: 650px;
+  margin-right: 20px;
+  position: relative;
+  border: 3px solid rgba(178, 210, 195, .3);
+  background: url(../img/together_read_2.png) no-repeat bottom right #fff;
+  background-size: 100%;
+}
+.sect4 .main .content{
+  width: 100%; height: 100%;
+  position: absolute;
+  padding: 40px;
+  display: none;
+}
+.sect4 .main .content.show{
+  display: block;
+}
+.sect4 .main .content h2{
+  font-size: 30px;
+}
+.sect4 .main .content em{
+  display: block;
+  padding-bottom: 20px;
+  font-size: 20px;
+}
+.sect4 .main .content p{
+  font-size: 17px;
+  line-height: 30px;
+}
+.sect4 .preview{
+  width: 50%; height: 650px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-content: space-between;
+}
+.sect4 .preview div{
+  width: 394px; height: 315px;
+  cursor: pointer;
+  /* background: url(../img/con1.jpg) no-repeat bottom left orange; */
+  background: url(../img/contBg.png) no-repeat bottom right #fff;
+  border: 3px solid rgba(178, 210, 195, .3);
+}
+.sect4 .preview div.on{
+  background: url(../img/contBg_on.png) no-repeat bottom right #fff;
+}
+.sect4 .preview div h3{
+  font-size: 24px;
+  text-align: center;
+  line-height: 300px;
+}
+.sect4 .preview div.col2{
+  width: 256px;
+}
+.write{
+  max-width: 1240px;
+  margin: 100px auto 0;
+  position: relative;
+}
+.writephoto{
+  width: 50%; height: 400px;
+  background: url(../img/sect4_write.jpg);
+  position: absolute;
+}
+.writeInfo{
+  width: 60%;
+  padding: 50px;
+  border: 3px solid rgba(178, 210, 195, .3);
+  background: #fff;
+  position: absolute;
+  right: 0;
+}
+.writeInfo h3{
+  font-size: 28px;
+}
+.writeInfo em{
+  display: block;
+  font-size: 20px;
+  padding-bottom: 15px;
+}
+.writeInfo p{
+  font-size: 18px;
+}
+.writeInfo p span{
+  display: block;
+  font-size: 16px;
+  padding-top: 10px;
+}
 /* section5 시작-------------------------- */
 .sect5 {
   width: 100%;
@@ -29,16 +123,9 @@
   background: url(../img/sect5_bg.png) no-repeat;
   position: relative;
 }
-.sect5 .title_bg{
-  position: absolute;
-  width: 33px; height: 33px;
-  top: 5%; left: 17.5%;
-  background: #B2D2C3;
-  opacity: 0;
-}
 .sect5 .title {
   max-width: 1240px;
-  padding: 70px 35px;
+  padding: 70px 0;
   text-align: left;
   opacity: 0;
   margin: auto;
@@ -99,7 +186,6 @@
 /* section5 끝-------------------------- */
 /* 모바일 */
 @media screen and (max-width: 768px) {
-  
   .sect5{
     padding: 0 15px;
     min-height: 110vh;
