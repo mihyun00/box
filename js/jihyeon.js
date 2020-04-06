@@ -24,3 +24,29 @@ $(document).scroll(function(){
     // $('.sect5 .more_btn').delay(1700).animate({'opacity':'1'},200)
   }
 })
+$('.preview div').click(function(){
+  var idx = $(this).index()
+  $('.main .content').stop().fadeOut()
+  $('.main .content').eq(idx).stop().fadeIn()
+  $('.preview div').removeClass('on')
+  $(this).addClass('on')
+})
+$('.wave_text').on({
+  mouseenter:function(){
+    clearInterval(timer)
+  },
+  mouseleave:function(){
+    timer=setInterval(move,40)
+  }
+})// 상동
+function move(){
+  mleft -= 1
+  console.log(mleft)
+  $('.wave_text').css({'marginLeft':mleft})
+
+  if(mleft == -2453){
+    $('.wave_text>span').first().appendTo('.wave_text')
+  }else if(mleft <= -4904){
+    mleft = 2452
+  }
+}

@@ -11,7 +11,7 @@ body {
   background-position: bottom left, top right;
   background-repeat: no-repeat;
   background-attachment: fixed;
-  background-size: 500px;
+  background-size: 480px;
 }
 @font-face {
   /*약간 굵음*/
@@ -39,7 +39,7 @@ a:link{
 h1,h2,h3,h4,h5,h6,b{
   font-family: square_light;
 }
-p,li,a,span{
+p,li,a,span,em{
   font-family: square_regular;
 }
 button{
