@@ -24,24 +24,32 @@ $(document).scroll(function(){
     // $('.sect5 .more_btn').delay(1700).animate({'opacity':'1'},200)
   }
 })
-$('.preview div').click(function(){
-  var idx = $(this).index()
-  $('.main .content').stop().fadeOut()
-  $('.main .content').eq(idx).stop().fadeIn()
-  $('.preview div').removeClass('on')
+$('.preview a').click(function(e){
+  e.preventDefault()
+  var href = $(this).attr('href')
+  $('.main .content').fadeOut()
+  $(href).fadeIn()
+  $('.preview a').removeClass('on')
   $(this).addClass('on')
 })
+$('.sect4 .row1 a').click(function(){
+  $('.sect4 .main').removeClass('small')
+})
+$('.sect4 .row2 a').click(function(){
+  $('.sect4 .main').addClass('small')
+})
+
+
 $('.wave_text').on({
   mouseenter:function(){
     clearInterval(timer)
   },
   mouseleave:function(){
-    timer=setInterval(move,40)
+    timer=setInterval(moveT,40)
   }
 })// 상동
-function move(){
+function moveT(){
   mleft -= 1
-  console.log(mleft)
   $('.wave_text').css({'marginLeft':mleft})
 
   if(mleft == -2453){
