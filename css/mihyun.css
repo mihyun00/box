@@ -1,15 +1,17 @@
 /*sect2*/
-.sect2 {
+.sect2,
+.sect3 {
   width: 100%;
   height: 100vh;
   padding-top: 60px;
   position: relative;
 }
 /* sect2 상단 main txt */
-.sect2 h2 {
+.sect2 h2,
+.sect3 h2 {
   text-align: center;
   margin-top: 40px;
-  margin-bottom: 100px;
+  margin-bottom: 80px;
 }
 .sect2-tap {
   width: 100%;
@@ -54,7 +56,7 @@
   z-index: 999;
   opacity: 0;
 }
-.sect2-new{
+.sect2-new {
   opacity: 1;
 }
 .sect2-bookslide .swiper-container {
@@ -67,14 +69,8 @@
   height: 100%;
   text-align: center;
 }
-.sect2-bookslide .swiper-container .swiper-slide img{
+.sect2-bookslide .swiper-container .swiper-slide img {
   box-shadow: 6px 6px 6px rgba(0, 0, 0, 0.2);
-}
-.sect2-wrap .swiper-button-next {
-  right: 200px;
-}
-.sect2-wrap .swiper-button-prev {
-  left: 200px;
 }
 :root {
   --swiper-theme-color: #355444;
@@ -84,7 +80,6 @@
 .swiper-container-horizontal > .swiper-pagination-bullets {
   bottom: 1%;
 }
-/**/
 .sect2-book-txt {
   position: absolute;
   top: 45%;
@@ -119,146 +114,127 @@
   font-size: 18px;
 }
 /*sect3*/
-.sect3 {
-  width: 100%;
-  height: 100vh;
-  padding-top: 100px;
+.sect3 .sect3-1 {
+  position: absolute;
+  right: 0;
+  width: 90%;
+  height: 40%;
+  display: flex;
+  border: 2px solid #cce4d7;
+  border-right: 0;
 }
 .sect3 h2 {
-  text-align: center;
   margin-bottom: 50px;
 }
-/*about*/
-.sect3-about {
-  display: flex;
-  width: 90%;
-  height: 50%;
-  margin: auto;
-}
-.sect3-about > div {
-  width: 50%;
-  height: 80%;
-  display: flex;
-  align-items: center;
-}
-.sect3-about .about-logo {
-  justify-content: center;
-}
-.sect3-about .about-logo .logoWrap {
-  width: 70%;
-}
-.sect3-about .about-logo img {
-  width: 100%;
+.sect3-1 > div img,
+.sect3-txt-ring {
+  /* width: 100%; */
   height: 100%;
 }
-/*about-txt*/
-.sect3 .about-txt {
-  justify-content: flex-start;
-  margin-top: 200px;
-  height: 60%;
-  flex-direction: column;
-  justify-content: space-evenly;
-}
-.sect3 .about-txt h2,
-.sect3-txt h3 {
-  font-size: 25px;
-}
-.sect3 .about-txt h3 {
-  font-size: 35px;
-}
-.sect3 .about-txt p {
-  margin: auto;
-  width: 90%;
-  font-size: 16px;
-  line-height: 35px;
-}
-/*창비 역사*/
-.sect3-txt {
-  margin-top: -100px;
-  margin-left: 50px;
-}
-.sect3-txt > div {
+.sect3-1-txt {
   display: flex;
+  width: 65%;
+  margin: auto;
+  flex-direction: column;
+  text-align: center;
   align-items: center;
-  justify-content: center;
+}
+.sect3-1-txt h4 {
+  font-size: 18px;
   margin: 20px 0;
 }
-.sect3-txt .main-year {
-  font-size: 13px;
+.sect3-1-txt p {
+  margin: auto;
+  width: 80%;
+  line-height: 35px;
+  font-size: 18px;
 }
-.sect3-txt .main-year p {
-  margin: 0 5px;
-}
-.sect3-txt .main-year span {
-  width: 80px;
-  height: 1px;
-  background-color: lightgray;
-}
-/*연도 버튼*/
-.sect3-txt .year-btn {
-  width: 100%;
-}
-.sect3-txt .year-btn button.on {
-  background-color: #b2d2c3;
-}
-.sect3-txt .year-btn button {
-  width: 50%;
-  height: 35px;
-  color: #355444;
-  background-color: white;
-  border: 1px solid #cce4d7;
-  margin: 0 2px;
-}
-/* sect3 슬라이드 부분 */
-article.sect3-swiperSlide {
-  width: 100%;
-  height: 200px;
+.sect3-2 {
+  position: absolute;
+  width: 20%;
+  /* width: 90%; */
+  /* background-color: #cce4d7; */
+  height: 37%;
+  top: 48%;
+  left: 0;
+  cursor: pointer;
+  transition: 1s;
   overflow: hidden;
 }
-.sect3-swiper-container {
-  width: 100%;
-  height: 200px;
-}
-.sect3-swiper-container .swiper-wrapper .swiper-slide {
-  width: 20%;
-  height: 100%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: space-between;
-}
-.sect3-slide-txtBox {
+.sect3-2:hover {
   width: 90%;
-  height: 65%;
-  border: 5px solid #cce4d7;
-  border-top-right-radius: 50px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  padding: 0 10px;
-  background-color: white;
+  top: 58%;
+  background-color: #cce4d7;
 }
-.sect3-slide-icon {
+.sect3-2:hover .sect3-txt-ring{
+  display: none;
+}
+.sect3-2:hover .sect3-history-wrap{
+  opacity: 1;
+}
+.sect3-txt-ring {
+  animation: ringAni 20s linear infinite forwards;
+  display: block;
+  transition: .5s;
+}
+@keyframes ringAni {
+  0% {
+    transform: rotate(-360deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+/***********************************/
+.sect3-history-wrap {
+  opacity: 0;
+  width: 100%;
+  height: 100%;
+  transition: .5s;
+}
+.sect3-history-wrap .year-btn {
+  width: 100px;
+  height: 100px;
+  margin-top: 120px;
+  background-color: white;
+  position: relative;
+  left: 20px;
+}
+.year-btn button{
+  width: 100%;
+  position: absolute;
+  line-height: 100px;
+  font-size: 15px;
+  color: #355444;
+}
+.sect3-swiper-container{
+  position: absolute;
+  width: 1900px;
+  top: 40%;
+  left: 8%;
+}
+.sect3-01{
+  opacity: 0;
+}
+.sect3-swiper-container .swiper-slide{
+  text-align: center;
+  width: 300px !important;
+}
+.sect3-slide-year{
+  font-size: 14px;
+}
+.sect3-slide-txtBox{
+  border: 2px solid #fff;
+  padding: 10px;
+  font-size: 16px;
+}
+.sect3-slide-icon{
   width: 10px;
   height: 10px;
+  background-color: white;
+  margin:10px auto;
   border-radius: 50%;
-  background-color: #cce4d7;
 }
-.sect3-swiper-container .swiper-wrapper .sect3-name {
-  width: 150px !important;
-}
-.sect3-swiper-container .swiper-wrapper .sect3-name span {
-  width: 80px;
-  height: 80px;
-  margin: auto;
-  display: block;
-  color: white;
-  font-weight: bold;
-  text-align: center;
-  line-height: 80px;
-  background-color: #cce4d7;
-}
-
 /**********************media************************/
 
 @media screen and (max-width: 768px) {
@@ -266,65 +242,30 @@ article.sect3-swiperSlide {
   body {
     background-image: none;
   }
-  /*sect3*/
-  .sect3 {
-    padding-top: 50px;
-    height: 150vh;
-  }
-  .sect3-about {
-    flex-direction: column;
-    width: 100%;
-    height: 50%;
-  }
-  .sect3-about > div {
-    width: 100%;
-    height: 50%;
-  }
-  .sect3 .about-txt {
-    margin-top: 10px;
-  }
-  .sect3-txt {
-    margin: auto;
-    margin-left: 50%;
-    transform: translate(-50%);
-  }
-  article.sect3-swiperSlide {
+  /*sect2*/
+  .sect2-tap ul {
     width: 80%;
-    height: 31.5%;
-    margin: auto;
   }
-  .sect3-swiper-container {
-    width: 100%;
-    height: 100%;
-  }
-  .sect3-swiper-container .swiper-wrapper .swiper-slide {
+  .sect2-book-txt ul li {
+    padding-top: 100px;
     width: 80%;
-    margin: auto;
-    height: 98%;
-    flex-direction: unset;
-    justify-content: space-between;
-  }
-  .sect3-slide-txtBox {
-    width: 100%;
-    height: 100%;
-    background-image: unset;
-    font-size: 14px;
-    border: none;
-    border-bottom: 2px solid #cce4d7;
-  }
-  .sect3-swiper-container .swiper-wrapper .sect3-name {
-    margin: auto;
-  }
-  .sect3-swiper-container .swiper-wrapper .sect3-name span {
-    width: 50px;
-    height: 50px;
-    line-height: 50px;
-  }
-  .sect3-slide-year {
-    margin-right: 10px;
   }
 }
 @media screen and (max-width: 1024px) {
+  /*sect2*/
+  .sect2-bookslide .swiper-container {
+    width: 80%;
+  }
+  .sect2-book-txt {
+    top: 55%;
+    height: 40%;
+  }
 }
 @media screen and (min-width: 1024px) {
+  .sect2-wrap .swiper-button-next {
+    right: 200px;
+  }
+  .sect2-wrap .swiper-button-prev {
+    left: 200px;
+  }
 }
