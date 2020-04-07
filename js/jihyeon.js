@@ -36,12 +36,12 @@ $('.wave_text').on({
     clearInterval(timer)
   },
   mouseleave:function(){
-    timer=setInterval(move,40)
+    timer=setInterval(move1,40)
   }
 })// 상동
-function move(){
+function move1(){
   mleft -= 1
-  console.log(mleft)
+  //console.log(mleft)
   $('.wave_text').css({'marginLeft':mleft})
 
   if(mleft == -2453){
