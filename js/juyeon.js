@@ -5,15 +5,18 @@ $('section').on('mousewheel',function(event,delta){
       //alert('up')
       var prev=$(this).prev().offset().top
       $('header').slideUp(700,'easeOutExpo')
-      $('.top_button').fadeOut()
   }
   else if(delta<0){
       //alert('down')
       var next=$(this).next().offset().top
       $('header').slideDown(700,'easeOutExpo')
-      $('.top_button').fadeIn()
   }
   
+})
+
+//header li hover animation
+$('.h_nav li').mouseenter(function(){
+  $('.h_nav li a span').animate({})
 })
 
 //header mobile ver animation
@@ -61,9 +64,7 @@ var swiper = new Swiper(".sect1-swiper-container", {
 //section1 multislide
 $(".sect1_button a.next").click(function() {
   $(".sect1_slidewrap1").animate({ marginLeft: "-200%" }, function() {
-    $(".slide1")
-      .first()
-      .appendTo(".sect1_slidewrap1")
+    $(".slide1").first().appendTo(".sect1_slidewrap1")
     $(".sect1_slidewrap1").css({ marginLeft: "-100%" })
   })
 
@@ -91,23 +92,30 @@ $(".sect1_button a.prev").click(function() {
   })
 })
 
-var mleft = 0
-var timer = setInterval(move, 1000)
+//foooter banner
 
-$(".flow_container").on({
-  mouseenter: function() {
-    clearInterval(timer)
-  },
-  mouseleave: function() {
-    timer = setInterval(move, 1000)
-  }
+var mleft = -120
+var timer = setInterval(f_move, 40)
+
+$('.flowwrap').mouseenter(function(){
+  clearInterval(timer)
+})
+$('.flowwrap').mouseleave(function(){
+ 
+  timer = setInterval(f_move, 40)
+
 })
 
-function move() {
-  mleft -= 2
+function f_move(){
 
+  mleft -= 2
+  $('.flowwrap').css({'marginLeft':mleft})
+  if (mleft == -122) {
+   $('.flowwrap li').first().appendTo('.flowwrap')
+} 
+  else if (mleft <= -240){
  
- $('.flowwrap img').first().appendTo('.flowwrap')
- 
-    
+    console.log(mleft)
+    mleft = -120
+  }
 }
