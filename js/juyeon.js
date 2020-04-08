@@ -4,28 +4,34 @@ $('section').on('mousewheel',function(event,delta){
   if(delta>0){
       //alert('up')
       var prev=$(this).prev().offset().top
-      $('header').slideUp(700,'easeOutExpo')
+      $('header').slideDown(700,'easeOutExpo')
   }
   else if(delta<0){
       //alert('down')
       var next=$(this).next().offset().top
-      $('header').slideDown(700,'easeOutExpo')
+      $('header').slideUp(700,'easeOutExpo')
   }
   
 })
 
-//header li hover animation
-$('.h_nav li').mouseenter(function(){
-  $('.h_nav li a span').animate({})
-})
+// nav li click scrl effect
 
-//header mobile ver animation
-$("header nav li a").click(function(e) {
+$('header nav li a, .top_button').click(function(e) {
   e.preventDefault()
   var href = $(this).attr("href")
   var scrl = $(href).offset().top
   $("html,body").animate({ scrollTop: scrl })
 })
+
+
+
+//header li hover animation
+$('.h_nav li a').click(function(){
+  $('.h_nav li span').removeClass('line')
+  $(this).next('span').addClass('line')
+})
+
+
 
 //section1 header menu mobile ver
 var sw = 1
@@ -62,55 +68,55 @@ var swiper = new Swiper(".sect1-swiper-container", {
 })
 
 //section1 multislide
-$(".sect1_button a.next").click(function() {
-  $(".sect1_slidewrap1").animate({ marginLeft: "-200%" }, function() {
-    $(".slide1").first().appendTo(".sect1_slidewrap1")
-    $(".sect1_slidewrap1").css({ marginLeft: "-100%" })
-  })
-
-  $(".sect1_slidewrap2").animate({ marginTop: "-158%" }, function() {
-    $(".sect1_slidewrap2 div")
-      .first()
-      .appendTo(".sect1_slidewrap2")
-    $(".sect1_slidewrap2").css({ marginTop: "-79%" })
-  })
-})
-
-$(".sect1_button a.prev").click(function() {
-  $(".sect1_slidewrap1").animate({ marginLeft: "0px" }, function() {
-    $(".slide1")
-      .last()
-      .prependTo(".sect1_slidewrap1")
-    $(".sect1_slidewrap1").css({ marginLeft: "-100%" })
-  })
-
-  $(".sect1_slidewrap2").animate({ marginTop: "0px" }, function() {
-    $(".slide2")
-      .last()
-      .prependTo(".sect1_slidewrap2")
-    $(".sect1_slidewrap2").css({ marginTop: "-79%" })
-  })
-})
+ $(".sect1_button a.next").click(function() {
+   $(".sect1_slidewrap1").animate({ marginLeft: "-200%" }, function() {
+     $(".slide1").first().appendTo(".sect1_slidewrap1")
+     $(".sect1_slidewrap1").css({ marginLeft: "-100%" })
+   })
+ 
+   $(".sect1_slidewrap2").animate({ marginTop: "-132%" }, function() {
+     $(".sect1_slidewrap2 div")
+       .first()
+       .appendTo(".sect1_slidewrap2")
+     $(".sect1_slidewrap2").css({ marginTop: "-66%" })
+   })
+ })
+ 
+ $(".sect1_button a.prev").click(function() {
+   $(".sect1_slidewrap1").animate({ marginLeft: "0px" }, function() {
+     $(".slide1")
+       .last()
+       .prependTo(".sect1_slidewrap1")
+     $(".sect1_slidewrap1").css({ marginLeft: "-100%" })
+   })
+ 
+   $(".sect1_slidewrap2").animate({ marginTop: "0px" }, function() {
+     $(".slide2")
+       .last()
+       .prependTo(".sect1_slidewrap2")
+     $(".sect1_slidewrap2").css({ marginTop: "-66%" })
+   })
+ })
 
 //foooter banner
 
 var mleft = -120
-var timer = setInterval(f_move, 40)
+var timer = setInterval(f_move, 70)
 
 $('.flowwrap').mouseenter(function(){
   clearInterval(timer)
 })
 $('.flowwrap').mouseleave(function(){
  
-  timer = setInterval(f_move, 40)
+  timer = setInterval(f_move, 70)
 
 })
 
 function f_move(){
 
-  mleft -= 2
+  mleft -= 1
   $('.flowwrap').css({'marginLeft':mleft})
-  if (mleft == -122) {
+  if (mleft == -121) {
    $('.flowwrap li').first().appendTo('.flowwrap')
 } 
   else if (mleft <= -240){
