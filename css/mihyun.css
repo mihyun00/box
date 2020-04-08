@@ -7,8 +7,7 @@
   position: relative;
 }
 /* sect2 상단 main txt */
-.sect2 h2,
-.sect3 h2 {
+.sect2 h2 {
   text-align: center;
   margin-top: 40px;
   margin-bottom: 80px;
@@ -114,126 +113,82 @@
   font-size: 18px;
 }
 /*sect3*/
-.sect3 .sect3-1 {
-  position: absolute;
-  right: 0;
-  width: 90%;
-  height: 40%;
-  display: flex;
-  border: 2px solid #cce4d7;
-  border-right: 0;
-}
 .sect3 h2 {
-  margin-bottom: 50px;
-}
-.sect3-1 > div img,
-.sect3-txt-ring {
-  /* width: 100%; */
-  height: 100%;
-}
-.sect3-1-txt {
-  display: flex;
-  width: 65%;
-  margin: auto;
-  flex-direction: column;
-  text-align: center;
-  align-items: center;
-}
-.sect3-1-txt h4 {
-  font-size: 18px;
-  margin: 20px 0;
-}
-.sect3-1-txt p {
-  margin: auto;
-  width: 80%;
-  line-height: 35px;
-  font-size: 18px;
-}
-.sect3-2 {
   position: absolute;
-  width: 20%;
-  /* width: 90%; */
-  /* background-color: #cce4d7; */
-  height: 37%;
-  top: 48%;
-  left: 0;
-  cursor: pointer;
-  transition: 1s;
+  top: 100px;
+  left: 50%;
+  transform: translate(-50%);
+}
+.sect3-1 {
+  position: absolute;
+  width: 80%;
+  top: 250px;
+  left: 50%;
+  transform: translate(-50%);
+  text-align: center;
+}
+.sect3-1 p {
+  font-size: 18px;
+  width: 50%;
+  margin: 50px auto;
+}
+/*history*/
+.sect3-artWrap {
+  width: 100%;
+  height: 100%;
+  position: relative;
   overflow: hidden;
 }
-.sect3-2:hover {
-  width: 90%;
-  top: 58%;
-  background-color: #cce4d7;
-}
-.sect3-2:hover .sect3-txt-ring{
-  display: none;
-}
-.sect3-2:hover .sect3-history-wrap{
-  opacity: 1;
-}
-.sect3-txt-ring {
-  animation: ringAni 20s linear infinite forwards;
-  display: block;
-  transition: .5s;
-}
-@keyframes ringAni {
-  0% {
-    transform: rotate(-360deg);
-  }
-  100% {
-    transform: rotate(360deg);
-  }
-}
-/***********************************/
-.sect3-history-wrap {
-  opacity: 0;
+.sect3-artWrap > div {
+  position: absolute;
+  top: 0;
   width: 100%;
   height: 100%;
-  transition: .5s;
+  display: flex;
+  align-items: flex-end;
 }
-.sect3-history-wrap .year-btn {
-  width: 100px;
-  height: 100px;
-  margin-top: 120px;
-  background-color: white;
-  position: relative;
-  left: 20px;
-}
-.year-btn button{
+.sect3-hoverWrap {
   width: 100%;
-  position: absolute;
-  line-height: 100px;
-  font-size: 15px;
-  color: #355444;
+  height: 30%;
+  transition: 0.5s;
+  margin-bottom: 50px;
+  background-color: #cce4d7;
+  cursor: pointer;
 }
-.sect3-swiper-container{
-  position: absolute;
-  width: 1900px;
-  top: 40%;
-  left: 8%;
+.sect3-hoverWrap.on {
+  background-color: #b2d2c3;
 }
-.sect3-01{
+.sect3-2 {
+  left: -50%;
+}
+.sect3-3 {
+  right: -50%;
+}
+.sect3-close {
+  width: 3.3%;
+  height: 7%;
+  position: absolute;
+  top: 15%;
+  cursor: pointer;
+}
+.sect3-2 .sect3-close {
+  left: 40px;
+}
+.sect3-3 .sect3-close {
+  right: 40px;
+}
+.sect3-close img {
+  height: 100%;
+}
+/*********************************/
+.sect3-swiper-container {
   opacity: 0;
+  top: 10%;
+  height: 80%;
+  transition: 0.5s;
 }
-.sect3-swiper-container .swiper-slide{
-  text-align: center;
-  width: 300px !important;
-}
-.sect3-slide-year{
-  font-size: 14px;
-}
-.sect3-slide-txtBox{
-  border: 2px solid #fff;
-  padding: 10px;
-  font-size: 16px;
-}
-.sect3-slide-icon{
-  width: 10px;
-  height: 10px;
+.sect3-swiper-container .swiper-slide {
   background-color: white;
-  margin:10px auto;
-  border-radius: 50%;
 }
 /**********************media************************/
 

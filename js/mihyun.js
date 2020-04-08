@@ -141,21 +141,36 @@ $(".sect2-swiper-container .swiper-slide a").click(function (e) {
     .animate({ marginTop: "16%", opacity: "0" })
   $(href).stop().css({ display: "block" }).animate({ marginTop: "14%", opacity: "1" })
 })
-
-var btn = 0 // 버튼 체크
-$(".year-btn button").click(function () {
-  btn = !btn //버튼을 누를 때 반대로 변경한다.
-  if (btn) {
-    $(".sect3-02").css({opacity:'0'}).hide()
-    $(".sect3-01").css({opacity:'1'}).show()
-    $("button").text("1960~1990")
-  } else {
-    $(".sect3-01").css({opacity:'0'}).hide()
-    $(".sect3-02").css({opacity:'1'}).show()
-    $("button").text("2000~2020")
-  }
+//sect3///////////////////////////////////
+$(".sect3-hoverWrap").mouseenter(function () {
+  $(".sect3-hoverWrap").removeClass("on")
+  $(this).addClass("on")
+})
+///////////////////////////////////
+$(".sec3-2-hover").click(function () {
+  $(".sect3-2").animate({ left: "0%" }, 500, function () {
+    $(".sect3-01").css({ opacity: "1" })
+  })
+  $(".sect3-3").animate({ right: "-100%" }, 500)
 })
 
+$(".sec3-3-hover").click(function () {
+  $(".sect3-3").animate({ right: "0%" }, 500, function () {
+    $(".sect3-02").css({ opacity: "1" })
+  })
+  $(".sect3-2").animate({ left: "-100%" }, 500)
+})
+//////////////////////////////////////
+$(".sect3-2 .sect3-close").click(function () {
+  $(".sect3-01").css({ opacity: "0" })
+  $(".sect3-2").animate({ left: "-50%" }, 500)
+  $(".sect3-3").animate({ right: "-50%" }, 500)
+})
+$(".sect3-3 .sect3-close").click(function () {
+  $(".sect3-02").css({ opacity: "0" })
+  $(".sect3-3").animate({ right: "-50%" }, 500)
+  $(".sect3-2").animate({ left: "-50%" }, 500)
+})
 //sect3 swiper
 
 var swiper = new Swiper(".sect3-01", {
