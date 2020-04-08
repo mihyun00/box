@@ -1,15 +1,17 @@
 /* section4 시작---------------------- */
 .sect4{
-  width: 100%; height: 300vh;
+  width: 100%;
   position: relative;
   background-size: cover;
-  padding-top: 150px;
+  padding: 150px 0 150px;
 }
 .sect4 .title{
-  height: 200px;
   font-family: square_light;
 }
-.sect4 .wave_text_wrap{
+.sect4 .title2{
+  padding-bottom: 80px;
+}
+/* .sect4 .wave_text_wrap{
   position: absolute;
   top: 245px;
   width: 100%; overflow-x: hidden;
@@ -22,10 +24,46 @@
   font-size: 125px;
   color: rgba(178, 210, 195, .5);
   margin-right: 30px;
+} */
+.write{
+  max-width: 1240px; height: 750px;
+  margin: 80px auto 150px;
+  position: relative;
+}
+.writePhoto{
+  width: 50%;
+}
+.writePhoto img{
+  width: 100%;
+}
+.writeInfo{
+  width: 60%;
+  background: #fff;
+  padding: 50px;
+  position: absolute;
+  top: 180px; right: 0;
+  border: 3px solid rgba(178, 210, 195, .3);
+}
+.writeInfo h3{
+  font-size: 28px;
+}
+.writeInfo em{
+  display: block;
+  font-size: 20px;
+  padding-bottom: 15px;
+}
+.writeInfo p{
+  font-size: 18px;
+}
+.writeInfo p span{
+  display: block;
+  font-size: 16px;
+  padding-top: 10px;
 }
 .sect4 .contents{
   max-width: 1240px;
   margin: 0 auto;
+  overflow: hidden;
 }
 .sect4 .main.fl{
   width: 50%; height: 650px;
@@ -62,16 +100,17 @@
 .sect4 .preview a{
   display: block; height: 100%;
   border: 3px solid rgba(178, 210, 195, .3);
+  text-align: center;
   font-size: 24px;
   background: #fff;
   display: flex;
   justify-content: center;
   align-items: center;
-  background: url(../img/preview_bg.png) no-repeat bottom right #fff;
+  background: url(../img/preview_off.png) no-repeat bottom right #fff;
   background-size: 30px;
 }
 .sect4 .preview a.on{
-  background: url(../img/preview_bg_on.png) no-repeat bottom right #fff;
+  background: url(../img/preview_on.png) no-repeat bottom right #fff;
   background-size: 30px;
 }
 .sect4 .preview .row1{
@@ -92,62 +131,39 @@
   width: calc(33.333% - 12px);
   margin: 0;
 }
-.write{
-  max-width: 1240px; height: 1200px;
-  margin: 120px auto 0;
-  border: 1px solid #000;
-}
-.writePhoto{
-  width: 50%;
-}
-.writePhoto img{
-  width: 100%;
-}
-.writeInfo{
-  width: 50%; height: 500px;
-}
-.writeInfo h3{
-  font-size: 28px;
-}
-.writeInfo em{
-  display: block;
-  font-size: 20px;
-  padding-bottom: 15px;
-}
-.writeInfo p{
-  font-size: 18px;
-}
-.writeInfo p span{
-  display: block;
-  font-size: 16px;
-  padding-top: 10px;
-}
 /* section5 시작-------------------------- */
 .sect5 {
   width: 100%;
-  min-height: 100vh;
-  background: url(../img/sect5_bg.png) no-repeat;
+  min-height: 105vh;
   position: relative;
+  padding: 60px 0 0;
 }
 .sect5 .title {
   max-width: 1240px;
   padding: 70px 0;
-  text-align: left;
-  opacity: 0;
   margin: auto;
+  opacity: 0;
 }
 .sect5 .wrap {
-  max-width: 1240px;
+  max-width: 1240px; height: 500px;
   margin: auto;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  align-items: center;
+  position: relative;
 }
 .sect5 .comm_content {
   max-width: 300px;
-  margin-top: 100px; opacity: 0;
+  position: absolute;
   cursor: pointer;
+  top: 50px;
+  opacity: 0;
+}
+.sect5 .comm2{
+  left: 313px;
+}
+.sect5 .comm3{
+  left: 626px;
+}
+.sect5 .comm4{
+  left: 939px;
 }
 .sect5 .comm_img {
   max-width: 300px;
@@ -177,14 +193,12 @@
   width: 180px;
   padding: 15px 0;
   border: 1px solid #d7d7d7;
-  margin: auto;
+  margin: 0 auto;
   text-align: center;
-  margin-top: 80px;
   font-size: 18px;
   font-family: square_black;
   color: #999;
   transition: .3s;
-  opacity: 0;
 }
 .sect5 .more_btn:hover{
   color: #365445;
@@ -192,11 +206,42 @@
 /* section5 끝-------------------------- */
 /* 모바일 */
 @media screen and (max-width: 768px) {
+  .sect4{
+    padding: 150px 0 100px;
+  }
   .sect4 .title{
-    height: 160px;
     font-size: 30px;
   }
-  .sect4 .wave_text_wrap{
+  .sect4 .title2{
+    padding-bottom: 40px;
+  }
+  .write{
+    margin: 40px auto 100px;
+    height: auto;
+  }
+  .writePhoto{
+    width: 100%;
+    padding-bottom: 10px;
+  }
+  .writeInfo{
+    width: 95%;
+    position: static;
+    margin: auto;
+    padding: 50px 30px;
+  }
+  .writeInfo h3{
+    font-size: 24px;
+  }
+  .writeInfo em{
+    font-size: 17px;
+  }
+  .writeInfo p{
+    font-size: 15px;
+  }
+  .writeInfo p span{
+    font-size: 13px;
+  }
+  /* .sect4 .wave_text_wrap{
     top: 220px;
   }
   .sect4 .wave_text{
@@ -204,7 +249,7 @@
   }
   .sect4 .wave_text span{
     font-size: 80px;
-  }
+  } */
   .sect4 .main.fl{
     width: 95%; height: 590px;
     float: none;
@@ -235,11 +280,11 @@
   }
   .sect4 .preview a{
     font-size: 18px;
-    background: url(../img/preview_bg.png) no-repeat bottom right;
+    background: url(../img/preview_off.png) no-repeat bottom right;
     background-size: 23px;
   }
   .sect4 .preview a.on{
-    background: url(../img/preview_bg_on.png) no-repeat bottom right;
+    background: url(../img/preview_on.png) no-repeat bottom right;
     background-size: 23px;
   }
   .sect4 .preview .row1{
@@ -257,28 +302,32 @@
     width: calc(33.333% - 10px);
     margin: 0;
   }
-
-
-
-
-  /* ------------------------------- */
+  /* sect5 mobile---------------------------------- */
   .sect5{
     padding: 0 15px;
-    min-height: 110vh;
   }
   .sect5 .title{
     font-size: 30px;
     padding: 35px 25px;
-    text-align: center;
   }
-  .sect5 .title_bg{
-    display: none;
+  .sect5 .wrap {
+    height: 1700px;
   }
-  .sect5 .wrap{
-    flex-direction: column;
+  .sect5 .comm_content {
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  .sect5 .comm2{
+    top: 480px;
+  }
+  .sect5 .comm3{
+    top: 910px;
+  }
+  .sect5 .comm4{
+    top: 1340px;
   }
   .sect5 .comm_content{
-    width: 70%;
+    width: 100%;
   }
   .sect5 .comm_text b {
     display: block;
@@ -298,29 +347,104 @@
     margin-bottom: 120px;
   }
 }
-footer{
-  position: relative;
-}
 /* 태블릿 */
 @media screen and (min-width: 768px) and (max-width: 1024px) {
+  .sect4{
+    padding: 150px 0 80px;
+  }
+  .sect4 .title{
+    font-size: 30px;
+  }
+  .sect4 .title2{
+    padding-bottom: 50px;
+  }
+  .write{
+    height: 680px;
+  }
+  .writeInfo{
+    padding: 50px 30px;
+    right: 15px;
+  }
+  .writeInfo h3{
+    font-size: 23px;
+  }
+  .writeInfo em{
+    font-size: 18px;
+  }
+  .writeInfo p{
+    font-size: 16px;
+  }
+  .writeInfo p span{
+    font-size: 16px;
+  }
+  .sect4 .main.fl{
+    width: 60%; height: 550px;
+    margin-right: 15px;
+  }
+  .sect4 .main .content h2{
+    font-size: 23px;
+  }
+  .sect4 .main .content em{
+    font-size: 18px;
+  }
+  .sect4 .main .content p{
+    font-size: 16px;
+    line-height: 28px;
+  }
+  .sect4 .preview{
+    width: calc(40% - 15px); height: 550px;
+  }
+  .sect4 .preview a{
+    font-size: 18px;
+    padding: 15px;
+  }
+  .sect4 .preview .row1{
+    width: 100%; height: calc(50% - 10px);
+    margin-bottom: 15px;
+  }
+  .sect4 .row1 a{
+    width: calc(50% - 7px);
+  }
+  .sect4 .preview .row2{
+    width: 100%; height: calc(50% - 7px);
+  }
+  .sect4 .row2 a{
+    width: calc(33.333% - 10px);
+    margin-right: 15px;
+  }
+  .sect4 .row2 a:last-child{
+    width: calc(33.333% - 10px);
+  }
+  /* sect5 tablet--------------------------------- */
   .sect5{
     padding: 0 15px;
-    min-height: 80vh;
-    background: none;
+    min-height: 85vh;
   }
   .sect5 .title{
     font-size: 30px;
-    padding: 35px 25px;
+    padding: 45px 25px;
   }
-  .sect5 .title_bg{
-    position: absolute;
-    width: 25px; height: 25px;
-    top: 20px; left: 15px;
-    background: #B2D2C3;
-    opacity: 0;
+  .sect5 .title {
+    max-width: 1240px;
+    padding: 70px 0;
+    margin: auto;
+  }
+  .sect5 .wrap {
+    max-width: 1240px; height: 400px;
+    margin: auto;
+    position: relative;
   }
   .sect5 .comm_content{
     width: 24%;
+  }
+  .sect5 .comm2{
+    left: 25.5%
+  }
+  .sect5 .comm3{
+    left: 51%;
+  }
+  .sect5 .comm4{
+    left: 76.5%;
   }
   .sect5 .comm_text b {
     display: block;
@@ -333,9 +457,6 @@ footer{
   }
   .sect5 .more_btn {
     width: 120px;
-    margin: auto;
-    text-align: center;
-    margin-top: 40px;
     font-size: 15px;
   }
 }
