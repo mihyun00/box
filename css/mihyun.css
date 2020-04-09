@@ -5,11 +5,12 @@
   height: 100vh;
   padding-top: 60px;
   position: relative;
+  overflow: hidden;
 }
 /* sect2 상단 main txt */
 .sect2 h2 {
   text-align: center;
-  margin-top: 40px;
+  margin-top: 50px;
   margin-bottom: 80px;
 }
 .sect2-tap {
@@ -113,82 +114,59 @@
   font-size: 18px;
 }
 /*sect3*/
-.sect3 h2 {
+.sect3-title {
   position: absolute;
-  top: 100px;
+  top: 110px;
   left: 50%;
   transform: translate(-50%);
 }
-.sect3-1 {
-  position: absolute;
-  width: 80%;
-  top: 250px;
-  left: 50%;
-  transform: translate(-50%);
-  text-align: center;
-}
-.sect3-1 p {
-  font-size: 18px;
-  width: 50%;
-  margin: 50px auto;
-}
-/*history*/
-.sect3-artWrap {
-  width: 100%;
-  height: 100%;
-  position: relative;
-  overflow: hidden;
-}
-.sect3-artWrap > div {
-  position: absolute;
-  top: 0;
+.sect3-art {
   width: 100%;
   height: 100%;
   display: flex;
-  align-items: flex-end;
 }
-.sect3-hoverWrap {
-  width: 100%;
-  height: 30%;
-  transition: 0.5s;
-  margin-bottom: 50px;
-  background-color: #cce4d7;
-  cursor: pointer;
-}
-.sect3-hoverWrap.on {
-  background-color: #b2d2c3;
-}
-.sect3-2 {
-  left: -50%;
-}
-.sect3-3 {
-  right: -50%;
-}
-.sect3-close {
-  width: 3.3%;
-  height: 7%;
-  position: absolute;
-  top: 15%;
-  cursor: pointer;
-}
-.sect3-2 .sect3-close {
-  left: 40px;
-}
-.sect3-3 .sect3-close {
-  right: 40px;
-}
-.sect3-close img {
+.sect3-title-box {
+  width: 35%;
   height: 100%;
+  text-align: center;
+  /* border: 1px solid #000; */
+  position: relative;
+  padding: 100px 10px 10px 10px;
 }
-/*********************************/
-.sect3-swiper-container {
-  opacity: 0;
-  top: 10%;
-  height: 80%;
-  transition: 0.5s;
+.sect3-title-box h3 {
+  width: 100%;
 }
-.sect3-swiper-container .swiper-slide {
-  background-color: white;
+.sect3-title-box h3 img {
+  width: 100%;
+}
+.sect3-title-box h4 {
+  font-size: 18px;
+  margin: 20px 0 60px 0;
+}
+.sect3-title-box p {
+  width: 95%;
+  margin: auto;
+  line-height: 30px;
+  font-size: 18px;
+}
+.sect3-next-btn {
+  width: 40%;
+  position: absolute;
+  top: 80%;
+  right: -10%;
+  background-image: url(../img/sect3-lb.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: bottom;
+  text-align: left;
+  padding-bottom: 10px;
+  cursor: pointer;
+}
+/******************************************/
+.sect3-slide-wrap{
+  width: 65%;
+  height: 100%;
+  background-color: yellowgreen;
 }
 /**********************media************************/
 
@@ -214,6 +192,10 @@
   .sect2-book-txt {
     top: 55%;
     height: 40%;
+  }
+  /*sect3*/
+  .sect3-1 p {
+    width: 100%;
   }
 }
 @media screen and (min-width: 1024px) {
