@@ -152,7 +152,7 @@
 .sect3-next-btn {
   width: 40%;
   position: absolute;
-  top: 80%;
+  top:15%;
   right: -10%;
   background-image: url(../img/sect3-lb.png);
   background-size: contain;
