@@ -59,7 +59,22 @@ $('.sect4 .row1 a').click(function(){
 $('.sect4 .row2 a').click(function(){
   $('.sect4 .main').addClass('small')
 })
-
+$('.preview a').mouseenter(function(){
+  var th = $(this)
+  $(this).find('.line1').animate({width:'100%'},function(){
+    $(th).find('.line2').animate({height:'100%'},function(){
+      $(th).find('.line3').animate({width:'100%'},function(){
+        $(th).find('.line4').animate({height:'100%'})
+      })
+    })
+  })
+})
+$('.preview a').mouseleave(function(){
+  $(this).find('.line1').animate({width:'0'})
+  $(this).find('.line2').animate({height:'0'})
+  $(this).find('.line3').animate({width:'0'})
+  $(this).find('.line4').animate({height:'0'})
+})
 
 // $('.wave_text').on({
 //   mouseenter:function(){

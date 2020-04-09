@@ -34,7 +34,7 @@
   width: 50%;
 }
 .writePhoto img{
-  width: 100%;
+  width: 620px;
 }
 .writeInfo{
   width: 60%;
@@ -108,6 +108,28 @@
   align-items: center;
   background: url(../img/preview_off.png) no-repeat bottom right #fff;
   background-size: 30px;
+  position: relative;
+  transition: .5s;
+}
+.sect4 .preview a span.line{
+  position: absolute;
+  background: #365445;
+}
+.sect4 .preview a span.line1{
+  width: 0; height: 5px;
+  top: 0; left: 0;
+}
+.sect4 .preview a span.line2{
+  width: 5px; height: 0;
+  top: 0; right: 0;
+}
+.sect4 .preview a span.line3{
+  width: 0; height: 5px;
+  bottom: 0; right: 0;
+}
+.sect4 .preview a span.line4{
+  width: 5px; height: 0;
+  bottom: 0; left: 0;
 }
 .sect4 .preview a.on{
   background: url(../img/preview_on.png) no-repeat bottom right #fff;
@@ -136,7 +158,7 @@
   width: 100%;
   min-height: 105vh;
   position: relative;
-  padding: 60px 0 0;
+  padding: 80px 0 0;
 }
 .sect5 .title {
   max-width: 1240px;
@@ -207,7 +229,7 @@
 /* 모바일 */
 @media screen and (max-width: 768px) {
   .sect4{
-    padding: 150px 0 100px;
+    padding: 150px 0 20px;
   }
   .sect4 .title{
     font-size: 30px;
@@ -220,8 +242,14 @@
     height: auto;
   }
   .writePhoto{
+    width: 100%; height: 400px;
+    overflow: hidden;
+    margin-bottom: 15px;
+  }
+  .writePhoto img{
     width: 100%;
-    padding-bottom: 10px;
+    display: block;
+    margin-top: -200px;
   }
   .writeInfo{
     width: 95%;
@@ -304,7 +332,7 @@
   }
   /* sect5 mobile---------------------------------- */
   .sect5{
-    padding: 0 15px;
+    padding: 100px 15px 0;
   }
   .sect5 .title{
     font-size: 30px;
@@ -359,7 +387,7 @@
     padding-bottom: 50px;
   }
   .write{
-    height: 680px;
+    height: 750px;
   }
   .writeInfo{
     padding: 50px 30px;
@@ -376,6 +404,9 @@
   }
   .writeInfo p span{
     font-size: 16px;
+  }
+  .sect4 .contents{
+    padding: 0 15px;
   }
   .sect4 .main.fl{
     width: 60%; height: 550px;
