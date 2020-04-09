@@ -141,81 +141,72 @@ $(".sect2-swiper-container .swiper-slide a").click(function (e) {
     .animate({ marginTop: "16%", opacity: "0" })
   $(href).stop().css({ display: "block" }).animate({ marginTop: "14%", opacity: "1" })
 })
-//sect3///////////////////////////////////
-$(".sect3-hoverWrap").mouseenter(function () {
-  $(".sect3-hoverWrap").removeClass("on")
-  $(this).addClass("on")
-})
-///////////////////////////////////
-$(".sec3-2-hover").click(function () {
-  $(".sect3-2").animate({ left: "0%" }, 500, function () {
-    $(".sect3-01").css({ opacity: "1" })
-  })
-  $(".sect3-3").animate({ right: "-100%" }, 500)
-})
+// sect3
 
-$(".sec3-3-hover").click(function () {
-  $(".sect3-3").animate({ right: "0%" }, 500, function () {
-    $(".sect3-02").css({ opacity: "1" })
-  })
-  $(".sect3-2").animate({ left: "-100%" }, 500)
-})
-//////////////////////////////////////
-$(".sect3-2 .sect3-close").click(function () {
-  $(".sect3-01").css({ opacity: "0" })
-  $(".sect3-2").animate({ left: "-50%" }, 500)
-  $(".sect3-3").animate({ right: "-50%" }, 500)
-})
-$(".sect3-3 .sect3-close").click(function () {
-  $(".sect3-02").css({ opacity: "0" })
-  $(".sect3-3").animate({ right: "-50%" }, 500)
-  $(".sect3-2").animate({ left: "-50%" }, 500)
-})
-//sect3 swiper
+// setInterval(function() {
+//   $(".sect3-wraper01").animate({ marginLeft: -700 }, function() {
+//     $(".sect3-wraper01 div")
+//       .first()
+//       .appendTo(".sect3-wraper01")
+//     $(".sect3-wraper01 ").css({ marginLeft: -350 })
+//   })
+// }, 3000);
 
-var swiper = new Swiper(".sect3-01", {
-  slidesPerView: 5,
-  mousewheel: true,
-  slidesPerView: "auto",
-  spaceBetween: 20,
-  freeMode: true,
-  breakpoints: {
-    200: {
-      slidesPerView: 4,
-      direction: "vertical",
-    },
-    760: {
-      slidesPerView: 4,
-      direction: "horizontal",
-    },
-    1024: {
-      slidesPerView: 5,
-      direction: "horizontal",
-    },
-  },
+//////////////////////////////////////////////////
+var SNT = 0
+$(".sect3-next-btn").click(function () {
+  SNT = !SNT
+  if (SNT) {
+    $(".sect3-next-btn p").text("1966~1999")
+    $(".sect3-wraper01").css({ display: "none" })
+    $(".sect3-wraper02").css({ display: "flex" })
+  } else {
+    $(".sect3-next-btn p").text("2000~2020")
+    $(".sect3-wraper02").css({ display: "none" })
+    $(".sect3-wraper01").css({ display: "flex" })
+  }
 })
+////////////////////////////////////////////////////
 
-var swiper = new Swiper(".sect3-02", {
-  slidesPerView: 5,
-  mousewheel: true,
-  slidesPerView: "auto",
-  spaceBetween: 20,
-  freeMode: true,
-  breakpoints: {
-    200: {
-      slidesPerView: 4,
-      direction: "vertical",
-    },
-    760: {
-      slidesPerView: 4,
-      direction: "horizontal",
-    },
-    1024: {
-      slidesPerView: 5,
-      direction: "horizontal",
-    },
-  },
-})
+var SML = -300
+var TI = setInterval(move, 60)
+var SPL = -300
+var TII = setInterval(move, 60)
+
+// $(".sect3-wraper01 .S3-W01-slide").mouseenter(function () {
+//   clearInterval(TI)
+// })
+// $(".sect3-wraper01 .S3-W01-slide").mouseleave(function () {
+//   TI = setInterval(move, 60)
+// })
+// $(".sect3-wraper02 .S3-W01-slide").mouseenter(function () {
+//   clearInterval(TII)
+// })
+// $(".sect3-wraper02 .S3-W01-slide").mouseleave(function () {
+//   TII = setInterval(move, 60)
+// })
+
+function move() {
+  SML -= 2
+  $(".sect3-wraper01").css({ "margin-left": SML })
+  // console.log(mleft)
+  if (SML == -302) {
+    $(".sect3-wraper01 div").first().appendTo(".sect3-wraper01")
+  } else if (SML <= -600) {
+    SML = -300
+  }
+
+  SPL -= 2
+  $(".sect3-wraper02").css({ "margin-left": SPL })
+  // console.log(mleft)
+  if (SPL == -302) {
+    $(".sect3-wraper02 div").first().appendTo(".sect3-wraper02")
+  } else if (SPL <= -600) {
+    SPL = -300
+  }
+}
+
+///////////////////////////////////////////
 
 //스크롤 이벤트
 

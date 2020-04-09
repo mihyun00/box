@@ -13,7 +13,7 @@ var swiper = new Swiper('.sect4_swiper-container', {
 });
 $(document).scroll(function(){
   var scrT = $(this).scrollTop()
-  console.log(scrT)
+  // console.log(scrT)
   if (matchMedia("screen and (min-width: 1025px)").matches) {
     // 1024px 이상에서 사용할 JavaScript
     if(scrT>=4400){
