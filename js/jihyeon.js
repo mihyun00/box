@@ -13,15 +13,21 @@ var swiper = new Swiper('.sect4_swiper-container', {
 });
 $(document).scroll(function(){
   var scrT = $(this).scrollTop()
-  // console.log(scrT)
-  if (matchMedia("screen and (min-width: 1025px)").matches) {
-    // 1024px 이상에서 사용할 JavaScript
-    if(scrT>=4400){
+  console.log(scrT)
+  // 1024px 이상에서 사용할 JavaScript
+    if (matchMedia("screen and (min-width: 1025px)"). matches) {
+      if(scrT>=4400){
       $('.sect5 .title').animate({opacity:'1'},500)
       $('.sect5 .comm1').delay(500).animate({opacity:'1',top:'0'},700)
       $('.sect5 .comm2').delay(800).animate({opacity:'1',top:'0'},700)
       $('.sect5 .comm3').delay(1100).animate({opacity:'1',top:'0'},700)
       $('.sect5 .comm4').delay(1400).animate({opacity:'1',top:'0'},700)
+    } else if(scrT>=2500){
+      $('.titleBg').animate({opacity:'1'})
+    } else if(scrT>=3000) {
+      $('.fillBg').addClass('full')
+    } else{
+      $('.fillBg').removeClass('full')
     }
   } else if(matchMedia("screen and (min-width: 768px) and (max-width: 1024px)").matches) {
     // 1025px 미만, 768px 이상에서 사용할 JavaScript
@@ -43,38 +49,8 @@ $(document).scroll(function(){
     }
   }
 })
-$('.preview a').click(function(e){
-  e.preventDefault()
-  var href = $(this).attr('href')
-  $('.main .content').removeClass('show').stop().animate({opacity:'0',marginTop:'50px'})
-  $(href).addClass('show').stop().animate({opacity:'1',marginTop:'0'},'easeInOutQuad')
 
 
-  $('.preview a').removeClass('on')
-  $(this).addClass('on')
-})
-$('.sect4 .row1 a').click(function(){
-  $('.sect4 .main').removeClass('small')
-})
-$('.sect4 .row2 a').click(function(){
-  $('.sect4 .main').addClass('small')
-})
-$('.preview a').mouseenter(function(){
-  var th = $(this)
-  $(this).find('.line1').animate({width:'100%'},function(){
-    $(th).find('.line2').animate({height:'100%'},function(){
-      $(th).find('.line3').animate({width:'100%'},function(){
-        $(th).find('.line4').animate({height:'100%'})
-      })
-    })
-  })
-})
-$('.preview a').mouseleave(function(){
-  $(this).find('.line1').animate({width:'0'})
-  $(this).find('.line2').animate({height:'0'})
-  $(this).find('.line3').animate({width:'0'})
-  $(this).find('.line4').animate({height:'0'})
-})
 
 // $('.wave_text').on({
 //   mouseenter:function(){
