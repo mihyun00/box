@@ -68,7 +68,7 @@ var swiper = new Swiper(".sect1-swiper-container", {
 })
 
 //section1 multislide
- $(".sect1_button a.next").click(function() {
+ $(".roll a.next").click(function() {
    $(".sect1_slidewrap1").animate({ marginLeft: "-200%" }, function() {
      $(".slide1").first().appendTo(".sect1_slidewrap1")
      $(".sect1_slidewrap1").css({ marginLeft: "-100%" })
@@ -82,7 +82,7 @@ var swiper = new Swiper(".sect1-swiper-container", {
    })
  })
  
- $(".sect1_button a.prev").click(function() {
+ $(".roll a.prev").click(function() {
    $(".sect1_slidewrap1").animate({ marginLeft: "0px" }, function() {
      $(".slide1")
        .last()
@@ -125,3 +125,17 @@ function f_move(){
     mleft = -120
   }
 }
+
+//top button fadeout
+
+$(document).scroll(function(){
+
+  var scrlBtn = $('.top_button').offset().top
+  //alert(scrlBtn)
+
+  if (scrlBtn > 5872) {
+    $('.top_button').stop().fadeOut()
+  } else if (scrlBtn < 5872) {
+    $('.top_button').stop().fadeIn()
+  }
+})
