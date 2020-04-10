@@ -15,39 +15,38 @@ $(document).scroll(function(){
   var scrT = $(this).scrollTop()
   console.log(scrT)
   // 1024px 이상에서 사용할 JavaScript
-    if (matchMedia("screen and (min-width: 1025px)"). matches) {
-      if(scrT>=4400){
-      $('.sect5 .title').animate({opacity:'1'},500)
-      $('.sect5 .comm1').delay(500).animate({opacity:'1',top:'0'},700)
-      $('.sect5 .comm2').delay(800).animate({opacity:'1',top:'0'},700)
-      $('.sect5 .comm3').delay(1100).animate({opacity:'1',top:'0'},700)
-      $('.sect5 .comm4').delay(1400).animate({opacity:'1',top:'0'},700)
-    } else if(scrT>=2500){
-      $('.titleBg').animate({opacity:'1'})
-    } else if(scrT>=3000) {
-      $('.fillBg').addClass('full')
-    } else{
-      $('.fillBg').removeClass('full')
+  if (matchMedia("screen and (min-width: 1025px)"). matches) {
+    if (scrT>2500){
+      $('.titleBg').animate({opacity:'1'},700)
+    } if (scrT>=3000) {
+      $('.fillBg').animate({opacity:'1',height:'330px'},1000)
     }
-  } else if(matchMedia("screen and (min-width: 768px) and (max-width: 1024px)").matches) {
-    // 1025px 미만, 768px 이상에서 사용할 JavaScript
-    if(scrT>=4100){
-      $('.sect5 .title').animate({opacity:'1'},500)
-      $('.sect5 .comm1').delay(500).animate({opacity:'1',top:'0'},700)
-      $('.sect5 .comm2').delay(800).animate({opacity:'1',top:'0'},700)
-      $('.sect5 .comm3').delay(1100).animate({opacity:'1',top:'0'},700)
-      $('.sect5 .comm4').delay(1400).animate({opacity:'1',top:'0'},700)
-    }
-  } else if(matchMedia("screen and (max-width: 768px)").matches){
-    // 768px 미만에서 사용할 JavaScript
-    if(scrT>=4700){
-      $('.sect5 .title').animate({opacity:'1'},500)
-      $('.sect5 .comm1').delay(500).animate({opacity:'1',top:'0'},700)
-      $('.sect5 .comm2').delay(800).animate({opacity:'1',top:'430'},700)
-      $('.sect5 .comm3').delay(1100).animate({opacity:'1',top:'860'},700)
-      $('.sect5 .comm4').delay(1400).animate({opacity:'1',top:'1290'},700)
-    }
+    if(scrT>=8000){
+    $('.sect5 .title').animate({opacity:'1'},500)
+    $('.sect5 .comm1').delay(500).animate({opacity:'1',top:'0'},700)
+    $('.sect5 .comm2').delay(800).animate({opacity:'1',top:'0'},700)
+    $('.sect5 .comm3').delay(1100).animate({opacity:'1',top:'0'},700)
+    $('.sect5 .comm4').delay(1400).animate({opacity:'1',top:'0'},700)
   }
+} else if(matchMedia("screen and (min-width: 768px) and (max-width: 1024px)").matches) {
+  // 1025px 미만, 768px 이상에서 사용할 JavaScript
+  if(scrT>=4100){
+    $('.sect5 .title').animate({opacity:'1'},500)
+    $('.sect5 .comm1').delay(500).animate({opacity:'1',top:'0'},700)
+    $('.sect5 .comm2').delay(800).animate({opacity:'1',top:'0'},700)
+    $('.sect5 .comm3').delay(1100).animate({opacity:'1',top:'0'},700)
+    $('.sect5 .comm4').delay(1400).animate({opacity:'1',top:'0'},700)
+  }
+} else if(matchMedia("screen and (max-width: 768px)").matches){
+  // 768px 미만에서 사용할 JavaScript
+  if(scrT>=4700){
+    $('.sect5 .title').animate({opacity:'1'},500)
+    $('.sect5 .comm1').delay(500).animate({opacity:'1',top:'0'},700)
+    $('.sect5 .comm2').delay(800).animate({opacity:'1',top:'430'},700)
+    $('.sect5 .comm3').delay(1100).animate({opacity:'1',top:'860'},700)
+    $('.sect5 .comm4').delay(1400).animate({opacity:'1',top:'1290'},700)
+  }
+}
 })
 
 
