@@ -143,14 +143,26 @@ $(".sect2-swiper-container .swiper-slide a").click(function (e) {
 })
 // sect3
 
-// setInterval(function() {
-//   $(".sect3-wraper01").animate({ marginLeft: -700 }, function() {
-//     $(".sect3-wraper01 div")
-//       .first()
-//       .appendTo(".sect3-wraper01")
-//     $(".sect3-wraper01 ").css({ marginLeft: -350 })
-//   })
-// }, 3000);
+setInterval(function () {
+  $(".sect3-wraper01").animate({ marginLeft: -700 }, function () {
+    $(".sect3-wraper01 div").first().appendTo(".sect3-wraper01")
+    $(".sect3-wraper01").css({ marginLeft: -350 })
+  })
+  $(".sect3-wraper02").animate({ marginLeft: -700 }, function () {
+    $(".sect3-wraper02 div").first().appendTo(".sect3-wraper02")
+    $(".sect3-wraper02").css({ marginLeft: -350 })
+  })
+  $(".sect3-wraper01 div").removeClass("on")
+  $(".sect3-wraper01 div")
+    .eq(1 + 2)
+    .addClass("on")
+  $(".sect3-wraper02 div").removeClass("on")
+  $(".sect3-wraper02 div")
+    .eq(1 + 2)
+    .addClass("on")
+}, 3500)
+
+///////////////////////////////////////////
 
 //////////////////////////////////////////////////
 var SNT = 0
@@ -167,44 +179,6 @@ $(".sect3-next-btn").click(function () {
   }
 })
 ////////////////////////////////////////////////////
-
-var SML = -300
-var TI = setInterval(move, 60)
-var SPL = -300
-var TII = setInterval(move, 60)
-
-// $(".sect3-wraper01 .S3-W01-slide").mouseenter(function () {
-//   clearInterval(TI)
-// })
-// $(".sect3-wraper01 .S3-W01-slide").mouseleave(function () {
-//   TI = setInterval(move, 60)
-// })
-// $(".sect3-wraper02 .S3-W01-slide").mouseenter(function () {
-//   clearInterval(TII)
-// })
-// $(".sect3-wraper02 .S3-W01-slide").mouseleave(function () {
-//   TII = setInterval(move, 60)
-// })
-
-function move() {
-  SML -= 2
-  $(".sect3-wraper01").css({ "margin-left": SML })
-  // console.log(mleft)
-  if (SML == -302) {
-    $(".sect3-wraper01 div").first().appendTo(".sect3-wraper01")
-  } else if (SML <= -600) {
-    SML = -300
-  }
-
-  SPL -= 2
-  $(".sect3-wraper02").css({ "margin-left": SPL })
-  // console.log(mleft)
-  if (SPL == -302) {
-    $(".sect3-wraper02 div").first().appendTo(".sect3-wraper02")
-  } else if (SPL <= -600) {
-    SPL = -300
-  }
-}
 
 ///////////////////////////////////////////
 

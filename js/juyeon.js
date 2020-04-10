@@ -121,7 +121,7 @@ function f_move(){
 } 
   else if (mleft <= -240){
  
-    console.log(mleft)
+    // console.log(mleft)
     mleft = -120
   }
 }

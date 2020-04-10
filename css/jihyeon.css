@@ -5,6 +5,7 @@
   background-size: cover;
   margin: 150px 0 0;
   border: 1px solid #000;
+  display: none;
 }
 .textBgWrap{
   width: 58%; height: 332px;
