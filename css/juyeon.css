@@ -24,7 +24,7 @@ header {
   border-top: 2px solid #365445;
   border-bottom: 1px solid #ddd;
   position: fixed;
-  z-index: 9999;
+  z-index: 999999;
   background-color: #fff;
 }
 
@@ -222,16 +222,16 @@ header {
   height: 100%;
 }
 .roll_left{
-  background-image: url(/img/arrow_r.png);
+  background-image: url(../img/arrow_r.png);
 }
 .roll_left:hover{
-  background-image: url(/img/arrow_r_hover.png);
+  background-image: url(../img/arrow_r_hover.png);
 }
 .roll_right{
-  background-image: url(/img/arrow_l.png);
+  background-image: url(../img/arrow_l.png);
 }
 .roll_right:hover{
-  background-image: url(/img/arrow_l_hover.png);
+  background-image: url(../img/arrow_l_hover.png);
 }
 .roll li img {
   width: 100%;
