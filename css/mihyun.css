@@ -182,21 +182,20 @@
 .sect3-slide-wrap {
   width: 50%;
   height: 100%;
-  border: 1px solid #000;
   overflow: hidden;
 }
 .sect3-wraper {
   height: 100%;
-  width: 4200px;
+  width: 480%;
   display: flex;
   align-items: center;
-  margin-left: -400px;
+  margin-left: -40%;
   /* background-image: url(../img/sect3-line.png);
   background-repeat: repeat-x;
   background-position: center; */
 }
 .sect3-wraper .S3-W01-slide {
-  width: 350px;
+  width: 40%;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
@@ -258,11 +257,44 @@
     width: 80%;
   }
   /*sect3*/
+  .sect3{
+    height: 150vh;
+  }
   .sect3-art {
     flex-direction: column;
   }
   .sect3-art>div{
     width: 100%;
+  }
+  .sect3-title-box {
+    padding: 200px 10px 10px 20px;
+  }
+  .sect3-title-box h3{
+    width: 90%;
+  }
+  .sect3-title-box h4{
+    padding: 20px 0;
+  }
+  .sect3-next-btn{
+    width: 35%;
+    top: 60%;
+    left: 3%;
+  }
+  .sect3-wraper{
+    height: 70%;
+  }
+  .S3-W01-slide.on h5 {
+    font-size: 16px;
+  }
+  .S3-W01-slide.DO {
+    margin-top: 320px;
+  }
+  .S3-W01-slide h5 {
+    font-size: 12px;
+  }
+  .S3-W01-slide p {
+    font-size: 16px;
+    margin: 15px 0;
   }
 }
 @media screen and (max-width: 1024px) {

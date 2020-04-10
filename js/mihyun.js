@@ -144,13 +144,13 @@ $(".sect2-swiper-container .swiper-slide a").click(function (e) {
 // sect3
 
 setInterval(function () {
-  $(".sect3-wraper01").animate({ marginLeft: -700 }, function () {
+  $(".sect3-wraper01").animate({ marginLeft: '-80%' }, function () {
     $(".sect3-wraper01 div").first().appendTo(".sect3-wraper01")
-    $(".sect3-wraper01").css({ marginLeft: -350 })
+    $(".sect3-wraper01").css({ marginLeft: '-40%' })
   })
-  $(".sect3-wraper02").animate({ marginLeft: -700 }, function () {
+  $(".sect3-wraper02").animate({ marginLeft: '-80%' }, function () {
     $(".sect3-wraper02 div").first().appendTo(".sect3-wraper02")
-    $(".sect3-wraper02").css({ marginLeft: -350 })
+    $(".sect3-wraper02").css({ marginLeft: '-40%' })
   })
   $(".sect3-wraper01 div").removeClass("on")
   $(".sect3-wraper01 div")
@@ -160,10 +160,12 @@ setInterval(function () {
   $(".sect3-wraper02 div")
     .eq(1 + 2)
     .addClass("on")
-}, 3500)
-
+}, 3800)
 ///////////////////////////////////////////
+$(window).resize(function(){
+  console.log()
 
+})
 //////////////////////////////////////////////////
 var SNT = 0
 $(".sect3-next-btn").click(function () {
@@ -180,28 +182,3 @@ $(".sect3-next-btn").click(function () {
 })
 ////////////////////////////////////////////////////
 
-///////////////////////////////////////////
-
-//스크롤 이벤트
-
-// $(document).scroll(function() {
-
-//   var scrl = $(this).scrollTop()
-
-//   if (scrl > 0) {
-//     $("header").addClass("on")
-//   } else if (scrl == 0) {
-//     $("header").removeClass("on")
-//   }
-
-//   if(scrl < 350) {
-//     $('.sect4_logo img').animate({'opacity':'1','top':'40%'})
-//     $('.sect4_txt p').delay(200).animate({'opacity':'1','top':'40%'})
-//     $('.sect4 button').delay(400).animate({'opacity':'1','top':'40%'})
-//   }
-//   else if(scrl < 350){
-//     $('.sect4_logo img').animate({'opacity':'0','top':'70%'})
-//     $('.sect4_txt p').animate({'opacity':'0','top':'70%'})
-//     $('.sect4 button').delay(400).animate({'opacity':'0','top':'70%'})
-//   }
-// })
