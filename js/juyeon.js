@@ -74,11 +74,11 @@ var swiper = new Swiper(".sect1-swiper-container", {
      $(".sect1_slidewrap1").css({ marginLeft: "-100%" })
    })
  
-   $(".sect1_slidewrap2").animate({ marginTop: "-132%" }, function() {
+   $(".sect1_slidewrap2").animate({ marginTop: "-148%" }, function() {
      $(".sect1_slidewrap2 div")
        .first()
        .appendTo(".sect1_slidewrap2")
-     $(".sect1_slidewrap2").css({ marginTop: "-66%" })
+     $(".sect1_slidewrap2").css({ marginTop: "-74%" })
    })
  })
  
@@ -94,7 +94,7 @@ var swiper = new Swiper(".sect1-swiper-container", {
      $(".slide2")
        .last()
        .prependTo(".sect1_slidewrap2")
-     $(".sect1_slidewrap2").css({ marginTop: "-66%" })
+     $(".sect1_slidewrap2").css({ marginTop: "-74%" })
    })
  })
 
