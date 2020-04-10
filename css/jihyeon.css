@@ -25,7 +25,7 @@
   position: absolute;
   top: 330px; left: 0;
   width: 100%; height: 330px;
-  background: #365445;
+  background: #cce4d7;
   z-index: -1;
 }
 .sect4 .contents{
@@ -159,67 +159,39 @@
     margin: 150px 0 0;
   }
   .textBgWrap{
-    width: 100%; height: 330px;
-    position: sticky;
-    top: 50%; left: 20%;
-    transform: translateY(-50%);
-    overflow: hidden;
-    margin-top: 50vh;
+    width: 100%; height: 150px;
   }
   .titleBg{
     position: absolute;
-    top: 0; left: 0;
-    width: 100.1%; height: 330px;
-    background: url(../img/sect4_title2.png) no-repeat;
-    background-size: 100%;
-    z-index: 999;
-    opacity: 1;
+    height: 150px;
   }
   .fillBg{
-    position: absolute;
-    top: 330px; left: 0;
-    width: 100%; height: 330px;
-    background: #365445;
+    top: 150px; height: 150px;
   }
   .sect4 .contents{
-    width: 1240px; height: 450vh;
+    width: 100%; height: 450vh;
     position: relative;
-    top: 110vh; left: 50%;
-    transform: translateX(-50%);
+    top: 110vh;
   }
   .sect4 .contents .content{
-    width: 43%;
-    background-color: #fff;
-    border: 1px solid #000;
+    width: 80%;
     position: absolute;
-    transition: .7s;
-  }
-  .sect4 .content:hover{
-    box-shadow: 0px 0px 30px rgba(0, 0, 0, .65);
+    left: 50%; transform: translateX(-50%);
   }
   .sect4 .contents .cont2{
-    top: 50vh; right: 0;
+    top: 60vh; left: 50%;
   }
   .sect4 .contents .cont3{
-    top: 120vh; left: 0;
+    top: 135vh; left: 50%;
   }
   .sect4 .contents .cont4{
-    top: 190vh; right: 0;
+    top: 213vh; left: 50%;
   }
   .sect4 .contents .cont5{
-    top: 260vh; left: 0;
+    top: 286vh; left: 50%;
   }
   .sect4 .contents .cont6{
-    top: 320vh; right: 0;
-  }
-  .sect4 .cont_img{
-    width: 100%;
-  }
-  .sect4 .cont_img img{
-    width: 100%;
-  }
-  .sect4 .cont_text{
-    padding: 30px;
+    top: 360vh; left: 50%;
   }
   .sect4 .content h2{
     font-size: 23px;
@@ -229,15 +201,13 @@
     padding: 5px 0 20px;
   }
   .sect4 .content p{
-    font-size: 15px;
-    line-height: 24px;
+    display: none;
   }
   /* sect5 mobile---------------------------------- */
   .sect5{
     padding: 100px 15px 0;
   }
   .sect5 .title{
-    font-size: 30px;
     padding: 35px 25px;
   }
   .sect5 .wrap {
@@ -354,7 +324,6 @@
     min-height: 85vh;
   }
   .sect5 .title{
-    font-size: 30px;
     padding: 45px 25px;
   }
   .sect5 .title {
