@@ -12,7 +12,7 @@ var swiper = new Swiper(".new", {
     prevEl: ".swiper-button-prev",
   },
   breakpoints: {
-    500: {
+    10: {
       slidesPerView: 2,
     },
     760: {
@@ -36,7 +36,7 @@ var swiper = new Swiper(".best", {
     prevEl: ".swiper-button-prev",
   },
   breakpoints: {
-    500: {
+    10: {
       slidesPerView: 2,
     },
     760: {
@@ -60,7 +60,7 @@ var swiper = new Swiper(".chu", {
     prevEl: ".swiper-button-prev",
   },
   breakpoints: {
-    500: {
+    10: {
       slidesPerView: 2,
     },
     760: {
@@ -84,7 +84,7 @@ var swiper = new Swiper(".prime", {
     prevEl: ".swiper-button-prev",
   },
   breakpoints: {
-    500: {
+    10: {
       slidesPerView: 2,
     },
     760: {
@@ -108,7 +108,7 @@ var swiper = new Swiper(".ebook", {
     prevEl: ".swiper-button-prev",
   },
   breakpoints: {
-    500: {
+   10: {
       slidesPerView: 2,
     },
     760: {
