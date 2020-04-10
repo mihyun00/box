@@ -16,12 +16,13 @@ $(document).scroll(function(){
   console.log(scrT)
   // 1024px 이상에서 사용할 JavaScript
   if (matchMedia("screen and (min-width: 1025px)"). matches) {
-    if (scrT>2500){
-      $('.titleBg').animate({opacity:'1'},700)
-    } if (scrT>=3000) {
-      $('.fillBg').animate({opacity:'1',height:'330px'},1000)
+    if (scrT>3100){
+      $('.fillBg').stop().animate({opacity:'0',top:'330px'},1000)
     }
-    if(scrT>=8000){
+    if (scrT>=3200) {
+      $('.fillBg').stop().animate({opacity:'1',top:'0'},1000)
+    } 
+    if(scrT>=8300){
     $('.sect5 .title').animate({opacity:'1'},500)
     $('.sect5 .comm1').delay(500).animate({opacity:'1',top:'0'},700)
     $('.sect5 .comm2').delay(800).animate({opacity:'1',top:'0'},700)
