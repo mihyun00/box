@@ -40,6 +40,12 @@ $(document).scroll(function(){
   }
 } else if(matchMedia("screen and (max-width: 768px)").matches){
   // 768px 미만에서 사용할 JavaScript
+  if (scrT>3350){
+    $('.fillBg').stop().animate({opacity:'0',top:'150px'},1000)
+  }
+  if (scrT>=3450) {
+    $('.fillBg').stop().animate({opacity:'1',top:'0'},1000)
+  } 
   if(scrT>=4700){
     $('.sect5 .title').animate({opacity:'1'},500)
     $('.sect5 .comm1').delay(500).animate({opacity:'1',top:'0'},700)
