@@ -6,7 +6,8 @@
   margin: 150px 0 0;
 }
 .textBgWrap{
-  width: 58%; height: 330px;
+  width: 58%; 
+  padding: 11%;
   position: sticky;
   top: 50%; left: 20%;
   transform: translateY(-50%);
@@ -16,20 +17,20 @@
 .titleBg{
   position: absolute;
   top: 0; left: 0;
-  width: 100.1%; height: 330px;
-  background: url(../img/sect4_title2.png) no-repeat;
+  width: 100%; height: 100%;
+  background: url(../img/stroke2.svg) no-repeat;
   background-size: 100%;
   z-index: 999;
 }
 .fillBg{
   position: absolute;
-  top: 330px; left: 0;
-  width: 100%; height: 330px;
-  background: #cce4d7;
+  top: 98%; left: 1%;
+  width: 98%; height: 98%;
+  background: #51cbc5;
   z-index: -1;
 }
 .sect4 .contents{
-  width: 1240px; height: 450vh;
+  max-width: 1240px; height: 450vh;
   position: relative;
   top: 110vh; left: 50%;
   transform: translateX(-50%);
@@ -37,12 +38,12 @@
 .sect4 .contents .content{
   width: 43%;
   background-color: #fff;
-  border: 1px solid #000;
+  border: 1px solid #51cbc5;
   position: absolute;
   transition: .7s;
 }
 .sect4 .content:hover{
-  box-shadow: 0px 0px 30px rgba(0, 0, 0, .65);
+  box-shadow: 0px 0px 30px rgba(0, 0, 0, .45);
 }
 .sect4 .contents .cont2{
   top: 50vh; right: 0;
@@ -155,23 +156,17 @@
 /* 모바일 */
 @media screen and (max-width: 768px) {
   .sect4{
-    height: 600vh;
+    height: 650vh;
     margin: 150px 0 0;
   }
-  .textBgWrap{
-    width: 100%; height: 150px;
-  }
-  .titleBg{
-    position: absolute;
-    height: 150px;
-  }
-  .fillBg{
-    top: 150px; height: 150px;
+  .sect4 .textBgWrap{
+    width: 100%;
+    padding: 20%;
   }
   .sect4 .contents{
     width: 100%; height: 450vh;
     position: relative;
-    top: 110vh;
+    top: 80vh;
   }
   .sect4 .contents .content{
     width: 80%;
@@ -179,19 +174,19 @@
     left: 50%; transform: translateX(-50%);
   }
   .sect4 .contents .cont2{
-    top: 60vh; left: 50%;
+    top: 15%; left: 50%;
   }
   .sect4 .contents .cont3{
-    top: 135vh; left: 50%;
+    top: 35%; left: 50%;
   }
   .sect4 .contents .cont4{
-    top: 213vh; left: 50%;
+    top: 55%; left: 50%;
   }
   .sect4 .contents .cont5{
-    top: 286vh; left: 50%;
+    top: 75%; left: 50%;
   }
   .sect4 .contents .cont6{
-    top: 360vh; left: 50%;
+    top: 95%; left: 50%;
   }
   .sect4 .content h2{
     font-size: 23px;
@@ -250,73 +245,36 @@
 /* 태블릿 */
 @media screen and (min-width: 768px) and (max-width: 1024px) {
   .sect4{
-    padding: 150px 0 80px;
+    height: 550vh;
   }
-  .sect4 .title{
-    font-size: 30px;
-  }
-  .sect4 .title2{
-    padding-bottom: 50px;
-  }
-  .write{
-    height: 750px;
-  }
-  .writeInfo{
-    padding: 50px 30px;
-    right: 15px;
-  }
-  .writeInfo h3{
-    font-size: 23px;
-  }
-  .writeInfo em{
-    font-size: 18px;
-  }
-  .writeInfo p{
-    font-size: 16px;
-  }
-  .writeInfo p span{
-    font-size: 16px;
+  .textBgWrap{
+    width: 70%; 
+    padding: 13%; left: 15%;
   }
   .sect4 .contents{
-    padding: 0 15px;
+    height: 450vh;
+    top: 90vh;
   }
-  .sect4 .main.fl{
-    width: 60%; height: 550px;
-    margin-right: 15px;
+  .sect4 .contents .content{
+    width: 40%;
   }
-  .sect4 .main .content h2{
-    font-size: 23px;
+  .sect4 .contents .cont1{
+    left: 20px;
   }
-  .sect4 .main .content em{
-    font-size: 18px;
+  .sect4 .contents .cont2{
+    right: 20px;
   }
-  .sect4 .main .content p{
-    font-size: 16px;
-    line-height: 28px;
+  .sect4 .contents .cont3{
+    left: 20px;
   }
-  .sect4 .preview{
-    width: calc(40% - 15px); height: 550px;
+  .sect4 .contents .cont4{
+    right: 20px;
   }
-  .sect4 .preview a{
-    font-size: 18px;
-    padding: 15px;
+  .sect4 .contents .cont5{
+    left: 20px;
   }
-  .sect4 .preview .row1{
-    width: 100%; height: calc(50% - 10px);
-    margin-bottom: 15px;
-  }
-  .sect4 .row1 a{
-    width: calc(50% - 7px);
-  }
-  .sect4 .preview .row2{
-    width: 100%; height: calc(50% - 7px);
-  }
-  .sect4 .row2 a{
-    width: calc(33.333% - 10px);
-    margin-right: 15px;
-  }
-  .sect4 .row2 a:last-child{
-    width: calc(33.333% - 10px);
+  .sect4 .contents .cont6{
+    right: 20px;
   }
   /* sect5 tablet--------------------------------- */
   .sect5{

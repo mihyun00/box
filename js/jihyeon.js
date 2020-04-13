@@ -17,7 +17,7 @@ $(document).scroll(function(){
   // 1024px 이상에서 사용할 JavaScript
   if (matchMedia("screen and (min-width: 1025px)"). matches) {
     if (scrT>3100){
-      $('.fillBg').stop().animate({opacity:'0',top:'330px'},1000)
+      $('.fillBg').stop().animate({opacity:'0',top:'98%'},1000)
     }
     if (scrT>=3200) {
       $('.fillBg').stop().animate({opacity:'1',top:'0'},1000)
@@ -31,7 +31,13 @@ $(document).scroll(function(){
   }
 } else if(matchMedia("screen and (min-width: 768px) and (max-width: 1024px)").matches) {
   // 1025px 미만, 768px 이상에서 사용할 JavaScript
-  if(scrT>=4100){
+  if (scrT>3150){
+    $('.fillBg').stop().animate({opacity:'0',top:'98%'},1000)
+  }
+  if (scrT>=3250) {
+    $('.fillBg').stop().animate({opacity:'1',top:'0'},1000)
+  } 
+  if(scrT>=7740){
     $('.sect5 .title').animate({opacity:'1'},500)
     $('.sect5 .comm1').delay(500).animate({opacity:'1',top:'0'},700)
     $('.sect5 .comm2').delay(800).animate({opacity:'1',top:'0'},700)
@@ -41,7 +47,7 @@ $(document).scroll(function(){
 } else if(matchMedia("screen and (max-width: 768px)").matches){
   // 768px 미만에서 사용할 JavaScript
   if (scrT>3350){
-    $('.fillBg').stop().animate({opacity:'0',top:'150px'},1000)
+    $('.fillBg').stop().animate({opacity:'0',top:'98%'},1000)
   }
   if (scrT>=3450) {
     $('.fillBg').stop().animate({opacity:'1',top:'0'},1000)
