@@ -7,11 +7,11 @@ body {
   position: relative;
   height: 100%;
   color: #333;
-  background-image: url(../img/bg-icon01.png), url(../img/bg-icon02.png);
+  background-image: url(../img/icon0003.png), url(../img/icon001.png);
   background-position: bottom left, top right;
   background-repeat: no-repeat;
   background-attachment: fixed;
-  background-size: 480px;
+  background-size: 450px;
 }
 @font-face {
   /*약간 굵음*/
