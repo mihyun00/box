@@ -7,6 +7,10 @@ var swiper = new Swiper(".new", {
     el: ".swiper-pagination",
     dynamicBullets: true,
   },
+  autoplay: {
+    delay: 3000,
+    disableOnInteraction: false,
+  },
   navigation: {
     nextEl: ".swiper-button-next",
     prevEl: ".swiper-button-prev",
@@ -30,6 +34,10 @@ var swiper = new Swiper(".best", {
   pagination: {
     el: ".swiper-pagination",
     dynamicBullets: true,
+  },
+  autoplay: {
+    delay: 3000,
+    disableOnInteraction: false,
   },
   navigation: {
     nextEl: ".swiper-button-next",
@@ -55,6 +63,10 @@ var swiper = new Swiper(".chu", {
     el: ".swiper-pagination",
     dynamicBullets: true,
   },
+  autoplay: {
+    delay: 3000,
+    disableOnInteraction: false,
+  },
   navigation: {
     nextEl: ".swiper-button-next",
     prevEl: ".swiper-button-prev",
@@ -78,6 +90,10 @@ var swiper = new Swiper(".prime", {
   pagination: {
     el: ".swiper-pagination",
     dynamicBullets: true,
+  },
+  autoplay: {
+    delay: 3000,
+    disableOnInteraction: false,
   },
   navigation: {
     nextEl: ".swiper-button-next",
@@ -103,12 +119,16 @@ var swiper = new Swiper(".ebook", {
     el: ".swiper-pagination",
     dynamicBullets: true,
   },
+  autoplay: {
+    delay: 3000,
+    disableOnInteraction: false,
+  },
   navigation: {
     nextEl: ".swiper-button-next",
     prevEl: ".swiper-button-prev",
   },
   breakpoints: {
-   10: {
+    10: {
       slidesPerView: 2,
     },
     760: {
@@ -141,16 +161,21 @@ $(".sect2-swiper-container .swiper-slide a").click(function (e) {
     .animate({ marginTop: "16%", opacity: "0" })
   $(href).stop().css({ display: "block" }).animate({ marginTop: "14%", opacity: "1" })
 })
+
+$('.sect2-bookslide .swiper-container .swiper-slide img').click(function(){
+  $('.sect2-bookslide .swiper-container .swiper-slide img').removeClass('on')
+  $(this).addClass('on')
+})
 // sect3
 
 setInterval(function () {
-  $(".sect3-wraper01").animate({ marginLeft: '-80%' }, function () {
+  $(".sect3-wraper01").animate({ marginLeft: "-80%" }, function () {
     $(".sect3-wraper01 div").first().appendTo(".sect3-wraper01")
-    $(".sect3-wraper01").css({ marginLeft: '-40%' })
+    $(".sect3-wraper01").css({ marginLeft: "-40%" })
   })
-  $(".sect3-wraper02").animate({ marginLeft: '-80%' }, function () {
+  $(".sect3-wraper02").animate({ marginLeft: "-80%" }, function () {
     $(".sect3-wraper02 div").first().appendTo(".sect3-wraper02")
-    $(".sect3-wraper02").css({ marginLeft: '-40%' })
+    $(".sect3-wraper02").css({ marginLeft: "-40%" })
   })
   $(".sect3-wraper01 div").removeClass("on")
   $(".sect3-wraper01 div")
@@ -162,9 +187,8 @@ setInterval(function () {
     .addClass("on")
 }, 3800)
 ///////////////////////////////////////////
-$(window).resize(function(){
+$(window).resize(function () {
   console.log()
-
 })
 //////////////////////////////////////////////////
 var SNT = 0
@@ -181,4 +205,3 @@ $(".sect3-next-btn").click(function () {
   }
 })
 ////////////////////////////////////////////////////
-
