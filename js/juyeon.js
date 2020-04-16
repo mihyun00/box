@@ -133,9 +133,9 @@ $(document).scroll(function(){
   var scrlBtn = $('.top_button').offset().top
   //alert(scrlBtn)
 
-  if (scrlBtn > 5872) {
+  if (scrlBtn > 10000) {
     $('.top_button').stop().fadeOut()
-  } else if (scrlBtn < 5872) {
+  } else if (scrlBtn < 10000) {
     $('.top_button').stop().fadeIn()
   }
 })

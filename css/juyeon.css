@@ -183,19 +183,19 @@ header {
 }
 
 .slide2 button {
-  width: 150px;
-  height: 40px;
+  width: 180px;
+  height: 60px;
   border: 2px solid #ccc;
   background-color: rgba(255, 255, 255, 0.5);
   border-radius: 30px;
   color: rgb(126, 126, 126);
   font-weight: bold;
+  font-size: 1vw;
 }
 .slide2 button:hover {
   color: #416051;
   transition: 0.5s;
-  font-weight: bold;
-  font-size: small;
+  
 }
 
 .roll {
@@ -218,16 +218,20 @@ header {
   height: 100%;
 }
 .roll_left {
-  background-image: url(../img/arrow_r.png);
+  background-image: url(../img/arrow_prev_1.png);
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 .roll_left:hover {
-  background-image: url(../img/arrow_r_hover.png);
+  background-image: url(../img/arrow_prev_2.png);
 }
 .roll_right {
-  background-image: url(../img/arrow_l.png);
+  background-image: url(../img/arrow_next_1.png);
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 .roll_right:hover {
-  background-image: url(../img/arrow_l_hover.png);
+  background-image: url(../img/arrow_next_2.png);
 }
 .roll li img {
   width: 100%;
